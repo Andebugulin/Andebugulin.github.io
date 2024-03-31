@@ -380,10 +380,11 @@ ul.task-list input[type="checkbox"] {
 
 .social {
   text-align: center;
+  margin-top: 100px;
 
   .contact-icons {
-    font-size: 4rem;
-
+    font-size: 2.5rem;
+    
     a {
       i::before {
         color: var(--global-text-color);
@@ -435,30 +436,22 @@ ul.task-list input[type="checkbox"] {
 
 // Footer
 footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.9rem;
+  background-color: var(--global-bg-color);
+  opacity: 1;
 
   .container {
-    color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
     text-align: center;
-  }
-
-  a {
-    color: var(--global-footer-link-color);
-
-    &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
-    }
   }
 }
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 0.9rem;
 
   .container {
