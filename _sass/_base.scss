@@ -40,7 +40,7 @@ table.table a {
 
   &:hover {
     color: var(--global-theme-color);
-    text-decoration: underline;
+    text-decoration: dashed;
   }
 
   &:hover:after :not(.nav-item.dropdown) {
@@ -49,7 +49,7 @@ table.table a {
 }
 
 .table-dark {
-  background-color: transparent;
+  background-color: var(--global-card-text-color);
   &.table-bordered {
     border: 1px solid var(--global-divider-color) !important;
   }
@@ -163,18 +163,11 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
-
-  img {
-    width: 100%;
-  }
-
-  .card-title {
-    color: var(--global-text-color);
-  }
-
+  
+  
   .card-item {
     width: auto;
-    margin-bottom: 10px;
+    margin-bottom: 1000px;
 
     .row {
       display: flex;
@@ -380,7 +373,7 @@ ul.task-list input[type="checkbox"] {
 
 .social {
   text-align: center;
-  margin-top: 100px;
+  margin-top:100px;
 
   .contact-icons {
     font-size: 2.5rem;
@@ -467,6 +460,13 @@ footer.sticky-bottom {
   .card {
     background-color: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
+    .location {
+      color: black;
+    }
+
+    .list-group-name {
+      color: black;
+    }
 
     .list-group-item {
       background-color: inherit;
@@ -606,29 +606,31 @@ footer.sticky-bottom {
 
 .projects {
   a {
-    text-decoration: none;
 
-    &:hover {
-      .card-title {
-        color: var(--global-theme-color);
+    &:hover{
+      .card-title{
+        color: pink;
       }
     }
-  }
-
-  .card {
-    img {
-      width: 100%;
+    .card {
+      img {
+        width: 100%;
+      }
+      .card-text{
+        color: rgb(125, 83, 150); // color: for text in the card of the project, not the title.
+      }
     }
+  
+    .card-item {
+      width: auto;
+      margin-bottom: 10px;
+  
+      .row {
+        display: flex;
+        align-items: center;
+      }
+    
   }
-
-  .card-item {
-    width: auto;
-    margin-bottom: 10px;
-
-    .row {
-      display: flex;
-      align-items: center;
-    }
   }
 
   .grid-sizer,
@@ -1057,6 +1059,7 @@ nav[data-toggle="toc"] {
     text-decoration: none;
 
     .card-text {
+      color: var(  --global-card-text-color);
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -1066,7 +1069,7 @@ nav[data-toggle="toc"] {
       color: var(--global-theme-color);
 
       .card-title {
-        color: var(--global-theme-color);
+        color: var(--global-card-text-color);
       }
     }
   }
