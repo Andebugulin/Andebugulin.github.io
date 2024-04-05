@@ -4,7 +4,7 @@
  :root {
   --global-bg-color: #0f141d; /* A deep, rich background akin to the depths of a modern terminal */
   --global-code-bg-color: #1d1111; /* A slightly lighter shade for code blocks, offering subtle contrast */
-  --global-text-color: #c9d1d9; /* A soft, light text color for general readability */
+  --global-text-color: #bcc4cc; /* A soft, light text color for general readability */
   --global-text-color-light: #8b949e; /* A muted light for less important text, blending seamlessly */
   --global-theme-color: #15af2a; /* A striking, electric blue for accents, highlighting the most important elements */
   --global-hover-color: #644eb4; /* A deeper blue for hover states, ensuring interactivity is noticeable */
@@ -27,6 +27,7 @@
   --global-danger-block-bg: #3a1616; /* A dark, muted background for danger blocks, making the red stand out */
   --global-danger-block-text: #ff9999; /* A softer red for text, ensuring it's warning but readable */
   --global-danger-block-title: #ff6a6a; /* The vivid red again for titles, emphasizing the alert */
+  --global-cv-text: #d1d5da;
 }
 
   #light-toggle-system {
@@ -53,10 +54,10 @@
 
 html[data-theme="dark"] {
   --global-bg-color: #ced0e2; /* Editor Background (Night) */
-  --global-code-bg-color: #1e2041; /* Dark Editor Background */
+  --global-code-bg-color: #8278a0; /* Dark Editor Background */
   --global-text-color: lighten(#3c4252, 40%); /* Lightened Comments for dark theme */
   --global-text-color-light: lighten(#3c3f4d, 40%); /* Consistency */
-  --global-theme-color: #8670af; /* Object literal keys, Markdown links */
+  --global-theme-color: #572da3; /* Object literal keys, Markdown links */
   --global-hover-color: #5f857f; /* Consistent with theme color */
   --global-hover-text-color: #c0caf5; /* White Color */
   --global-footer-bg-color: #94a578; /* Adjusted for dark theme */
@@ -64,7 +65,8 @@ html[data-theme="dark"] {
   --global-footer-link-color: #a7e993; /* Lime Green */
   --global-distill-app-color: lighten(#565f89, 40%); /* Lightened Comments for readability */
   --global-divider-color: #5454eb; /* Adjusted for contrast */
-  --global-card-bg-color: #1e2041; /* Dark Grey */
+  --global-card-bg-color: #8278a0; /* Dark Grey */
+  --global-cv-text: #181616;
 }
   .repo-img-light {
     display: none;
