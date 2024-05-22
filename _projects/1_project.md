@@ -4,7 +4,7 @@ title: TATASk
 description: An innovative platform for managing daily tasks and activities.
 img: assets/img/wizardTATASK.png
 importance: 1
-category: fun
+category: uni 
 ---
 
 ## `TATASk` - Your Daily Task Management Wizard
