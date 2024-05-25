@@ -15,6 +15,32 @@ category: productivity
 
 Ankara is developed with `Python` and incorporates the `pygame` library to create an interactive learning environment. It leverages spaced repetition and randomization to help users learn and retain new words more effectively.
 
+### `Key Bindings`
+
+The application supports Vim-like key bindings for an intuitive and efficient learning experience:
+
+- `n` - Next word
+- `p` - Previous word
+- `h` - Mark word as "don't remember"
+- `j` - Mark word as "hard"
+- `k` - Mark word as "normal"
+- `l` - Mark word as "nice"
+- `i` - Mark word as "very impressive"
+- `0` - Skip 10 words forward
+- `f` - Show word
+- `d` - Show meaning
+- `s` - Show example
+- `a` - Play pronunciation
+
+### `Optimized Hand Placement`
+
+For the best user experience, we recommend positioning your hands as follows:
+
+- **Right Hand**: Place your index finger on `h`, middle finger on `j`, ring finger on `k`, and pinky on `l`. This positioning allows easy access to the evaluation keys.
+- **Left Hand**: Place your index finger on `f`, middle finger on `d`, ring finger on `s`, and pinky on `a`. This positioning allows easy access to the word interaction keys.
+
+This hand placement mimics the efficient navigation of Vim, allowing for quick and comfortable interaction with the application.
+
 ### `Page Layouts`
 
 #### Instructions view 
@@ -73,3 +99,4 @@ One of the key features of Ankara is its use of spaced repetition and randomizat
 
   fetchContributors();
 </script>
+
