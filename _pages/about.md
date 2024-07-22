@@ -19,9 +19,9 @@ social: true # includes social icons at the bottom of the page
 ```arduino
 $ whoami
 ```
-A passionate software developer and student at XAMK, Finland 🇫🇮
+A passionate software developer, AI enthusiast, and student at XAMK, Finland 🇫🇮
 
-I'm on a journey of exploration in web development and low-level programming, with a special love for the open-source community and great music.
+I'm on a journey of exploration in software engineering, artificial intelligence, and low-level programming, with a special love for the open-source community and great music.
 
 ```arduino
 $ nvim interests
