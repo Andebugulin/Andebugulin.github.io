@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Andrei Gulin",
-    "label": "Software Developer",
+    "label": "Software Developer, AI enthusiast",
     "image": "",
     "email": "andreigulin2005@gmail.com",
-    "phone": "+358417148158",
-    "summary": "I'm a software developer from Russia, now in Finland, with a huge passion for learning and exploring the world around us.",
-    "location": {
+    "phone": "+358417137538",
+
+    "summary": "I'm a software developer from Russia, now in Finland, with a huge passion for learning and exploring the world around us. I aim to find the best solutions for present problems, utilizing AI technologies to make a positive impact.",    "location": {
       "address": "raviradantie 7",
       "postalCode": "Mikkeli 50100",
       "city": "Mikkeli",
@@ -17,12 +17,12 @@
   "work": [
     {
       "name": "Full stack",
-      "position": "Software Developer - Mindhive Oy",
+      "position": "Software Developer Internship - Mindhive Oy",
       "url": "https://www.mindhive.fi/en/home",
       "startDate": "2024-01-10",
-      "endDate": "present",
+      "endDate": "2024-06-10",
       "summary": "I dive deep into building awesome websites, front to back, with React, TypeScript, Next.js, and Firebase. It's all about creating smooth, fast, secure experiences online that people would love. We used Toggle and Clickup to manage our tasks.",
-      "highlights": ["Git", "Typescript", "React", "Firebase", "Next.js"]
+      "highlights": ["Git", "Typescript", "React", "Firebase", "Next.js", "React Native"]
     }
   ],
   "education": [
@@ -39,7 +39,7 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "level": "Advanced | Basics | Learn",
+      "level": "Advanced | Basics | Learning",
       "icon": "fa-solid fa-code-branch",
       "keywords": [
         "&nbsp;<i class=\"fa-brands fa-python\"></i>&nbsp;&nbsp;Python",
@@ -47,7 +47,9 @@
         "<i class=\"fa-solid fa-crow\"></i>  C++",
         "&nbsp;<i class=\"fa-brands fa-js\"></i>&nbsp;  Javascript & Typescript",
         "&nbsp;<i class=\"fa-brands fa-html5\"></i>&nbsp;  HTML & CSS",
-        "<i class=\"fa-brands fa-golang\"></i> Golang"
+        "<i class=\"fa-brands fa-golang\"></i> Golang",
+        "<i class=\"fa-solid fa-cog\"></i> C",
+        "<i class=\"fa-brands fa-rust\"></i> Rust"
       ]
     },
     {
@@ -68,7 +70,7 @@
       "level": "Used frequently",
       "icon": "fa-solid fa-wrench",
       "keywords": [
-        "<i class=\"fa-brands fa-git\"></i>&nbsp;Git",
+        "<i class=\"fa-brands fa-git\"></i>&nbsp; Git",
         "<i class=\"fa-solid fa-bolt\"></i>&nbsp; Babel",
         "<i class=\"fa-brands fa-docker\"></i>&nbsp;Docker",
         "<i class=\"fa-solid fa-kiwi-bird\"></i>&nbsp; Linux"
@@ -82,8 +84,12 @@
         "&nbsp;<i class=\"fa-brands fa-gripfire\"></i>&nbsp; Firestore",
         "&nbsp;<i class=\"fa-solid fa-user-astronaut\"></i>&nbsp; Supabase",
         "&nbsp; <i class=\"fa-solid fa-jar-wheat\"></i>&nbsp; SQL",
-        "&nbsp;<i class=\"fa-solid fa-leaf\"></i>&nbsp;MongoDB"
-      ]
+        "&nbsp;<i class=\"fa-solid fa-leaf\"></i>&nbsp;MongoDB",
+        "&nbsp;<i class=\"fa-solid fa-tree\"></i>&nbsp;PostgreSQL",
+        "&nbsp;<i class=\"fa-solid fa-diamond\"></i>&nbsp;SQLite",
+        "&nbsp;<i class=\"fa-solid fa-rocket\"></i>&nbsp;MySQL",
+        "&nbsp;<i class=\"fa-solid fa-globe\"></i>&nbsp;MariaDB"
+              ]
     }
   ],
   "languages": [
