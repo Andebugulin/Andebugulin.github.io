@@ -584,16 +584,16 @@ footer.sticky-bottom {
       color: var(--global-text-color);
 
       &:hover {
-        color: $black-color;
+        background-color: var(--global-page-link-hover-color);
       }
     }
 
     &.active .page-link {
       color: $white-color;
-      background-color: var(--global-theme-color);
+      background-color: var(--global-page-link-color);
 
       &:hover {
-        background-color: var(--global-theme-color);
+        background-color: var(--global-page-link-hover-color);
       }
     }
   }

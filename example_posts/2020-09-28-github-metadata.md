@@ -30,7 +30,7 @@ A sample blog page that demonstrates the accessing of github meta data.
 ## Example MetaData
 
 - Host Name : {{ site.github.hostname }}
-- URL : {{ site.github.url }}
+- URL : {{ site.github.w }}
 - BaseURL : {{ site.github.baseurl }}
 - Archived : {{ site.github.archived}}
 - Contributors :
