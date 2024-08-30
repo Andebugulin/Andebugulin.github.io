@@ -2,37 +2,37 @@
  * Themes
  ******************************************************************************/
  :root {
-  --global-bg-color: #0f141d; /* A deep, rich background akin to the depths of a modern terminal */
-  --global-code-bg-color: #1d1111; /* A slightly lighter shade for code blocks, offering subtle contrast */
-  --global-text-color: #bcc4cc; /* A soft, light text color for general readability */
-  --global-text-color-light: #8b949e; /* A muted light for less important text, blending seamlessly */
-  --global-theme-color: #15af2a; /* A striking, electric blue for accents, highlighting the most important elements */
-  --global-hover-color: #644eb4; /* A deeper blue for hover states, ensuring interactivity is noticeable */
-  --global-hover-text-color: #cae8ff; /* A bright, inviting blue for hover text, drawing attention */
-  --global-footer-bg-color: #172436; /* A dark, subtle footer, tying the theme together */
-  --global-footer-text-color: #8b949e; /* A light grey for footer text, maintaining readability */
-  --global-footer-link-color: #58a6ff; /* The electric blue again, for consistency and emphasis on links */
-  --global-distill-app-color: #21262d; /* A dark grey for subdued elements, like comments or less important UI */
-  --global-divider-color: #30363d; /* A slightly lighter grey for dividers, offering just enough contrast */
-  --global-card-bg-color: #0e1827; /* Matching the code bg for cards, ensuring they blend but stand out */
-  --global-tip-block: #4aff4a; /* A vibrant green for tips, standing out as helpful hints */
-  --global-tip-block-bg: #033a16; /* A very dark green background for tips, making the text pop */
-  --global-tip-block-text: #b1e3b1; /* A softer green for tip text, ensuring readability */
-  --global-tip-block-title: #4aff4a; /* Bright green for titles, drawing attention */
-  --global-warning-block: #ffa657; /* A warm orange for warnings, signaling caution */
-  --global-warning-block-bg: #3a2716; /* A dark background for warnings, enhancing the orange text */
-  --global-warning-block-text: #ffc080; /* A lighter orange for warning text, balancing caution with readability */
-  --global-warning-block-title: #ffa657; /* The same orange for titles, for consistency */
-  --global-danger-block: #ff6a6a; /* A vivid red for errors, demanding immediate attention */
-  --global-danger-block-bg: #3a1616; /* A dark, muted background for danger blocks, making the red stand out */
-  --global-danger-block-text: #ff9999; /* A softer red for text, ensuring it's warning but readable */
-  --global-danger-block-title: #ff6a6a; /* The vivid red again for titles, emphasizing the alert */
-  --global-cv-text: #d1d5da;
-  --global-page-link-color: #122b10;
-  --global-page-link-hover-color: #164813;
+  --global-bg-color: #000000; /* Black background, providing a sleek, modern canvas */
+  --global-code-bg-color: #131314; /* Slightly lighter black for code blocks, ensuring subtle contrast */
+  --global-text-color: #E5E5EA; /* Soft white for general text, ensuring readability */
+  --global-text-color-light: #A3A3A3; /* Muted light gray for secondary text, blending seamlessly */
+  --global-theme-color: #43B758; /* Sea green for key accents, inspired by programming themes */
+  --global-hover-color: #276637; /* Slightly darker green for hover states, enhancing interactivity */
+  --global-hover-text-color: #A1ECA5; /* Light green for hover text, maintaining the fresh, clean aesthetic */
+  --global-footer-bg-color: #1C1D1F; /* Deep gray for the footer, consistent with the overall dark theme */
+  --global-footer-text-color: #8E8E93; /* Light gray for footer text, ensuring readability */
+  --global-footer-link-color: #2F8040; /* Consistent sea green for footer links, maintaining cohesiveness */
+  --global-distill-app-color: #1C1D1F; /* Dark gray for subdued elements, like comments or less important UI */
+  --global-divider-color: #2C2C2E; /* Medium-dark gray for dividers, offering subtle separation */
+  --global-card-bg-color: #1C1D1F; /* Dark charcoal for card backgrounds, ensuring they blend with the theme */
+  --global-tip-block: #2F8040; /* Sea green for tips, offering a fresh, noticeable highlight */
+  --global-tip-block-bg: #1C1D1F; /* Dark muted green for tips, creating a soft contrast */
+  --global-tip-block-text: #D1EED1; /* Soft green for tip text, ensuring it stands out */
+  --global-tip-block-title: #2F8040; /* Consistent green for tip titles */
+  --global-warning-block: #FF9500; /* Orange for warnings, clear and professional */
+  --global-warning-block-bg: #4B3721; /* Dark muted orange for warning backgrounds, providing balance */
+  --global-warning-block-text: #FFCC99; /* Light orange for warning text, maintaining readability */
+  --global-warning-block-title: #FF9500; /* Consistent amber for warning titles */
+  --global-danger-block: #FF3B30; /* Red for errors, signaling urgency with sophistication */
+  --global-danger-block-bg: #3B1F1F; /* Dark muted red for danger backgrounds */
+  --global-danger-block-text: #FF9A9A; /* Soft red for error text, keeping the alert noticeable */
+  --global-danger-block-title: #FF3B30; /* Vivid red for error titles */
+  --global-cv-text: #D1D5DA; /* Light gray for CV text, balancing professionalism and readability */
+  --global-page-link-color: #2F8040; /* Sea green for links, ensuring they stand out */
+  --global-page-link-hover-color: #276637; /* Slightly darker green for hovered links, maintaining interactivity */
 }
 
-  #light-toggle-system {
+#light-toggle-system {
     padding-left: 10px;
     padding-top: 12px;
     display: block;
@@ -53,22 +53,21 @@
     display: none;
   }
 
-
 html[data-theme="dark"] {
-  --global-bg-color: #ced0e2; /* Editor Background (Night) */
-  --global-code-bg-color: #8278a0; /* Dark Editor Background */
-  --global-text-color: lighten(#3c4252, 40%); /* Lightened Comments for dark theme */
-  --global-text-color-light: lighten(#3c3f4d, 40%); /* Consistency */
-  --global-theme-color: #572da3; /* Object literal keys, Markdown links */
-  --global-hover-color: #5f857f; /* Consistent with theme color */
-  --global-hover-text-color: #c0caf5; /* White Color */
-  --global-footer-bg-color: #94a578; /* Adjusted for dark theme */
-  --global-footer-text-color: #c0b8b8; /* Adjusted for readability */
-  --global-footer-link-color: #a7e993; /* Lime Green */
-  --global-distill-app-color: lighten(#565f89, 40%); /* Lightened Comments for readability */
-  --global-divider-color: #5454eb; /* Adjusted for contrast */
-  --global-card-bg-color: #8278a0; /* Dark Grey */
-  --global-cv-text: #181616;
+  --global-bg-color: #000000; /* Editor Background */
+  --global-code-bg-color: #131314; /* Dark Editor Background */
+  --global-text-color: #E5E5EA; /* Lightened Comments for dark theme */
+  --global-text-color-light: #A3A3A3; /* Consistency */
+  --global-theme-color: #2F8040; /* Object literal keys, Markdown links */
+  --global-hover-color: #276637; /* Consistent with theme color */
+  --global-hover-text-color: #A1ECA5; /* White Color */
+  --global-footer-bg-color: #1C1D1F; /* Adjusted for dark theme */
+  --global-footer-text-color: #8E8E93; /* Adjusted for readability */
+  --global-footer-link-color: #2F8040; /* Sea Green */
+  --global-distill-app-color: #1C1D1F; /* Lightened Comments for readability */
+  --global-divider-color: #2C2C2E; /* Adjusted for contrast */
+  --global-card-bg-color: #1C1D1F; /* Dark Grey */
+  --global-cv-text: #D1D5DA; /* Light gray for CV text */
 }
   .repo-img-light {
     display: none;
