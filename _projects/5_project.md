@@ -2,7 +2,7 @@
 layout: page
 title: Piracy RPG
 description: A strategic naval exploration and combat game with procedural generation and advanced software design patterns
-img: assets/img/1.jpg
+img: assets/img/pirates_battle.jpeg
 importance: 3
 category: uni
 ---
