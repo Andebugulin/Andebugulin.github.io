@@ -19,14 +19,14 @@ social: true # includes social icons at the bottom of the page
 ```arduino
 $ whoami
 ```
-A passionate software developer, AI enthusiast, and student at XAMK, Finland 🇫🇮
+I am him. A passionate software developer and student at XAMK, Finland 🇫🇮
 
-I'm on a journey of exploration in software engineering and artificial intelligence, with a special love for the open-source community and great music.
+I'm exploring software engineering and artificial intelligence, low level programming and linux, with a special love for the open-source community and great music.
 
 ```arduino
-$ nvim interests
+$ vim interests
 ```
-Outside the box, you’ll find me living an active lifestyle, just chilling with friends or reading books. I run linux <span style="color: #CBC3E3;">Arch btw</span>  on a <span style="color: #CBC3E3;">fancy Hyprland</span> desktop, I enjoy the concept of efficiency, customization, and availability. 
+Outside the box, you’ll find me living an active lifestyle, just chilling with friends or doing sports. I run <span style="color: #CBC3E3;">Arch Linux</span>  on a <span style="color: #CBC3E3;">fancy Hyprland</span> desktop, I enjoy the concept of efficiency, customization, and availability, but of course, healthy and active lifestyle is my priority. 
 
 
 
