@@ -26,7 +26,7 @@ I'm exploring software engineering and artificial intelligence, low level progra
 ```arduino
 $ vim interests
 ```
-Outside the box, you’ll find me living an active lifestyle, just chilling with friends or doing sports. I run <span style="color: #CBC3E3;">Arch Linux</span>  on a <span style="color: #CBC3E3;">fancy Hyprland</span> desktop, I enjoy the concept of efficiency, customization, and availability, but of course, healthy and active lifestyle is my priority. 
+Outside the box, you’ll find me living an active lifestyle, just reading or doing sports. I run <span style="color: #CBC3E3;">Arch Linux</span>  on a <span style="color: #CBC3E3;">cool, eficient Hyprland</span> desktop, I enjoy the concept of efficiency, customization, and availability, but of course, healthy and active lifestyle is my priority. 
 
 
 
