@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Andrei Gulin",
-    "label": "Software Developer, AI enthusiast",
+    "label": "Software Developer, Fullstack Developer",
     "image": "",
     "email": "andreigulin2005@gmail.com",
     "phone": "+358417137538",
 
-    "summary": "I'm a software developer from Russia, now in Finland, with a huge passion for learning and exploring the world around us. I aim to find the best solutions for present problems, utilizing AI technologies to make a positive impact.",    "location": {
+    "summary": "I'm a software developer, located in Finland, with a huge passion for learning and exploring the working world. I aim to find the best solutions for present problems, utilizing AI technologies to make a positive impact.",    "location": {
       "address": "raviradantie 7",
       "postalCode": "Mikkeli 50100",
       "city": "Mikkeli",
@@ -33,7 +33,7 @@
       "area": "Information Technology",
       "studyType": "Bachelor",
       "startDate": "2022-21-08",
-      "endDate": "ongoing"
+      "endDate": "2025-21-05"
     }
   ],
   "skills": [
@@ -49,7 +49,8 @@
         "&nbsp;<i class=\"fa-brands fa-html5\"></i>&nbsp;  HTML & CSS",
         "<i class=\"fa-brands fa-golang\"></i> Golang",
         "<i class=\"fa-solid fa-cog\"></i> C",
-        "<i class=\"fa-brands fa-rust\"></i> Rust"
+        "<i class=\"fa-brands fa-rust\"></i> Rust",
+        "<i class=\"fa-solid fa-chart-pie\"></i> R"
       ]
     },
     {
@@ -109,7 +110,7 @@
     },
     {
       "language": "French",
-      "fluency": "Interested"
+      "fluency": "Basics"
     }
   ],
   "interests": [
@@ -120,16 +121,16 @@
       "name": "Sport <i class=\"fa-solid fa-person-snowboarding\"></i> <i class=\"fa-solid fa-person-skating\"></i> <i class=\"fa-solid fa-basketball\"></i> <i class=\"fa-solid fa-dumbbell\"></i>"
     },
     {
-      "name": "History <i class=\"fa-solid fa-jedi\"></i>"
+      "name": "Reading <i class=\"fa-regular fa-chess-rook\"></i>"
     },
     {
-      "name": "Drawing <i class=\"fa-solid fa-dove\"></i>"
+      "name": "Photography <i class=\"fa-solid fa-camera-retro\"></i>"
     },
     {
-      "name": "Reading <i class=\"fa-solid fa-wand-sparkles\"></i>"
+      "name": "Movies <i class=\"fa-solid fa-film\"></i>"
     },
     {
-      "name": "Music <i class=\"fa-solid fa-microphone-lines\"></i>"
+      "name": "Music <i class=\"fa-solid fa-headphones\"></i>"
     }
   ]
 }
