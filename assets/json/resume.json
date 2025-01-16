@@ -74,7 +74,8 @@
         "<i class=\"fa-brands fa-git\"></i>&nbsp; Git",
         "<i class=\"fa-solid fa-bolt\"></i>&nbsp; Babel",
         "<i class=\"fa-brands fa-docker\"></i>&nbsp;Docker",
-        "<i class=\"fa-solid fa-kiwi-bird\"></i>&nbsp; Linux"
+        "<i class=\"fa-solid fa-kiwi-bird\"></i>&nbsp; Linux",
+        "<i class=\"fa-brands fa-aws\"></i> AWS services"
       ]
     },
     {
