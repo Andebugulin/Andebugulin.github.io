@@ -637,7 +637,7 @@ footer.sticky-bottom {
         width: 100%;
       }
       .card-text{
-        color: rgb(227, 228, 218); // color: for text in the card of the project, not the title.
+        color: var(--global-card-text-color-dimmed);
       }
     }
   

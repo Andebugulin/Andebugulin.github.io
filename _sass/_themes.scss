@@ -1,14 +1,10 @@
 /*******************************************************************************
  * Themes
  ******************************************************************************/
- :root {  --global-bg-color: #0A0A0A; /* Deep black for a sleek, modern base */
-  --global-code-bg-color: #1A1A1A; /* Slightly lighter black for code blocks */
-  --global-text-color: #F0F0F5; /* Crisp white for primary text */
-  --global-text-color-light: #B0B0B5; /* Soft gray for secondary text */
+ :root {  
   --global-theme-color: #104f32; /* Neon green for accents (geeky and futuristic) */
   --global-hover-color: #1a3f2e; /* Slightly darker green for hover states */
   --global-hover-text-color: #165436; /* Light green for hover text */
-  --global-footer-bg-color: #1E1E1E; /* Deep gray for the footer */
   --global-footer-text-color: #8E8E93; /* Light gray for footer text */
   --global-footer-link-color: #1c4a34b4; /* Neon green for footer links */
   --global-distill-app-color: #6D83F2; /* Soft blue for subdued elements */
@@ -29,6 +25,34 @@
   --global-cv-text: #D1D5DA; /* Light gray for CV text */
   --global-page-link-color: #1f6544; /* Neon green for links */
   --global-page-link-hover-color: #1c4632; /* Slightly darker green for hovered links */
+
+  --global-bg-color: #FFFFFF; /* Pure white for a clean, modern base */
+  --global-code-bg-color: #F5F5F5; /* Light gray for code blocks */
+  --global-text-color: #333333; /* Dark gray for primary text */
+  --global-text-color-light: #666666; /* Medium gray for secondary text */
+  --global-hover-text-color: #004080; /* Darker blue for hover text */
+  --global-footer-bg-color: #F8F9FA; /* Light gray for the footer */
+  --global-footer-text-color: #6C757D; /* Medium gray for footer text */
+  --global-footer-link-color: #007BFF; /* Bright blue for footer links */
+  --global-distill-app-color: #6D83F2; /* Soft blue for subdued elements */
+  --global-divider-color: #E0E0E0; /* Light gray for dividers */
+  --global-card-bg-color: #F8F9FA; /* Light gray for card backgrounds */
+  --global-tip-block: #28A745; /* Green for tips */
+  --global-tip-block-bg: #E8F5E9; /* Light green for tip backgrounds */
+  --global-tip-block-text: #155724; /* Dark green for tip text */
+  --global-tip-block-title: #28A745; /* Green for tip titles */
+  --global-warning-block: #FFC107; /* Vibrant yellow for warnings */
+  --global-warning-block-bg: #FFF3CD; /* Light yellow for warning backgrounds */
+  --global-warning-block-text: #856404; /* Dark yellow for warning text */
+  --global-warning-block-title: #FFC107; /* Yellow for warning titles */
+  --global-danger-block: #DC3545; /* Bright red for errors */
+  --global-danger-block-bg: #F8D7DA; /* Light red for danger backgrounds */
+  --global-danger-block-text: #721C24; /* Dark red for error text */
+  --global-danger-block-title: #DC3545; /* Bright red for error titles */
+  --global-cv-text: #495057; /* Dark gray for CV text */
+  --global-page-link-color: #007BFF; /* Bright blue for links */
+  --global-page-link-hover-color: #0056b3; /* Slightly darker blue for hovered links */
+  --global-card-text-color-dimmed: #6C757D; /* Medium gray for dimmed card text */
 }
 
 #light-toggle-system {
@@ -67,6 +91,8 @@
     --global-divider-color: #333333; /* Subtle gray */
     --global-card-bg-color: #1E1E1E; /* Dark gray */
     --global-cv-text: #D1D5DA; /* Light gray */
+    --global-card-text-color-dimmed: rgb(227, 228, 218); // color: for text in the card of the project, not the title.
+    ;
   }
   
   .repo-img-light {
