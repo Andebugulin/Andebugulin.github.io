@@ -133,3 +133,21 @@ html[data-theme-setting="light"] {
     display: block;
   }
 }
+
+
+/* Default (light) theme */
+.profile-img-light {
+  display: block;
+}
+.profile-img-dark {
+  display: none;
+}
+
+/* Dark theme */
+html[data-theme="dark"] .profile-img-light {
+  display: none;
+}
+
+html[data-theme="dark"] .profile-img-dark {
+  display: block;
+}
