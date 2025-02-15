@@ -4,7 +4,7 @@ title: GaleriYah
 description: An avant-garde photography portfolio.
 img: assets/img/GaleriYah.png
 importance: 1
-category: productivity
+category: fun 
 ---
 
 ## `GaleriYah` - Avant-Garde Photography Portfolio
