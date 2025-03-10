@@ -7,7 +7,7 @@ subtitle:
 profile:
   align: right
   image: prof_pic_light.png      # Keep your original light theme image here
-  image_dark: prof_pic.png
+  image_dark: prof_pic1.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p>I am Andryha</p>
