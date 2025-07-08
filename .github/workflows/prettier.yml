@@ -1,14 +1,12 @@
 name: Prettier code formatter
 
 on:
-  pull_request:
-    branches:
-      - master
-      - main
   push:
     branches:
-      - master
-      - main
+      - gca
+  pull_request:
+    branches:
+      - gca
 
 jobs:
   check:
@@ -17,6 +15,8 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          ref: gca
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
       - name: Install Prettier 💾

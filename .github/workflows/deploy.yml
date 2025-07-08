@@ -3,15 +3,18 @@ name: Deploy site
 on:
   push:
     branches:
-      - master
-      - main
+      - gca
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "**.bib"
       - "**.html"
       - "**.js"
       - "**.liquid"
-      - "**/*.md"
+      - "**/**.md"
       - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -27,15 +30,18 @@ on:
       - "!README.md"
   pull_request:
     branches:
-      - master
-      - main
+      - gca
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "**.bib"
       - "**.html"
       - "**.js"
       - "**.liquid"
-      - "**/*.md"
+      - "**/**.md"
       - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -61,11 +67,18 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
-      - name: Setup Ruby
+        with:
+          ref: gca
+      - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2.2"
+          ruby-version: "3.3.5"
           bundler-cache: true
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip" # caching pip dependencies
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -75,13 +88,22 @@ jobs:
           value: ${{ github.repository }}
       - name: Install and Build 🔧
         run: |
-          pip3 install --upgrade jupyter
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
-          bundle exec jekyll build --lsi
+          bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Fix CSS animations 🎨
+        run: |
+          ruby -e 'text = File.read("_site/assets/css/main.css")
+            text.gsub! "animation-delay:calc(var(--stagger)*var(--delay)+var(--start))", "animation-delay: calc(var(--stagger) * var(--delay) + var(--start))"
+            text.gsub! "--start:0", "--start:0ms"
+            text.gsub! "animation-delay:var(--fa-animation-delay,0)", "animation-delay:var(--fa-animation-delay,0s)"
+            puts text' > _site/assets/css/main2.css
+          mv _site/assets/css/main2.css _site/assets/css/main.css
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
