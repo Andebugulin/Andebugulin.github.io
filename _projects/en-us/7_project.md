@@ -9,7 +9,7 @@ category: fun
 
 ## `GaleriYah` - Avant-Garde Photography Portfolio
 
-> Experience photography through a new lens with GaleriYah, where avant-garde design meets seamless functionality. This Next.js-powered platform transforms the way we showcase and interact with visual art.
+> Experience photography through a new lens with GaleriYah, where avant-garde design meets seamless functionality. This Next.js 13-powered platform transforms the way we showcase and interact with visual art.
 
 ### `Technology Symphony`
 
@@ -19,6 +19,8 @@ Built with modern web technologies, GaleriYah orchestrates:
 - `Framer Motion` for fluid animations
 - `Supabase` for robust data management
 - `TypeScript` for code reliability
+- `Lucide React` for beautiful icons
+- `Custom Geist font` integration
 
 ### `Visual Experience`
 
@@ -64,6 +66,21 @@ Built with modern web technologies, GaleriYah orchestrates:
     </div>
 </details>
 
+### `Project Architecture`
+
+```
+app/
+├── album/[id]/       # Dynamic album pages
+├── albums/           # Albums overview
+├── components/       # Reusable components
+├── photo/[id]/       # Individual photo views
+└── fonts/           # Custom font files
+public/
+└── assets/          # Static assets
+scripts/
+└── parse_pictures_from_flickr.py  # Data import utility
+```
+
 ### `Standout Features`
 
 #### Supreme-Inspired Navigation
@@ -94,6 +111,44 @@ const getPhotoClassName = (index) => {
 };
 ```
 
+#### Admin Panel & Content Management
+Built-in admin interface at `/admin/photos` with Supabase authentication for secure photo and album management. Features one-click Flickr synchronization for seamless content import.
+
+### `Database Design`
+
+#### Supabase Schema
+```sql
+-- Photos table with UUID primary keys
+create table photos (
+    id uuid default uuid_generate_v4() primary key,
+    url text not null,
+    title text,
+    category text,
+    description text,
+    date_taken date,
+    created_at timestamp with time zone default timezone('utc'::text, now())
+);
+
+-- Albums with relational structure
+create table albums (
+    id uuid default uuid_generate_v4() primary key,
+    url text not null,
+    title text,
+    category text,
+    description text,
+    date_taken date,
+    created_at timestamp with time zone default timezone('utc'::text, now())
+);
+
+-- Junction table for album-photo relationships
+create table album_photos (
+    id uuid default uuid_generate_v4() primary key,
+    album_id uuid references albums(id),
+    photo_id uuid references photos(id),
+    created_at timestamp with time zone default timezone('utc'::text, now())
+);
+```
+
 ### `Technical Highlights`
 
 #### Smooth Scrolling Implementation
@@ -109,14 +164,43 @@ useEffect(() => {
 }, []);
 ```
 
+#### Flickr Integration Pipeline
+Automated photo import system with Python scraper that:
+- Extracts metadata from Flickr photostreams
+- Generates UUID-compatible data structures
+- Exports to CSV for Supabase import
+- Includes rate limiting and error handling
+
+```python
+def parse_photo_details(self, photo_data):
+    return {
+        'id': str(uuid.uuid4()),
+        'url': photo_data['url'],
+        'title': self._parse_title(soup),
+        'category': 'your_default_category',
+        'description': self._parse_description(soup),
+        'date_taken': self._parse_date(soup)
+    }
+```
+
 ### `Development Journey`
 
 Creating GaleriYah has been an exciting exploration of modern web technologies and design principles. The project challenged me to:
 - Implement complex grid layouts with dynamic sizing
 - Create smooth, performant animations
 - Design an intuitive yet avant-garde user interface
-- Integrate seamless data management with Supabase (that sucked :D)
+- Integrate seamless data management with Supabase
+- Build automated content import pipelines
+- Develop secure admin interfaces with authentication
 - Optimize image loading and delivery
+
+### `Design Philosophy`
+
+GaleriYah embraces avant-garde design principles while maintaining usability:
+- **Minimalist Aesthetics** - Less is more approach
+- **Dynamic Interactions** - Fluid animations and transitions
+- **Responsive Design** - Works across all device sizes
+- **Visual Hierarchy** - Clear content organization
 
 ### `Future Enhancements`
 
