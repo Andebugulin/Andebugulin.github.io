@@ -32,7 +32,7 @@ I'm learning computer science, low level programming and linux, love the open-so
 $ vim interests
 ```
 
-You’ll find me living, doing bunch of sports, just enjoying life. I run <span style="color: #CBC3E3;">Arch Linux</span>  on a <span style="color: #CBC3E3;"> Hyprland</span> desktop, I enjoy the concept of customization, and availability, I like music a lot and all kinds of sports. 
+You’ll find me living, doing bunch of sports, just enjoying life. I run <span style="color:  var(--global-theme-color);">Arch Linux</span>  on a <span style="color:  var(--global-theme-color);"> Hyprland</span> desktop, I enjoy the concept of customization, and availability, I like music a lot and all kinds of sports. 
 
 
 

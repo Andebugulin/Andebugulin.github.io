@@ -3,8 +3,8 @@ layout: page
 title: HaHaSaaS
 description: A joke-sharing SaaS platform that delivers humor on demand.
 img: assets/img/hahasaas.svg
-importance: 1
-category: fun 
+importance: 2
+category: uni 
 ---
 
 ## `HaHaSaaS` - Bringing Laughter to the Cloud

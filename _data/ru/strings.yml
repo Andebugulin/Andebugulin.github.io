@@ -1,0 +1,164 @@
+archive:
+  prefix: архив
+  category_suffix: этой категории
+  tag_suffix: с этим тегом
+  year_suffix: этого года
+bibliography:
+  abstract: Абстракт
+  awarded: Награжден
+  blog: Блог
+  book_prefix: В
+  code: Код
+  last_author_prefix: и
+  poster: Постер
+  slides: Слайды
+  supp: Доп
+  video: Видео
+  website: Сайт
+blog:
+  navigation_title: блог
+categories:
+  fun: развлечения
+  work: работа
+citation:
+  bibtex: "или как цитата в BibTeX:"
+  introduction: "Если вы нашли это полезным, пожалуйста, цитируйте как:"
+collections:
+  books: книги
+  posts: посты
+contact_note: Вы даже можете добавить небольшую заметку о том, какой из этих способов лучше всего подходит для связи с вами.
+cv:
+  address: Адрес
+  area: Область
+  awarder: Награжден
+  awards: Награды
+  basics: Общая информация
+  certificates: Сертификаты
+  city: Город
+  countryCode: Код страны
+  courses: Курсы
+  date: Дата
+  education: Образование
+  email: Email
+  endDate: Дата окончания
+  fluency: Владение
+  highlights: Основные моменты
+  image: Изображение
+  institution: Учреждение
+  interests: Интересы
+  issuer: Издатель
+  keywords: Ключевые слова
+  label: Название
+  language: Язык
+  languages: Языки
+  level: Уровень
+  location: Местоположение
+  name: Имя
+  network: Сеть
+  organization: Организация
+  phone: Телефон
+  position: Позиция
+  postalCode: Почтовый индекс
+  present: Настоящее время
+  profiles: Профили
+  projects: Проекты
+  publications: Публикации
+  publisher: Издательство
+  reference: Ссылка
+  references: Ссылки
+  region: Регион
+  releaseDate: Дата выпуска
+  score: Оценка
+  skills: Навыки
+  startDate: Дата начала
+  studyType: Тип обучения
+  summary: Резюме
+  table_of_contents: Содержание
+  title: Заголовок
+  url: Url
+  username: Пользователь
+  volunteer: Волонтер
+  work: Работа
+footer:
+  copyright: Авторские права
+  last_updated: "Последнее обновление:"
+footer_text: > # символ ">" означает игнорировать переносы строк до "titles:"
+  Разработано на <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> с темой <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>.
+  Размещено на <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Фотографии с <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+latest_posts: последние посты
+months:
+  long:
+    january: Январь
+    february: Февраль
+    march: Март
+    april: Апрель
+    may: Май
+    june: Июнь
+    july: Июль
+    august: Август
+    september: Сентябрь
+    october: Октябрь
+    november: Ноябрь
+    december: Декабрь
+  short:
+    january: Янв
+    february: Фев
+    march: Мар
+    april: Апр
+    may: Май
+    june: Июн
+    july: Июл
+    august: Авг
+    september: Сен
+    october: Окт
+    november: Ноя
+    december: Дек
+news: новости
+newsletter:
+  back: Назад
+  error: "Упс! Что-то пошло не так, пожалуйста, попробуйте еще раз."
+  subscribe: подписаться
+  subscribed: "Вы успешно подписались на рассылку."
+  subscribe_to_receive: "Подпишитесь, чтобы получать уведомления о новых статьях:"
+  too_many_signups: "Слишком много подписок, пожалуйста, попробуйте еще раз позже"
+  wait: "Пожалуйста, подождите..."
+no_news: Пока никаких новостей...
+no_posts: "Пока нет постов..."
+pagination:
+  page: страница
+post:
+  created_in: Создано в
+  created_by: автор
+  last_updated: последнее обновление
+references: Ссылки
+related_posts:
+  description: "Вот несколько связанных статей, которые могут вам понравиться:"
+  title: Понравилось читать эту статью?
+search:
+  dark_theme:
+    description: Переключает тему сайта на темную
+    title: Переключить на темную тему
+  dropdown: Другие опции
+  email: Отправить email
+  footer:
+    close: чтобы закрыть
+    navigate: для навигации
+    parent: вернуться на уровень выше
+    select: чтобы выбрать
+  languages: Языки
+  light_theme:
+    description: Переключает тему сайта на светлую
+    title: Переключить на светлую тему
+  navigation: Меню навигации
+  news: Новости
+  placeholder: Введите для начала поиска
+  posts: Посты
+  projects: Проекты
+  socials: Социальные сети
+  system_theme:
+    description: Переключает тему сайта на системную по умолчанию
+    title: Использовать системную тему по умолчанию
+  theme: Тема
+selected_publications: избранные публикации
+site_description: Простая тема для ученых. Основана на дизайне [*folio](https://github.com/bogoli/-folio).

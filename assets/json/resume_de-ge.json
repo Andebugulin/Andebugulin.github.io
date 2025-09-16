@@ -1,11 +1,12 @@
 {
   "basics": {
     "name": "Andrei Gulin",
-    "label": "Software Developer, Fullstack Developer",
+    "label": "Softwareentwickler, Fullstack-Entwickler",
     "image": "",
     "email": "andreigulin2005@gmail.com",
 
-    "summary": "I'm a software developer, located in Finland, with a huge passion for learning and exploring the working world. I aim to find the best solutions for present problems, utilizing AI technologies to make a positive impact.",    "location": {
+    "summary": "Ich bin ein Softwareentwickler aus Finnland mit einer großen Leidenschaft für das Lernen und die Erkundung der Arbeitswelt. Ich strebe danach, die besten Lösungen für aktuelle Probleme zu finden und dabei KI-Technologien zu nutzen, um einen positiven Einfluss zu erzielen.",
+    "location": {
       "address": "raviradantie 7",
       "postalCode": "Mikkeli 50100",
       "city": "Mikkeli",
@@ -16,20 +17,20 @@
   "work": [
     {
       "name": "Full stack",
-      "position": "Software Developer Internship - Mindhive Oy",
+      "position": "Softwareentwickler Praktikant - Mindhive Oy",
       "url": "https://www.mindhive.fi/en/home",
       "startDate": "2024-01-10",
       "endDate": "2024-06-10",
-      "summary": "I dive deep into building awesome websites, front to back, with React, TypeScript, Next.js, and Firebase. It's all about creating smooth, fast, secure experiences online that people would love. We used Toggle and Clickup to manage our tasks.",
+      "summary": "Ich vertiefe mich in die Entwicklung großartiger Websites von Grund auf mit React, TypeScript, Next.js und Firebase. Es geht darum, reibungslose, schnelle und sichere Online-Erfahrungen zu schaffen, die Menschen lieben würden. Wir verwendeten Toggle und Clickup für das Aufgabenmanagement.",
       "highlights": ["Git", "Typescript", "React", "Firebase", "Next.js", "React Native"]
     }
   ],
   "education": [
     {
-      "institution": "University of applied science XAMK, Mikkeli, Finland",
-      "location": "Mikkeli, Finland",
+      "institution": "Fachhochschule XAMK, Mikkeli, Finnland",
+      "location": "Mikkeli, Finnland",
       "url": "https://www.xamk.fi/en/frontpage/",
-      "area": "Information Technology",
+      "area": "Informationstechnik",
       "studyType": "Bachelor",
       "startDate": "2022-21-08",
       "endDate": "2025-21-05"
@@ -37,8 +38,8 @@
   ],
   "skills": [
     {
-      "name": "Programming Languages",
-      "level": "Advanced | Basics | Learning",
+      "name": "Programmiersprachen",
+      "level": "Fortgeschritten | Grundlagen | Lerne",
       "icon": "fa-solid fa-code-branch",
       "keywords": [
         "&nbsp;<i class=\"fa-brands fa-python\"></i>&nbsp;&nbsp;Python",
@@ -54,7 +55,7 @@
     },
     {
       "name": "Frameworks",
-      "level": "Practiced",
+      "level": "Geübt",
       "icon": "fa-solid fa-feather-pointed",
       "keywords": [
         "&nbsp;<i class=\"fa-brands fa-react\"></i>&nbsp; React",
@@ -66,8 +67,8 @@
       ]
     },
     {
-      "name": "Tools",
-      "level": "Used frequently",
+      "name": "Werkzeuge",
+      "level": "Häufig verwendet",
       "icon": "fa-solid fa-wrench",
       "keywords": [
         "<i class=\"fa-brands fa-git\"></i>&nbsp; Git",
@@ -78,8 +79,8 @@
       ]
     },
     {
-      "name": "Databases",
-      "level": "Used frequently",
+      "name": "Datenbanken",
+      "level": "Häufig verwendet",
       "icon": "fa-solid fa-database",
       "keywords": [
         "&nbsp;<i class=\"fa-brands fa-gripfire\"></i>&nbsp; Firestore",
@@ -90,27 +91,27 @@
         "&nbsp;<i class=\"fa-solid fa-diamond\"></i>&nbsp;SQLite",
         "&nbsp;<i class=\"fa-solid fa-rocket\"></i>&nbsp;MySQL",
         "&nbsp;<i class=\"fa-solid fa-globe\"></i>&nbsp;MariaDB"
-              ]
+      ]
     }
   ],
   "languages": [
     {
-      "language": "Russian ",
-      "fluency": "Native speaker",
+      "language": "Russisch",
+      "fluency": "Muttersprachler",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Englisch",
+      "fluency": "Fließend",
       "icon": ""
     },
     {
-      "language": "Finnish",
-      "fluency": "Basics"
+      "language": "Finnisch",
+      "fluency": "Grundlagen"
     },
     {
-      "language": "French",
-      "fluency": "Basics"
+      "language": "Französisch",
+      "fluency": "Grundlagen"
     }
   ],
   "interests": [
@@ -121,16 +122,16 @@
       "name": "Sport <i class=\"fa-solid fa-person-snowboarding\"></i> <i class=\"fa-solid fa-person-skating\"></i> <i class=\"fa-solid fa-basketball\"></i> <i class=\"fa-solid fa-dumbbell\"></i>"
     },
     {
-      "name": "Reading <i class=\"fa-regular fa-chess-rook\"></i>"
+      "name": "Lesen <i class=\"fa-regular fa-chess-rook\"></i>"
     },
     {
-      "name": "Photography <i class=\"fa-solid fa-camera-retro\"></i>"
+      "name": "Fotografie <i class=\"fa-solid fa-camera-retro\"></i>"
     },
     {
-      "name": "Movies <i class=\"fa-solid fa-film\"></i>"
+      "name": "Filme <i class=\"fa-solid fa-film\"></i>"
     },
     {
-      "name": "Music <i class=\"fa-solid fa-headphones\"></i>"
+      "name": "Musik <i class=\"fa-solid fa-headphones\"></i>"
     }
   ]
 }
