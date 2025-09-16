@@ -64,22 +64,43 @@ ninja.data = [{
           description: "",
           section: "",handler: () => {
               window.location.href = "/books/en-us/the_godfather/";
+            },},{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "",handler: () => {
+              window.location.href = "/books/pt-br/the_godfather/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{id: "news-um-anúncio-simples-em-uma-linha",
+          title: 'Um anúncio simples em uma linha.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
+            },},{id: "news-um-anúncio-longo-com-detalhes",
+          title: 'Um anúncio longo com detalhes',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/pt-br/announcement_2/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-um-anúncio-simples-em-uma-linha-com-markdown-emoji-sparkles-smile",
+          title: 'Um anúncio simples em uma linha com Markdown emoji! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "projects-hahasaas",
           title: 'HaHaSaaS',
           description: "A joke-sharing SaaS platform that delivers humor on demand.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/10_project/";
+            },},{id: "projects-awareen",
+          title: 'Awareen',
+          description: "A screen time awareness app with persistent overlay timer for mindful device usage.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/en-us/11_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "An innovative platform for managing daily tasks and activities.",
@@ -120,21 +141,6 @@ ninja.data = [{
           description: "A challenging 2D platformer game with procedural level generation and dynamic obstacles.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/9_project/";
-            },},{id: "projects-projeto-1",
-          title: 'projeto 1',
-          description: "com imagem de fundo",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/pt-br/1_project/";
-            },},{id: "projects-projeto-2",
-          title: 'projeto 2',
-          description: "um projeto com imagem de fundo e comentários do giscus",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/pt-br/2_project/";
-            },},{id: "projects-projeto-3-com-um-nome-bem-longo",
-          title: 'projeto 3 com um nome bem longo',
-          description: "um projeto que redireciona pra outro website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/pt-br/3_project/";
             },},{
         id: 'social-email',
         title: 'Send an email',
@@ -161,14 +167,28 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/andrei-gulin", "_blank");
+          window.open("https://www.linkedin.com/in/andrei-gulinyo", "_blank");
         },
       },{
-          id: 'lang-pt-br',
-          title: 'pt-br',
+          id: 'lang-ru',
+          title: 'ru',
           section: 'Languages',
           handler: () => {
-            window.location.href = "/pt-br" + updatedUrl;
+            window.location.href = "/ru" + updatedUrl;
+          },
+        },{
+          id: 'lang-de-ge',
+          title: 'de-ge',
+          section: 'Languages',
+          handler: () => {
+            window.location.href = "/de-ge" + updatedUrl;
+          },
+        },{
+          id: 'lang-fi',
+          title: 'fi',
+          section: 'Languages',
+          handler: () => {
+            window.location.href = "/fi" + updatedUrl;
           },
         },{
       id: 'light-theme',
