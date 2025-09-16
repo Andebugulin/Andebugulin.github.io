@@ -123,9 +123,9 @@ ninja.data = [{
               window.location.href = "/fi/projects/fi/4_project/";
             },},{id: "projects-piracy-rpg",
           title: 'Piracy RPG',
-          description: "A strategic naval exploration and combat game with procedural generation and advanced software design patterns.",
+          description: "Strateginen merimatkailu- ja taistelupeli proseduraalisella tasojen luomisella ja edistyneillä ohjelmistosuunnittelumalleilla.",
           section: "Projektit",handler: () => {
-              window.location.href = "/fi/projects/en-us/5_project/";
+              window.location.href = "/fi/projects/fi/5_project/";
             },},{id: "projects-galeriyah",
           title: 'GaleriYah',
           description: "An avant-garde photography portfolio.",
