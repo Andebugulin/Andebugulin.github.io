@@ -174,33 +174,40 @@
                   {% endif %}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  {% assign language_set = false %}
-                  {% for l in site.languages %}
-                    {% if l != site.active_lang %}
-                      {% if language_set %}
-                        <div class="dropdown-divider"></div>
-                      {% endif %}
-                      {% if l == site.default_lang %}
-                        <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}{{ page.url }}" {%- endstatic_href %}>
-                          {% if site.country_flag %}
-                            <span class="fi fi-{{ l | split: "-" | last }}"></span>
-                          {% else %}
-                            {{ l | upcase }}
-                          {%- endif -%}
-                        </a>
-                      {% else %}
-                        <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}/{{ l }}{{ page.url }}" {%- endstatic_href %}>
-                          {% if site.country_flag %}
-                            <span class="fi fi-{{ l | split: "-" | last }}"></span>
-                          {% else %}
-                            {{ l | upcase }}
-                          {%- endif -%}
-                        </a>
-                      {% endif %}
-                      {% assign language_set = true %}
+                {% assign language_set = false %}
+                {% for l in site.languages %}
+                  {% if l != site.active_lang %}
+                    {% if language_set %}
+                      <div class="dropdown-divider"></div>
                     {% endif %}
-                  {% endfor %}
-                </div>
+
+                    {% assign current_lang = site.active_lang %}
+                    {% assign target_lang = l %}
+                    {% assign project_prefix = '/projects/' | append: current_lang | append: '/' %}
+                    {% assign project_prefix_new = '/projects/' | append: target_lang | append: '/' %}
+                    {% assign new_url = page.url | replace: project_prefix, project_prefix_new %}
+
+                    {% if target_lang == site.default_lang %}
+                      <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}{{ new_url }}" {%- endstatic_href %}>
+                        {% if site.country_flag %}
+                          <span class="fi fi-{{ l | split: "-" | last }}"></span>
+                        {% else %}
+                          {{ l | upcase }}
+                        {% endif %}
+                      </a>
+                    {% else %}
+                      <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}/{{ target_lang }}{{ new_url }}" {%- endstatic_href %}>
+                        {% if site.country_flag %}
+                          <span class="fi fi-{{ l | split: "-" | last }}"></span>
+                        {% else %}
+                          {{ l | upcase }}
+                        {% endif %}
+                      </a>
+                    {% endif %}
+                    {% assign language_set = true %}
+                  {% endif %}
+                {% endfor %}
+              </div>
               </li>
             {% endif %}
           {% endif %}
