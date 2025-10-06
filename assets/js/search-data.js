@@ -48,7 +48,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-central-cee-amp-dave-quot-sprinter-quot",
+        },{id: "post-learning-journal-2025-10-06-y-m-d-webassembly-history-amp-concepts",
+        
+          title: "Learning Journal — 2025-10-06 (y/m/d): WebAssembly History &amp; Concepts",
+        
+        description: "Notes, reflections, and rough experiments on WebAssembly, asm.js, and related tooling.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/10/06/learning-2025-10-05-webassembly/";
+          
+        },
+      },{id: "post-learning-journal-2025-10-6-y-m-d-webassembly-history-amp-concepts",
+        
+          title: "Learning Journal — 2025-10-6 (y/m/d): WebAssembly History &amp; Concepts",
+        
+        description: "Notes, reflections, and rough experiments on WebAssembly, asm.js, and related tooling.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/10/05/learning-2025-10-05-webassembly/";
+          
+        },
+      },{id: "post-central-cee-amp-dave-quot-sprinter-quot",
         
           title: "Central Cee &amp; Dave - &quot;Sprinter&quot;",
         
