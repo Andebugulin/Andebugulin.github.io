@@ -59,17 +59,6 @@ ninja.data = [{
             window.location.href = "/ru/blog/2025/10/06/learning-2025-10-05-webassembly/";
           
         },
-      },{id: "post-learning-journal-2025-10-6-y-m-d-webassembly-history-amp-concepts",
-        
-          title: "Learning Journal — 2025-10-6 (y/m/d): WebAssembly History &amp; Concepts",
-        
-        description: "Notes, reflections, and rough experiments on WebAssembly, asm.js, and related tooling.",
-        section: "Посты",
-        handler: () => {
-          
-            window.location.href = "/ru/blog/2025/10/05/learning-2025-10-05-webassembly/";
-          
-        },
       },{id: "post-central-cee-amp-dave-quot-sprinter-quot",
         
           title: "Central Cee &amp; Dave - &quot;Sprinter&quot;",
@@ -79,6 +68,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/ru/blog/2025/07/08/central-cee-dave-sprinter-review/";
+          
+        },
+      },{id: "post-learning-journal-1000-10-10-y-m-d-webassembly-history-amp-concepts",
+        
+          title: "Learning Journal — 1000-10-10 (y/m/d): WebAssembly History &amp; Concepts",
+        
+        description: "Notes, reflections, and rough experiments on WebAssembly, asm.js, and related tooling.",
+        section: "Посты",
+        handler: () => {
+          
+            window.location.href = "/ru/blog/1000/10/05/learning-2025-10-05-webassembly/";
           
         },
       },{id: "books-the-godfather",
