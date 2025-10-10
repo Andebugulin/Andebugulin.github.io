@@ -70,6 +70,17 @@ ninja.data = [{
             window.location.href = "/ru/blog/2025/07/08/central-cee-dave-sprinter-review/";
           
         },
+      },{id: "post-everyday-journal",
+        
+          title: "Everyday Journal",
+        
+        description: "I struggle as everybody and I try to learn something new every day. Here are my notes.",
+        section: "Посты",
+        handler: () => {
+          
+            window.location.href = "/ru/blog/1000/10/06/life-journal/";
+          
+        },
       },{id: "post-learning-journal-1000-10-10-y-m-d-webassembly-history-amp-concepts",
         
           title: "Learning Journal — 1000-10-10 (y/m/d): WebAssembly History &amp; Concepts",
