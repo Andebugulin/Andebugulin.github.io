@@ -24,15 +24,15 @@ social: true # includes social icons at t
 ```arduino
 $ whoami
 ```
-A passionate software developer and student at XAMK, Finland 🇫🇮
+Software developer based in Finland 🇫🇮
 
-I'm learning computer science, low level programming and linux, love the open-source and great music.
+I like productivity, open-source, system programming, AI, good music and coffee.
 
 ```arduino
 $ vim interests
 ```
 
-You’ll find me living, doing bunch of sports, just enjoying life. I run <span style="color:  var(--global-theme-color);">Arch Linux</span>  on a <span style="color:  var(--global-theme-color);"> Hyprland</span> desktop, I enjoy the concept of customization, and availability, I like music a lot and all kinds of sports. 
+I run <span style="color:  var(--global-theme-color);">Arch Linux</span>  on a <span style="color:  var(--global-theme-color);"> Hyprland</span> desktop, like a proper guy, I enjoy the concept of customization, and availability, I do all kinds of sports, invested in F1, and I like to learn new things. 
 
 
 

@@ -5,7 +5,7 @@ permalink: /blog/
 title: blog
 blog_name: m
 description: im blog
-nav: true
+nav: false 
 nav_order: 1
 pagination:
 enabled: true

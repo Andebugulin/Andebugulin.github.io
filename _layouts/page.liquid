@@ -14,9 +14,9 @@ layout: default
     <p class="post-description">{{ page.description }}</p>
   </header>
 
-  <article>
-    {{ content }}
-  </article>
+<article class="journal-grid">
+  {{ content }}
+</article>
 
   {% if page.related_publications %}
     <h2>{{ site.data[site.active_lang].strings.references }}</h2>

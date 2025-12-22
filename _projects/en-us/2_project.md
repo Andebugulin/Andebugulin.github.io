@@ -1,21 +1,25 @@
 ---
 layout: page
-title: Planirium Bot
-description: A streamlined Telegram bot for efficient daily planning and task management.
+title: Morner Bot
+description: Telegram bot for morning routine tracking via smartwatch to minimize phone distractions.
 img: assets/img/PlaniriumBot.png
 importance: 1
 category: productivity
 ---
 
-## `Planirium Bot` - Your Daily Planning Assistant
+## `Morner Bot` - Morning Routine via Smartwatch
 
-> Planirium Bot simplifies daily planning, offering a feature-rich platform that enhances efficiency and makes managing schedules effortless.
+> Morner Bot helps build consistent morning habits by minimizing phone usage. Set up your routine once, then complete it daily using only your smartwatch.
 
-### `Feature Highlights`
+### `Core Idea`
 
-Planirium Bot is built with `Python` and utilizes the `aiogram` library for seamless interaction with Telegram. It offers a range of features designed to help users stay organized and productive. Plus, it adds a bit of charm to your day with playful compliments to keep you motivated!
+I believe mornings are more productive for our brain and mind. However, it is difficult to avoid distractions and not get pulled into the phone, hence comes the idea of this bot. You set up your morning routine once via phone, then every morning you interact with the bot via smartwatch using quick replies only, minimizing phone usage, keeping your head clear and not being too much noise is always good in my opinion.
 
-### `Page Layouts`
+### `Technical Implementation`
+
+Built with `Python` using the `aiogram 3.x` library for async Telegram operations. The bot uses FSM (Finite State Machine) pattern for conversation flow management. Data persistence via JSON with timezone support through `pytz`. All notifications are silent to avoid being intrusive.
+
+### `Bot Interface`
 
 #### Main Menu
 
@@ -28,53 +32,57 @@ Planirium Bot is built with `Python` and utilizes the `aiogram` library for seam
     </div>
 </details>
 
-#### Tasks View
+#### Task Flow
 
 <details>
-    <summary>Check Out the Tasks View</summary>
+    <summary>Check Out Task Flow</summary>
     <div class="row justify-content-center">
         <div class="col-sm-6">
-            {% include figure.liquid path="assets/img/tasks.jpg" title="Tasks View" class="img-fluid rounded z-depth-1" %}
+            {% include figure.liquid path="assets/img/tasks.jpg" title="Task Flow" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
 </details>
 
-#### Working Mode
+#### Statistics View
 
 <details>
-    <summary>Explore the Working Mode</summary>
+    <summary>Explore Statistics</summary>
     <div class="row justify-content-center">
         <div class="col-sm-6">
-            {% include figure.liquid path="assets/img/working.jpg" title="Working Mode" class="img-fluid rounded z-depth-1" %}
+            {% include figure.liquid path="assets/img/working.jpg" title="Statistics View" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
 </details>
 
-#### Template Management
+#### Settings Panel
 
 <details>
-    <summary>Manage Your Templates</summary>
+    <summary>Manage Settings</summary>
     <div class="row justify-content-center">
         <div class="col-sm-6">
-            {% include figure.liquid path="assets/img/template.jpg" title="Template Management" class="img-fluid rounded z-depth-1" %}
+            {% include figure.liquid path="assets/img/template.jpg" title="Settings Panel" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
 </details>
 
-### `Conclusion and Reflection`
+### `How It Works`
 
-Developing Planirium Bot has been a rewarding experience. It allowed me to delve deeper into Telegram's bot API and the aiogram library, enhancing my skills in Python development and user experience design. Plus, adding those fun, uplifting messages has made the development process even more enjoyable!
+Setup your routine once through phone. Each morning you receive a silent notification on your watch. Tap any quick reply to start. Complete tasks by tapping any quick reply button. The bot advances automatically regardless of which quick reply you use, since everyone has different button configurations on their watches.
 
-For further insights and a detailed breakdown of the project, check out the project documentation:
+Special commands: `Skip` (marks current task as skipped), `Menu` (returns to main menu). Streaks require 100% completion of required tasks. Optional tasks don't affect your streak if skipped.
 
-- **[Planirium Bot GitHub Repository](https://github.com/Andebugulin/telegram_bot)**
+### `Key Features`
 
+Watch-optimized interface with customizable quick replies. Task management with optional/required task types. Configurable time windows and timezone support. Streak tracking with daily/weekly/monthly calendar statistics. Silent notifications at routine start, warnings before deadline, and completion summaries. Pause/resume functionality for interrupted routines.
 
-### `Fancy Feature: Daily Compliments`
+### `Reflection`
 
-One of the standout features of Planirium Bot is its ability to sprinkle a bit of joy into your daily routine. Whether you're hard at work or ticking off tasks, the bot will cheer you on with charming compliments like, "Are you a cat? Because you’re purr-fect!" or "You must be a magician because whenever I look at you, everyone else disappears!"
+Developing Morner Bot taught me about async programming patterns and state machine architecture. The challenge was making the interface work seamlessly on smartwatches while maintaining full functionality on phones. Timezone handling and notification scheduling required careful consideration to work reliably across different user contexts.
 
-Planirium Bot is here to keep you smiling while you stay organized. Happy planning!
+For more details and source code:
+
+- **[Morner Bot GitHub Repository](https://github.com/Andebugulin/telegram_bot)**
+- **[Try the hosted bot](https://t.me/PlanyDbot)** - Running on Oracle Cloud
 
 ### `Contributors`
 

@@ -5,7 +5,7 @@ permalink: /blog/
 title: blogi
 blog_name: m
 description: blogissa
-nav: true
+nav: false 
 nav_order: 1
 pagination:
 enabled: true

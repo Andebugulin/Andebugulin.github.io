@@ -1,95 +1,108 @@
 ---
 layout: page
-title: Planirium Bot
-description: Virtaviivainen Telegram-botti tehokkaaseen päivittäiseen suunnitteluun ja tehtävien hallintaan.
+title: Morner Bot
+description: Telegram-botti aamurutiinien seuraamiseen älykellolla puhelimen häiriöiden minimoimiseksi.
 img: assets/img/PlaniriumBot.png
 importance: 1
 category: productivity
 ---
 
-## `Planirium Bot` - Päivittäisen suunnittelun assistentti
+## `Morner Bot` - Aamurutiini älykellolla
 
-> Planirium Bot yksinkertaistaa päivittäistä suunnittelua tarjoten ominaisuuksiltaan rikkaan alustan, joka parantaa tehokkuutta ja tekee aikataulujen hallinnasta vaivatonta.
+> Morner Bot auttaa rakentamaan johdonmukaisia aamutottumuksia minimoimalla puhelimen käyttöä. Aseta rutiini kerran ja suorita se sitten päivittäin käyttämällä vain älykelloasi.
 
-### `Ominaisuuksien kohokohdat`
+### `Ydinajatus`
 
-Planirium Bot on rakennettu `Python`-kielellä ja hyödyntää `aiogram`-kirjastoa saumattomaan vuorovaikutukseen Telegrammin kanssa. Se tarjoaa joukon ominaisuuksia, jotka on suunniteltu auttamaan käyttäjiä pysymään järjestäytyneenä ja tuottavana. Lisäksi se tuo hieman viehätystä päivääsi leikkisillä kehulla pitääkseen sinut motivoituneena!
+Uskon, että aamut ovat tuottavampia aivollemme ja mielelle. On kuitenkin vaikeaa välttää häiriötekijöitä eikä juuttua puhelimeen, siitä syntyi ajatus tähän bottiin. Asetat aamurutiinisi kerran puhelimen kautta, sitten joka aamu kommunikoit botin kanssa älykellon kautta käyttäen vain pikaviestejä, minimoit puhelimen käyttöä, pidät pääsi kirkkaana eikä liikaa melua ole mielestäni aina hyvä asia.
 
-### `Sivuasettelut`
+### `Tekninen toteutus`
+
+Rakennettu `Python`-kielellä käyttäen `aiogram 3.x`-kirjastoa asynkronisiin Telegram-operaatioihin. Botti käyttää FSM-mallia (äärellinen automaatti) keskustelun kulun hallintaan. Tietojen pysyvyys JSON:n kautta aikavyöhyketuella `pytz`:n avulla. Kaikki ilmoitukset ovat hiljaisia, jotta ne eivät ole häiritseviä.
+
+### `Botin käyttöliittymä`
 
 #### Päävalikko
+
 <details>
-<summary>Näytä päävalikko</summary>
-<div class="row justify-content-center">
-<div class="col-md-5">
- {% include figure.liquid path="assets/img/menu.jpg" title="Päävalikko" class="img-fluid rounded z-depth-1" %}
-</div>
-</div>
+    <summary>Näytä päävalikko</summary>
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            {% include figure.liquid path="assets/img/menu.jpg" title="Päävalikko" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
 </details>
 
-#### Tehtävänäkymä
+#### Tehtävävirta
+
 <details>
-<summary>Tutustu tehtävänäkymään</summary>
-<div class="row justify-content-center">
-<div class="col-sm-6">
- {% include figure.liquid path="assets/img/tasks.jpg" title="Tehtävänäkymä" class="img-fluid rounded z-depth-1" %}
-</div>
-</div>
+    <summary>Katso tehtävävirta</summary>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/tasks.jpg" title="Tehtävävirta" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
 </details>
 
-#### Työskentelytila
+#### Tilastonäkymä
+
 <details>
-<summary>Tutustu työskentelytilaan</summary>
-<div class="row justify-content-center">
-<div class="col-sm-6">
- {% include figure.liquid path="assets/img/working.jpg" title="Työskentelytila" class="img-fluid rounded z-depth-1" %}
-</div>
-</div>
+    <summary>Tutki tilastoja</summary>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/working.jpg" title="Tilastonäkymä" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
 </details>
 
-#### Mallien hallinta
+#### Asetuspaneeli
+
 <details>
-<summary>Hallitse malleja</summary>
-<div class="row justify-content-center">
-<div class="col-sm-6">
- {% include figure.liquid path="assets/img/template.jpg" title="Mallien hallinta" class="img-fluid rounded z-depth-1" %}
-</div>
-</div>
+    <summary>Hallinnoi asetuksia</summary>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/template.jpg" title="Asetuspaneeli" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
 </details>
 
-### `Johtopäätös ja pohdinta`
+### `Miten se toimii`
 
-Planirium Botin kehittäminen on ollut palkitseva kokemus. Se antoi minun sukeltaa syvemmälle Telegrammin bot API:in ja aiogram-kirjastoon, parantaen taitojani Python-kehityksessä ja käyttökokemuksen suunnittelussa. Lisäksi noiden hauskojen, piristävien viestien lisääminen on tehnyt kehitysprosessista entistäkin miellyttävämmän!
+Aseta rutiini kerran puhelimen kautta. Joka aamu saat hiljaisen ilmoituksen kellossasi. Napauta mitä tahansa pikavastausta aloittaaksesi. Suorita tehtävät napauttamalla mitä tahansa pikavastausnappia. Botti etenee automaattisesti riippumatta siitä, mitä pikavastausta käytät, koska kaikilla on erilaiset nappikokoonpanot kelloissaan.
 
-Lisätietoja ja yksityiskohtaista analyysia projektista löydät dokumentaatiosta:
+Erikoiskomennot: `Skip` (merkitsee nykyisen tehtävän ohitetuksi), `Menu` (palaa päävalikkoon). Putket vaativat 100% pakollisten tehtävien suorittamisen. Valinnaiset tehtävät eivät vaikuta putkeen, jos ne ohitetaan.
 
-- **[Planirium Bot GitHub Repository](https://github.com/Andebugulin/telegram_bot)**
+### `Pääominaisuudet`
 
-### `Erikoisominaisuus: Päivittäiset kehut`
+Kellolle optimoitu käyttöliittymä mukautettavilla pikaviestillä. Tehtävienhallinta valinnaisten/pakollisten tehtävätyyppien kanssa. Mukautettavat aikaikkunat ja aikavyöhyketuki. Putkien seuranta päivittäisillä/viikoittaisilla/kuukausittaisilla kalenteritilastoilla. Hiljaiset ilmoitukset rutiinin alussa, varoitukset ennen määräaikaa ja suoritusyhteenvedot. Tauko/jatka-toiminto keskeytyneille rutiineille.
 
-Yksi Planirium Botin erottuvista ominaisuuksista on sen kyky ripotella hieman iloa päivittäiseen rutiiniisi. Olipa olet töissä tai rastitat tehtäviä, botti kannustaa sinua viehättävillä kehuilla kuten "Oletko kissa? Koska olet täy-dellinen!" tai "Sinun täytyy olla taikuri, koska aina kun katson sinua, kaikki muut katoavat!"
+### `Pohdinta`
 
-Planirium Bot on täällä pitämässä sinut hymyileväisenä samalla kun pysyt järjestäytyneenä. Mukavaa suunnittelua!
+Morner Botin kehittäminen opetti minulle asynkronisia ohjelmointimalleja ja tilakone-arkkitehtuuria. Haasteena oli saada käyttöliittymä toimimaan saumattomasti älykelloissa säilyttäen samalla täysi toiminnallisuus puhelimissa. Aikavyöhykkeiden käsittely ja ilmoitusten aikataulutus vaativat huolellista harkintaa toimiakseen luotettavasti eri käyttäjäkonteksteissa.
 
-### `Kehittäjät`
+Lisätietoja ja lähdekoodia varten:
 
-<div id="contributors-list" style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px;">Ladataan kehittäjiä...</div>
+- **[Morner Bot GitHub-repositorio](https://github.com/Andebugulin/telegram_bot)**
+- **[Kokeile isännöityä bottia](https://t.me/PlanyDbot)** - Toimii Oracle Cloudissa
+
+### `Osallistujat`
+
+<div id="contributors-list" style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px;">Ladataan osallistujia...</div>
 
 <script>
-async function fetchContributors() {
-const url = 'https://api.github.com/repos/Andebugulin/telegram_bot/contributors';
-const response = await fetch(url);
-const contributors = await response.json();
+  async function fetchContributors() {
+    const url = 'https://api.github.com/repos/Andebugulin/telegram_bot/contributors';
+    const response = await fetch(url);
+    const contributors = await response.json();
 
-const contributorsHtml = contributors.map(contributor =>
-`<div class="contributor" style="margin: 10px; text-align: center;">
- <img src="${contributor.avatar_url}" alt="${contributor.login}" style="width: 100px; height: 100px; border-radius: 50%; display: block; margin: auto;">
- <p><a href="${contributor.html_url}" target="_blank">${contributor.login}</a></p>
- </div>`
- ).join('');
+    const contributorsHtml = contributors.map(contributor =>
+      `<div class="contributor" style="margin: 10px; text-align: center;">
+        <img src="${contributor.avatar_url}" alt="${contributor.login}" style="width: 100px; height: 100px; border-radius: 50%; display: block; margin: auto;">
+        <p><a href="${contributor.html_url}" target="_blank">${contributor.login}</a></p>
+      </div>`
+    ).join('');
 
- document.getElementById('contributors-list').innerHTML = contributorsHtml;
-}
+    document.getElementById('contributors-list').innerHTML = contributorsHtml;
+  }
 
-fetchContributors();
+  fetchContributors();
 </script>

@@ -5,7 +5,7 @@ permalink: /blog/
 title: блог 
 blog_name: m
 description: на блоге
-nav: true
+nav: false 
 nav_order: 1
 pagination:
   enabled: true
