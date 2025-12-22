@@ -94,3 +94,13 @@ Die Anwendung sammelte erfolgreich über 100 Benutzer durch organische Vertriebs
 
   fetchContributors();
 </script>
+
+---
+
+### `Download`
+
+<div style="text-align: center; margin: 40px 0;">
+  <a href="https://play.google.com/store/apps/details?id=com.andebugulin.awareen2" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 80px;">
+  </a>
+</div>

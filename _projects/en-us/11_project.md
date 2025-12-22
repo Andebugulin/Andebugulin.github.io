@@ -197,3 +197,32 @@ For detailed implementation and contribution:
 
   fetchContributors();
 </script>
+
+<script>
+  async function fetchContributors() {
+    const url = 'https://api.github.com/repos/Andebugulin/awareen/contributors';
+    const response = await fetch(url);
+    const contributors = await response.json();
+
+    const contributorsHtml = contributors.map(contributor =>
+      `<div class="contributor" style="margin: 10px; text-align: center;">
+        <img src="${contributor.avatar_url}" alt="${contributor.login}" style="width: 100px; height: 100px; border-radius: 50%; display: block; margin: auto;">
+        <p><a href="${contributor.html_url}" target="_blank">${contributor.login}</a></p>
+      </div>`
+    ).join('');
+
+    document.getElementById('contributors-list').innerHTML = contributorsHtml;
+  }
+
+  fetchContributors();
+</script>
+
+---
+
+### `Download`
+
+<div style="text-align: center; margin: 40px 0;">
+  <a href="https://play.google.com/store/apps/details?id=com.andebugulin.awareen2" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 80px;">
+  </a>
+</div>
