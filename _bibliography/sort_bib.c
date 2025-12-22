@@ -3,127 +3,116 @@
 #include <string.h>
 #include <ctype.h>
 
-#define MAX_ENTRIES 1000
-#define MAX_LINE_LENGTH 1024
+#define MAX_ENTRIES 2000
 
 typedef struct {
-    char *raw_text;
-    int year;
-    int month;
-    int day;
-} BibEntry;
+    char *raw;
+    int year, month, day;
+} Entry;
 
-int parse_int(const char *str) {
-    while (*str && !isdigit(*str)) str++; // Skip non-digit characters
-    return atoi(str);
+int extract_int(const char *s) {
+    while (*s && !isdigit(*s)) s++;
+    return atoi(s);
 }
 
-int parse_entry(const char *entry, int *year, int *month, int *day) {
-    *year = *month = *day = 0;
-    const char *year_ptr = strstr(entry, "year={");
-    const char *month_ptr = strstr(entry, "month={");
-    const char *day_ptr = strstr(entry, "day={");
+void parse_date(const char *e, Entry *out) {
+    out->year = out->month = out->day = 0;
 
-    if (year_ptr) *year = parse_int(year_ptr + 6);
-    if (month_ptr) *month = parse_int(month_ptr + 7);
-    if (day_ptr) *day = parse_int(day_ptr + 5);
+    const char *y = strstr(e, "year={");
+    const char *m = strstr(e, "month={");
+    const char *d = strstr(e, "day={");
 
-    return (year_ptr && month_ptr && day_ptr);
+    if (y) out->year  = extract_int(y + 6);
+    if (m) out->month = extract_int(m + 7);
+    if (d) out->day   = extract_int(d + 5);
 }
 
-int compare_entries(const void *a, const void *b) {
-    BibEntry *entry_a = (BibEntry *)a;
-    BibEntry *entry_b = (BibEntry *)b;
+int cmp_desc(const void *a, const void *b) {
+    const Entry *x = a;
+    const Entry *y = b;
 
-    if (entry_a->year != entry_b->year) {
-        return entry_b->year - entry_a->year;
-    }
-    if (entry_a->month != entry_b->month) {
-        return entry_b->month - entry_a->month;
-    }
-    return entry_b->day - entry_a->day;
+    if (x->year  != y->year)  return y->year  - x->year;
+    if (x->month != y->month) return y->month - x->month;
+    return y->day - x->day;
 }
 
-void free_entries(BibEntry *entries, int count) {
-    for (int i = 0; i < count; i++) {
-        free(entries[i].raw_text);
-    }
+char *read_block(FILE *f, char *first_line) {
+    size_t cap = 4096, len = 0;
+    char *buf = malloc(cap);
+    buf[0] = '\0';
+
+    do {
+        size_t l = strlen(first_line);
+        if (len + l + 1 > cap) {
+            cap *= 2;
+            buf = realloc(buf, cap);
+        }
+        memcpy(buf + len, first_line, l);
+        len += l;
+        buf[len] = '\0';
+
+        if (strchr(first_line, '}') && first_line[0] == '}')
+            break;
+
+    } while (fgets(first_line, 1024, f));
+
+    return buf;
 }
 
-int main() {
-    FILE *input = fopen("_bibliography/papers.bib", "r");
-    if (!input) {
-        perror("Failed to open input file");
+int main(void) {
+    FILE *in = fopen("_bibliography/papers.bib", "r");
+    if (!in) {
+        perror("open input");
         return 1;
     }
 
-    BibEntry entries[MAX_ENTRIES];
-    int entry_count = 0;
+    Entry entries[MAX_ENTRIES];
+    int n = 0;
 
-    char line[MAX_LINE_LENGTH];
-    char entry_buffer[MAX_LINE_LENGTH * 10]; // Buffer for a single entry
-    int in_entry = 0, buffer_pos = 0;
+    char *strings = NULL;
+    size_t strings_len = 0;
 
-    while (fgets(line, sizeof(line), input)) {
-        if (strstr(line, "@journal") || strstr(line, "@string")) {
-            if (in_entry && buffer_pos > 0) {
-                // End of the previous entry
-                entry_buffer[buffer_pos] = '\0';
+    char line[1024];
 
-                entries[entry_count].raw_text = strdup(entry_buffer);
-                if (!parse_entry(entry_buffer, &entries[entry_count].year,
-                                 &entries[entry_count].month,
-                                 &entries[entry_count].day)) {
-                    fprintf(stderr, "Warning: Failed to parse date for entry %d\n", entry_count + 1);
-                }
-                entry_count++;
-                buffer_pos = 0;
-            }
-            in_entry = 1;
-        }
-
-        if (in_entry) {
-            strcpy(&entry_buffer[buffer_pos], line);
-            buffer_pos += strlen(line);
+    while (fgets(line, sizeof(line), in)) {
+        if (strncmp(line, "@journal", 8) == 0) {
+            char *block = read_block(in, line);
+            entries[n].raw = block;
+            parse_date(block, &entries[n]);
+            n++;
+        } else if (strncmp(line, "@string", 7) == 0) {
+            size_t l = strlen(line);
+            strings = realloc(strings, strings_len + l + 1);
+            memcpy(strings + strings_len, line, l);
+            strings_len += l;
+            strings[strings_len] = '\0';
         }
     }
 
-    // Add the last entry
-    if (in_entry && buffer_pos > 0) {
-        entry_buffer[buffer_pos] = '\0';
-        entries[entry_count].raw_text = strdup(entry_buffer);
-        if (!parse_entry(entry_buffer, &entries[entry_count].year,
-                         &entries[entry_count].month,
-                         &entries[entry_count].day)) {
-            fprintf(stderr, "Warning: Failed to parse date for entry %d\n", entry_count + 1);
-        }
-        entry_count++;
-    }
+    fclose(in);
 
-    fclose(input);
+    qsort(entries, n, sizeof(Entry), cmp_desc);
 
-    // Sort entries
-    qsort(entries, entry_count, sizeof(BibEntry), compare_entries);
-
-    // Write sorted entries to a new file
-    FILE *output = fopen("_bibliography/papers.bib", "w");
-    if (!output) {
-        perror("Failed to open output file");
-        free_entries(entries, entry_count);
+    FILE *out = fopen("_bibliography/papers_sorted.bib", "w");
+    if (!out) {
+        perror("open output");
         return 1;
     }
 
-    fprintf(output, "---\n---\n\n");
+    fprintf(out, "---\n---\n\n");
 
-
-    for (int i = 0; i < entry_count; i++) {
-        fprintf(output, "%s", entries[i].raw_text);
+    for (int i = 0; i < n; i++) {
+        fputs(entries[i].raw, out);
+        fputc('\n', out);
+        free(entries[i].raw);
     }
 
-    fclose(output);
+    if (strings) {
+        fputc('\n', out);
+        fputs(strings, out);
+        free(strings);
+    }
 
-    free_entries(entries, entry_count);
-
-    printf("Sorted bibliography saved to 'papers_sorted.bib'\n");
+    fclose(out);
     return 0;
 }
