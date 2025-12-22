@@ -20,19 +20,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/fi/";
     },
-  },{id: "nav-blogi",
-          title: "blogi",
-          description: "blogissa",
-          section: "Navigointivalikko",
-          handler: () => {
-            window.location.href = "/fi/page/:num/";
-          },
-        },{id: "nav-päiväkirja",
+  },{id: "nav-päiväkirja",
           title: "päiväkirja",
           description: "Tässä on päiväkirjani elämäni muistojen säilyttämiseksi!",
           section: "Navigointivalikko",
           handler: () => {
             window.location.href = "/fi/journal/";
+          },
+        },{id: "nav-opinnäytetyö",
+          title: "opinnäytetyö",
+          description: "",
+          section: "Navigointivalikko",
+          handler: () => {
+            window.location.href = "/fi/thesis/";
           },
         },{id: "nav-projektit",
           title: "projektit",
@@ -139,9 +139,9 @@ ninja.data = [{
           description: "Innovatiivinen alusta päivittäisten tehtävien ja aktiviteettien hallintaan.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/1_project/";
-            },},{id: "projects-planirium-bot",
-          title: 'Planirium Bot',
-          description: "Virtaviivainen Telegram-botti tehokkaaseen päivittäiseen suunnitteluun ja tehtävien hallintaan.",
+            },},{id: "projects-morner-bot",
+          title: 'Morner Bot',
+          description: "Telegram-botti aamurutiinien seuraamiseen älykellolla puhelimen häiriöiden minimoimiseksi.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/2_project/";
             },},{id: "projects-ankara",

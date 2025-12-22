@@ -20,19 +20,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "on da blog",
-          section: "Navigation menu",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-journal",
+  },{id: "nav-journal",
           title: "journal",
           description: "Here is my journal to have memories of my life!",
           section: "Navigation menu",
           handler: () => {
             window.location.href = "/journal/";
+          },
+        },{id: "nav-thesis",
+          title: "thesis",
+          description: "",
+          section: "Navigation menu",
+          handler: () => {
+            window.location.href = "/thesis/";
           },
         },{id: "nav-projects",
           title: "projects",
@@ -139,9 +139,9 @@ ninja.data = [{
           description: "An innovative platform for managing daily tasks and activities.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/1_project/";
-            },},{id: "projects-planirium-bot",
-          title: 'Planirium Bot',
-          description: "A streamlined Telegram bot for efficient daily planning and task management.",
+            },},{id: "projects-morner-bot",
+          title: 'Morner Bot',
+          description: "Telegram bot for morning routine tracking via smartwatch to minimize phone distractions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/2_project/";
             },},{id: "projects-ankara",

@@ -20,19 +20,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/de-ge/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "im blog",
-          section: "Navigationsmenü",
-          handler: () => {
-            window.location.href = "/de-ge/page/:num/";
-          },
-        },{id: "nav-tagebuch",
+  },{id: "nav-tagebuch",
           title: "tagebuch",
           description: "Hier ist mein Tagebuch, um Erinnerungen an mein Leben zu bewahren!",
           section: "Navigationsmenü",
           handler: () => {
             window.location.href = "/de-ge/journal/";
+          },
+        },{id: "nav-abschlussarbeit",
+          title: "abschlussarbeit",
+          description: "",
+          section: "Navigationsmenü",
+          handler: () => {
+            window.location.href = "/de-ge/thesis/";
           },
         },{id: "nav-projekte",
           title: "projekte",
@@ -139,9 +139,9 @@ ninja.data = [{
           description: "Eine innovative Plattform zur Verwaltung täglicher Aufgaben und Aktivitäten.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/1_project/";
-            },},{id: "projects-planirium-bot",
-          title: 'Planirium Bot',
-          description: "Ein optimierter Telegram-Bot für effiziente Tagesplanung und Aufgabenverwaltung.",
+            },},{id: "projects-morner-bot",
+          title: 'Morner Bot',
+          description: "Telegram-Bot zur Verfolgung von Morgenroutinen über Smartwatch, um Ablenkungen durch das Telefon zu minimieren.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/2_project/";
             },},{id: "projects-ankara",
