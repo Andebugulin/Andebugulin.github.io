@@ -1,0 +1,136 @@
+{
+  "basics": {
+    "name": "Andrei Gulin",
+    "label": "Разработчик программного обеспечения, Fullstack разработчик",
+    "image": "",
+    "email": "andreigulin2005@gmail.com",
+
+    "summary": "Я разработчик программного обеспечения, живущий в Финляндии, с огромной страстью к обучению и изучению рабочего мира. Я стремлюсь найти лучшие решения для существующих проблем, используя технологии ИИ для положительного влияния.",    "location": {
+      "address": "raviradantie 7",
+      "postalCode": "Mikkeli 50100",
+      "city": "Mikkeli",
+      "countryCode": "FI",
+      "region": "Mikkeli"
+    }
+  },
+  "work": [
+    {
+      "name": "Full stack",
+      "position": "Стажировка разработчика программного обеспечения - Mindhive Oy",
+      "url": "https://www.mindhive.fi/en/home",
+      "startDate": "2024-01-10",
+      "endDate": "2024-06-10",
+      "summary": "Я глубоко погружаюсь в создание потрясающих веб-сайтов, от фронтенда до бэкенда, используя React, TypeScript, Next.js и Firebase. Всё направлено на создание плавных, быстрых и безопасных онлайн-впечатлений, которые понравятся людям. Мы использовали Toggle и Clickup для управления задачами.",
+      "highlights": ["Git", "Typescript", "React", "Firebase", "Next.js", "React Native"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Университет прикладных наук XAMK, Миккели, Финляндия",
+      "location": "Миккели, Финляндия",
+      "url": "https://www.xamk.fi/en/frontpage/",
+      "area": "Информационные технологии",
+      "studyType": "Бакалавр",
+      "startDate": "2022-21-08",
+      "endDate": "2025-21-05"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Языки программирования",
+      "level": "Продвинутый | Базовый | Изучаю",
+      "icon": "fa-solid fa-code-branch",
+      "keywords": [
+        "&nbsp;<i class=\"fa-brands fa-python\"></i>&nbsp;&nbsp;Python",
+        "<i class=\"fa-solid fa-code\"></i>&nbsp;C#",
+        "<i class=\"fa-solid fa-crow\"></i>  C++",
+        "&nbsp;<i class=\"fa-brands fa-js\"></i>&nbsp;  Javascript & Typescript",
+        "&nbsp;<i class=\"fa-brands fa-html5\"></i>&nbsp;  HTML & CSS",
+        "<i class=\"fa-brands fa-golang\"></i> Golang",
+        "<i class=\"fa-solid fa-cog\"></i> C",
+        "<i class=\"fa-brands fa-rust\"></i> Rust",
+        "<i class=\"fa-solid fa-chart-pie\"></i> R"
+      ]
+    },
+    {
+      "name": "Фреймворки",
+      "level": "Практикую",
+      "icon": "fa-solid fa-feather-pointed",
+      "keywords": [
+        "&nbsp;<i class=\"fa-brands fa-react\"></i>&nbsp; React",
+        "&nbsp;<i class=\"fa-brands fa-neos\"></i>&nbsp; Next.js",
+        "&nbsp;<i class=\"fa-solid fa-fire\"></i>&nbsp; Firebase",
+        "&nbsp;<i class=\"fa-brands fa-node-js\"></i>&nbsp; Node.js",
+        "&nbsp;<i class=\"fa-solid fa-flask\"></i>&nbsp; Flask",
+        "&nbsp;<i class=\"fa-solid fa-angles-left\"></i>&nbsp; Flutter"
+      ]
+    },
+    {
+      "name": "Инструменты",
+      "level": "Использую часто",
+      "icon": "fa-solid fa-wrench",
+      "keywords": [
+        "<i class=\"fa-brands fa-git\"></i>&nbsp; Git",
+        "<i class=\"fa-solid fa-bolt\"></i>&nbsp; Babel",
+        "<i class=\"fa-brands fa-docker\"></i>&nbsp;Docker",
+        "<i class=\"fa-solid fa-kiwi-bird\"></i>&nbsp; Linux",
+        "<i class=\"fa-brands fa-aws\"></i> AWS services"
+      ]
+    },
+    {
+      "name": "Базы данных",
+      "level": "Использую часто",
+      "icon": "fa-solid fa-database",
+      "keywords": [
+        "&nbsp;<i class=\"fa-brands fa-gripfire\"></i>&nbsp; Firestore",
+        "&nbsp;<i class=\"fa-solid fa-user-astronaut\"></i>&nbsp; Supabase",
+        "&nbsp; <i class=\"fa-solid fa-jar-wheat\"></i>&nbsp; SQL",
+        "&nbsp;<i class=\"fa-solid fa-leaf\"></i>&nbsp;MongoDB",
+        "&nbsp;<i class=\"fa-solid fa-tree\"></i>&nbsp;PostgreSQL",
+        "&nbsp;<i class=\"fa-solid fa-diamond\"></i>&nbsp;SQLite",
+        "&nbsp;<i class=\"fa-solid fa-rocket\"></i>&nbsp;MySQL",
+        "&nbsp;<i class=\"fa-solid fa-globe\"></i>&nbsp;MariaDB"
+              ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Русский ",
+      "fluency": "Родной язык",
+      "icon": ""
+    },
+    {
+      "language": "Английский",
+      "fluency": "Свободно",
+      "icon": ""
+    },
+    {
+      "language": "Финский",
+      "fluency": "Базовый"
+    },
+    {
+      "language": "Французский",
+      "fluency": "Базовый"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Linux <i class=\"fa-solid fa-archway\"></i> "
+    },
+    {
+      "name": "Спорт <i class=\"fa-solid fa-person-snowboarding\"></i> <i class=\"fa-solid fa-person-skating\"></i> <i class=\"fa-solid fa-basketball\"></i> <i class=\"fa-solid fa-dumbbell\"></i>"
+    },
+    {
+      "name": "Чтение <i class=\"fa-regular fa-chess-rook\"></i>"
+    },
+    {
+      "name": "Фотография <i class=\"fa-solid fa-camera-retro\"></i>"
+    },
+    {
+      "name": "Фильмы <i class=\"fa-solid fa-film\"></i>"
+    },
+    {
+      "name": "Музыка <i class=\"fa-solid fa-headphones\"></i>"
+    }
+  ]
+}

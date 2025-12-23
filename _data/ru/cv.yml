@@ -1,0 +1,92 @@
+
+- title: Общая информация
+  type: map
+  contents:
+    - name: Полное имя
+      value: Альберт Эйнштейн
+    - name: Дата рождения
+      value: 14 марта 1879
+    - name: Языки
+      value: Английский, Немецкий
+- title: Образование
+  type: time_table
+  contents:
+    - title: PhD
+      institution: Цюрихский университет, Цюрих, Швейцария
+      year: 1905
+      description:
+        - Описание 1.
+        - Описание 2.
+        - title: Описание 3.
+          contents:
+            - Под-описание 1.
+            - Под-описание 2.
+    - title: Федеральный преподавательский диплом
+      institution: Швейцарская высшая техническая школа, Цюрих, Швейцария
+      year: 1900
+      description:
+        - Описание 1.
+        - Описание 2.
+- title: Опыт работы
+  type: time_table
+  contents:
+    - title: Профессор теоретической физики
+      institution: Институт передовых исследований, Принстонский университет
+      year: 1933 - 1955
+      description:
+        - Описание 1.
+        - Описание 2.
+        - title: Описание 3.
+          contents:
+            - Под-описание 1.
+            - Под-описание 2.
+    - title: Приглашенный профессор
+      institution: Калифорнийский технологический институт, Пасадена, Калифорния, США
+      year: 1933
+      description:
+        - Описание 1.
+        - Описание 2.
+    - title: Директор
+      institution: Институт физики Кайзера Вильгельма, Берлин, Германия
+      year: 1917-1933
+    - title: Профессор теоретической физики
+      institution: Карл-Фердинандов университет, Прага, Чехословакия
+      year: 1911 - 1917
+      description:
+    - title: Доцент теоретической физики
+      institution: Цюрихский университет, Цюрих, Швейцария
+      year: 1909 - 1911
+- title: Проекты с открытым исходным кодом
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>
+      year: 2023-настоящее время
+      description: Вариация темы al-folio с поддержкой нескольких языков.
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-настоящее время
+      description: Красивая, простая, чистая и отзывчивая Jekyll тема для ученых.
+- title: Почести и награды
+  type: time_table
+  contents:
+    - year: 1921
+      items:
+        - Нобелевская премия по физике
+        - Медаль Маттеуччи
+    - year: 2029
+      items:
+        - Медаль Макса Планка
+- title: Академические интересы
+  type: nested_list
+  contents:
+    - title: Тема 1.
+      items:
+        - Описание 1.
+        - Описание 2.
+    - title: Тема 2.
+      items:
+        - Описание 1.
+        - Описание 2.
+- title: Другие интересы
+  type: list
+  contents:
+    - <u>Хобби:</u> Хобби 1, Хобби 2, и т.д.

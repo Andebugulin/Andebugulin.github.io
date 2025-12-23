@@ -1,0 +1,164 @@
+archive:
+  prefix: arkisto
+  category_suffix: tässä kategoriassa
+  tag_suffix: tällä tagilla
+  year_suffix: tältä vuodelta
+bibliography:
+  abstract: Tiiv
+  awarded: Palkittu
+  blog: Blogi
+  book_prefix: Teoksessa
+  code: Koodi
+  last_author_prefix: ja
+  poster: Juliste
+  slides: Kalvot
+  supp: Liite
+  video: Video
+  website: Verkkosivu
+blog:
+  navigation_title: blogi
+categories:
+  fun: hauska
+  work: työ
+citation:
+  bibtex: "tai BibTeX-merkintänä:"
+  introduction: "Jos tämä oli hyödyllinen, voit viitata siihen näin:"
+collections:
+  books: kirjat
+  posts: julkaisut
+contact_note: ota yhteyttä sähköpostitse tai sosiaalisen median kautta
+cv:
+  address: Osoite
+  area: Alue
+  awarder: Palkitsija
+  awards: Palkinnot
+  basics: Yleiset tiedot
+  certificates: Sertifikaatit
+  city: Kaupunki
+  countryCode: Maakoodi
+  courses: Kurssit
+  date: Päivämäärä
+  education: Koulutus
+  email: Sähköposti
+  endDate: Päättymispäivä
+  fluency: Sujuvuus
+  highlights: Kohokohdat
+  image: Kuva
+  institution: Instituutio
+  interests: Kiinnostuksen kohteet
+  issuer: Myöntäjä
+  keywords: Avainsanat
+  label: Nimike
+  language: Kieli
+  languages: Kielet
+  level: Taso
+  location: Sijainti
+  name: Nimi
+  network: Verkosto
+  organization: Organisaatio
+  phone: Puhelin
+  position: Asema
+  postalCode: Postinumero
+  present: Nykyinen
+  profiles: Profiilit
+  projects: Projektit
+  publications: Julkaisut
+  publisher: Julkaisija
+  reference: Suositus
+  references: Suositukset
+  region: Alue
+  releaseDate: Julkaisupäivä
+  score: Pisteet
+  skills: Taidot
+  startDate: Alkamispäivä
+  studyType: Tutkinnon tyyppi
+  summary: Yhteenveto
+  table_of_contents: Sisällysluettelo
+  title: Otsikko
+  url: Osoite
+  username: Käyttäjänimi
+  volunteer: Vapaaehtoistyö
+  work: Työ
+footer:
+  copyright: Tekijänoikeus
+  last_updated: "Viimeksi päivitetty:"
+footer_text: > # the ">" symbol means to ignore newlines until "titles:"
+  Voimanlähteenä <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> ja <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a> -teema.
+  Isännöi <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Kuvat <a href="https://unsplash.com" target="_blank">Unsplash</a>-palvelusta.
+latest_posts: viimeisimmät julkaisut
+months:
+  long:
+    january: Tammikuu
+    february: Helmikuu
+    march: Maaliskuu
+    april: Huhtikuu
+    may: Toukokuu
+    june: Kesäkuu
+    july: Heinäkuu
+    august: Elokuu
+    september: Syyskuu
+    october: Lokakuu
+    november: Marraskuu
+    december: Joulukuu
+  short:
+    january: Tammi
+    february: Helmi
+    march: Maalis
+    april: Huhti
+    may: Touko
+    june: Kesä
+    july: Heinä
+    august: Elo
+    september: Syys
+    october: Loka
+    november: Marras
+    december: Joulu
+news: uutiset
+newsletter:
+  back: Takaisin
+  error: "Hups! Jotain meni pieleen, yritä uudelleen."
+  subscribe: tilaa
+  subscribed: "Olet tilannut uutiskirjeen onnistuneesti."
+  subscribe_to_receive: "Tilaa saadaksesi ilmoituksia tulevista artikkeleista:"
+  too_many_signups: "Liian monta tilausta, yritä hetken kuluttua uudelleen"
+  wait: "Ole hyvä ja odota..."
+no_news: Ei uutisia toistaiseksi...
+no_posts: "Ei julkaisuja toistaiseksi..."
+pagination:
+  page: sivu
+post:
+  created_in: Luotu
+  created_by: kirjoittanut
+  last_updated: viimeksi päivitetty
+references: Viitteet
+related_posts:
+  description: "Tässä on lisää artikkeleita, joista saatat pitää:"
+  title: Pidätkö tämän artikkelin lukemisesta?
+search:
+  dark_theme:
+    description: Vaihda sivuston teema tummaksi
+    title: Vaihda teema tummaksi
+  dropdown: Pudotusvalikko
+  email: Lähetä sähköposti
+  footer:
+    close: sulkeaksesi
+    navigate: navigoidaksesi
+    parent: siirtyäksesi ylätasolle
+    select: valitaksesi
+  languages: Kielet
+  light_theme:
+    description: Vaihda sivuston teema vaaleaksi
+    title: Vaihda teema vaaleaksi
+  navigation: Navigointivalikko
+  news: Uutiset
+  placeholder: Ala kirjoittaa hakeaksesi
+  posts: Julkaisut
+  projects: Projektit
+  socials: Sosiaalinen media
+  system_theme:
+    description: Vaihda sivuston teema järjestelmän oletukseksi
+    title: Käytä järjestelmän oletusteemaa
+  theme: Teema
+selected_publications: valitut julkaisut
+site_description: Yksinkertainen, tilava teema akateemikoille. Perustuu [*folio](https://github.com/bogoli/-folio) -suunnitteluun.

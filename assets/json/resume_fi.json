@@ -1,0 +1,137 @@
+{
+  "basics": {
+    "name": "Andrei Gulin",
+    "label": "Ohjelmistokehittäjä, Fullstack-kehittäjä",
+    "image": "",
+    "email": "andreigulin2005@gmail.com",
+
+    "summary": "Olen ohjelmistokehittäjä Suomesta, jolla on valtava intohimo oppimiseen ja työelämän tutkimiseen. Pyrin löytämään parhaat ratkaisut nykyisiin ongelmiin hyödyntäen tekoälyteknologioita positiivisen vaikutuksen aikaansaamiseksi.",
+    "location": {
+      "address": "raviradantie 7",
+      "postalCode": "Mikkeli 50100",
+      "city": "Mikkeli",
+      "countryCode": "FI",
+      "region": "Mikkeli"
+    }
+  },
+  "work": [
+    {
+      "name": "Full stack",
+      "position": "Ohjelmistokehittäjä harjoittelija - Mindhive Oy",
+      "url": "https://www.mindhive.fi/en/home",
+      "startDate": "2024-01-10",
+      "endDate": "2024-06-10",
+      "summary": "Syventyä upeien verkkosivustojen rakentamiseen alusta loppuun React:in, TypeScript:in, Next.js:n ja Firebase:n avulla. Kyse on sujuvien, nopeiden ja turvallisten online-kokemusten luomisesta, joista ihmiset varmasti pitäisivät. Käytimme Toggle:a ja Clickup:ia tehtävienhallintaan.",
+      "highlights": ["Git", "Typescript", "React", "Firebase", "Next.js", "React Native"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Kaakkois-Suomen ammattikorkeakoulu XAMK, Mikkeli, Suomi",
+      "location": "Mikkeli, Suomi",
+      "url": "https://www.xamk.fi/en/frontpage/",
+      "area": "Tietotekniikka",
+      "studyType": "Kandidaatti",
+      "startDate": "2022-21-08",
+      "endDate": "2025-21-05"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Ohjelmointikielet",
+      "level": "Kehittynyt | Perusteet | Opiskelen",
+      "icon": "fa-solid fa-code-branch",
+      "keywords": [
+        "&nbsp;<i class=\"fa-brands fa-python\"></i>&nbsp;&nbsp;Python",
+        "<i class=\"fa-solid fa-code\"></i>&nbsp;C#",
+        "<i class=\"fa-solid fa-crow\"></i>  C++",
+        "&nbsp;<i class=\"fa-brands fa-js\"></i>&nbsp;  Javascript & Typescript",
+        "&nbsp;<i class=\"fa-brands fa-html5\"></i>&nbsp;  HTML & CSS",
+        "<i class=\"fa-brands fa-golang\"></i> Golang",
+        "<i class=\"fa-solid fa-cog\"></i> C",
+        "<i class=\"fa-brands fa-rust\"></i> Rust",
+        "<i class=\"fa-solid fa-chart-pie\"></i> R"
+      ]
+    },
+    {
+      "name": "Kehykset",
+      "level": "Harjoiteltu",
+      "icon": "fa-solid fa-feather-pointed",
+      "keywords": [
+        "&nbsp;<i class=\"fa-brands fa-react\"></i>&nbsp; React",
+        "&nbsp;<i class=\"fa-brands fa-neos\"></i>&nbsp; Next.js",
+        "&nbsp;<i class=\"fa-solid fa-fire\"></i>&nbsp; Firebase",
+        "&nbsp;<i class=\"fa-brands fa-node-js\"></i>&nbsp; Node.js",
+        "&nbsp;<i class=\"fa-solid fa-flask\"></i>&nbsp; Flask",
+        "&nbsp;<i class=\"fa-solid fa-angles-left\"></i>&nbsp; Flutter"
+      ]
+    },
+    {
+      "name": "Työkalut",
+      "level": "Käytetty usein",
+      "icon": "fa-solid fa-wrench",
+      "keywords": [
+        "<i class=\"fa-brands fa-git\"></i>&nbsp; Git",
+        "<i class=\"fa-solid fa-bolt\"></i>&nbsp; Babel",
+        "<i class=\"fa-brands fa-docker\"></i>&nbsp;Docker",
+        "<i class=\"fa-solid fa-kiwi-bird\"></i>&nbsp; Linux",
+        "<i class=\"fa-brands fa-aws\"></i> AWS services"
+      ]
+    },
+    {
+      "name": "Tietokannat",
+      "level": "Käytetty usein",
+      "icon": "fa-solid fa-database",
+      "keywords": [
+        "&nbsp;<i class=\"fa-brands fa-gripfire\"></i>&nbsp; Firestore",
+        "&nbsp;<i class=\"fa-solid fa-user-astronaut\"></i>&nbsp; Supabase",
+        "&nbsp; <i class=\"fa-solid fa-jar-wheat\"></i>&nbsp; SQL",
+        "&nbsp;<i class=\"fa-solid fa-leaf\"></i>&nbsp;MongoDB",
+        "&nbsp;<i class=\"fa-solid fa-tree\"></i>&nbsp;PostgreSQL",
+        "&nbsp;<i class=\"fa-solid fa-diamond\"></i>&nbsp;SQLite",
+        "&nbsp;<i class=\"fa-solid fa-rocket\"></i>&nbsp;MySQL",
+        "&nbsp;<i class=\"fa-solid fa-globe\"></i>&nbsp;MariaDB"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Venäjä",
+      "fluency": "Äidinkieli",
+      "icon": ""
+    },
+    {
+      "language": "Englanti",
+      "fluency": "Sujuva",
+      "icon": ""
+    },
+    {
+      "language": "Suomi",
+      "fluency": "Perusteet"
+    },
+    {
+      "language": "Ranska",
+      "fluency": "Perusteet"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Linux <i class=\"fa-solid fa-archway\"></i> "
+    },
+    {
+      "name": "Urheilu <i class=\"fa-solid fa-person-snowboarding\"></i> <i class=\"fa-solid fa-person-skating\"></i> <i class=\"fa-solid fa-basketball\"></i> <i class=\"fa-solid fa-dumbbell\"></i>"
+    },
+    {
+      "name": "Lukeminen <i class=\"fa-regular fa-chess-rook\"></i>"
+    },
+    {
+      "name": "Valokuvaus <i class=\"fa-solid fa-camera-retro\"></i>"
+    },
+    {
+      "name": "Elokuvat <i class=\"fa-solid fa-film\"></i>"
+    },
+    {
+      "name": "Musiikki <i class=\"fa-solid fa-headphones\"></i>"
+    }
+  ]
+}

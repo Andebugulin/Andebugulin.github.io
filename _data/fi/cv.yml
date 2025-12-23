@@ -1,0 +1,101 @@
+- title: Yleistiedot
+  type: map
+  contents:
+    - name: Koko nimi
+      value: Albert Einstein
+    - name: Syntymäaika
+      value: 14. maaliskuuta 1879
+    - name: Kielet
+      value: Englanti, Saksa
+
+- title: Koulutus
+  type: time_table
+  contents:
+    - title: Tohtorin tutkinto
+      institution: Zürichin yliopisto, Zürich, Sveitsi
+      year: 1905
+      description:
+        - Kuvaus 1.
+        - Kuvaus 2.
+        - title: Kuvaus 3.
+          contents:
+            - Alakuvaus 1.
+            - Alakuvaus 2.
+    - title: Liittovaltion opetustutkinto
+      institution: Eidgenössische Technische Hochschule, Zürich, Sveitsi
+      year: 1900
+      description:
+        - Kuvaus 1.
+        - Kuvaus 2.
+
+- title: Työkokemus
+  type: time_table
+  contents:
+    - title: Teoreettisen fysiikan professori
+      institution: Institute for Advanced Study, Princetonin yliopisto
+      year: 1933 - 1955
+      description:
+        - Kuvaus 1.
+        - Kuvaus 2.
+        - title: Kuvaus 3.
+          contents:
+            - Alakuvaus 1.
+            - Alakuvaus 2.
+    - title: Vieraileva professori
+      institution: Kalifornian teknillinen korkeakoulu, Pasadena, Kalifornia, USA
+      year: 1933
+      description:
+        - Kuvaus 1.
+        - Kuvaus 2.
+
+    - title: Johtaja
+      institution: Kaiser Wilhelm -instituutti fysiikalle, Berliini, Saksa.
+      year: 1917-1933
+
+    - title: Teoreettisen fysiikan professori
+      institution: Karl-Ferdinandin yliopisto, Praha, Tšekkoslovakia
+      year: 1911 - 1917
+      description:
+
+    - title: Teoreettisen fysiikan apulaisprofessori
+      institution: Zürichin yliopisto, Zürich, Sveitsi
+      year: 1909 - 1911
+
+- title: Avoimen lähdekoodin projektit
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>
+      year: 2023-nykyään
+      description: Al-folio-teeman haaraversio monikielituen kanssa.
+
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-nykyään
+      description: Kaunis, yksinkertainen, selkeä ja responsiivinen Jekyll-teema akateemikoille.
+
+- title: Kunnianosoitukset ja palkinnot
+  type: time_table
+  contents:
+    - year: 1921
+      items:
+        - Nobelin fysiikanpalkinto
+        - Matteucci-mitali
+    - year: 2029
+      items:
+        - Max Planck -mitali
+
+- title: Akateemiset kiinnostuksen kohteet
+  type: nested_list
+  contents:
+    - title: Aihe 1.
+      items:
+        - Kuvaus 1.
+        - Kuvaus 2.
+    - title: Aihe 2.
+      items:
+        - Kuvaus 1.
+        - Kuvaus 2.
+
+- title: Muut kiinnostuksen kohteet
+  type: list
+  contents:
+    - <u>Harrastukset:</u> Harrastus 1, Harrastus 2, jne.

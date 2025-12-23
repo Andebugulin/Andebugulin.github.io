@@ -1,0 +1,164 @@
+archive:
+  prefix: ein Archiv von
+  category_suffix: in dieser Kategorie
+  tag_suffix: mit diesem Tag
+  year_suffix: aus diesem Jahr
+bibliography:
+  abstract: Abstract
+  awarded: Ausgezeichnet
+  blog: Blog
+  book_prefix: In
+  code: Code
+  last_author_prefix: und
+  poster: Poster
+  slides: Folien
+  supp: Anhang
+  video: Video
+  website: Website
+blog:
+  navigation_title: blog
+categories:
+  fun: spaß
+  work: arbeit
+citation:
+  bibtex: "oder als BibTeX-Eintrag:"
+  introduction: "Falls Sie das nützlich fanden, zitieren Sie es bitte so:"
+collections:
+  books: bücher
+  posts: beiträge
+contact_note: kontaktieren Sie mich per E-Mail oder über soziale Medien
+cv:
+  address: Adresse
+  area: Bereich
+  awarder: Verleiher
+  awards: Auszeichnungen
+  basics: Allgemeine Informationen
+  certificates: Zertifikate
+  city: Stadt
+  countryCode: Ländercode
+  courses: Kurse
+  date: Datum
+  education: Bildung
+  email: E-Mail
+  endDate: Enddatum
+  fluency: Sprachkenntnisse
+  highlights: Höhepunkte
+  image: Bild
+  institution: Institution
+  interests: Interessen
+  issuer: Aussteller
+  keywords: Schlagwörter
+  label: Bezeichnung
+  language: Sprache
+  languages: Sprachen
+  level: Niveau
+  location: Ort
+  name: Name
+  network: Netzwerk
+  organization: Organisation
+  phone: Telefon
+  position: Position
+  postalCode: Postleitzahl
+  present: Gegenwart
+  profiles: Profile
+  projects: Projekte
+  publications: Publikationen
+  publisher: Verlag
+  reference: Referenz
+  references: Referenzen
+  region: Region
+  releaseDate: Veröffentlichungsdatum
+  score: Bewertung
+  skills: Fähigkeiten
+  startDate: Startdatum
+  studyType: Studienrichtung
+  summary: Zusammenfassung
+  table_of_contents: Inhaltsverzeichnis
+  title: Titel
+  url: URL
+  username: Benutzername
+  volunteer: Ehrenamt
+  work: Arbeit
+footer:
+  copyright: Urheberrecht
+  last_updated: "Zuletzt aktualisiert:"
+footer_text: > # the ">" symbol means to ignore newlines until "titles:"
+  Unterstützt von <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> mit <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a> Theme.
+  Gehostet von <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Fotos von <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+latest_posts: neueste Beiträge
+months:
+  long:
+    january: Januar
+    february: Februar
+    march: März
+    april: April
+    may: Mai
+    june: Juni
+    july: Juli
+    august: August
+    september: September
+    october: Oktober
+    november: November
+    december: Dezember
+  short:
+    january: Jan
+    february: Feb
+    march: Mär
+    april: Apr
+    may: Mai
+    june: Jun
+    july: Jul
+    august: Aug
+    september: Sep
+    october: Okt
+    november: Nov
+    december: Dez
+news: nachrichten
+newsletter:
+  back: Zurück
+  error: "Ups! Etwas ist schief gelaufen, bitte versuchen Sie es erneut."
+  subscribe: abonnieren
+  subscribed: "Sie haben den Newsletter erfolgreich abonniert."
+  subscribe_to_receive: "Abonnieren Sie, um über neue Artikel benachrichtigt zu werden:"
+  too_many_signups: "Zu viele Anmeldungen, bitte versuchen Sie es in Kürze erneut"
+  wait: "Bitte warten..."
+no_news: Bisher keine Nachrichten...
+no_posts: "Bisher keine Beiträge..."
+pagination:
+  page: Seite
+post:
+  created_in: Erstellt am
+  created_by: von
+  last_updated: zuletzt aktualisiert am
+references: Referenzen
+related_posts:
+  description: "Hier sind weitere Artikel, die Sie interessieren könnten:"
+  title: Hat Ihnen dieser Artikel gefallen?
+search:
+  dark_theme:
+    description: Das Theme der Website auf Dunkel ändern
+    title: Theme zu Dunkel wechseln
+  dropdown: Dropdown
+  email: E-Mail senden
+  footer:
+    close: zum Schließen
+    navigate: zum Navigieren
+    parent: zur übergeordneten Ebene
+    select: zum Auswählen
+  languages: Sprachen
+  light_theme:
+    description: Das Theme der Website auf Hell ändern
+    title: Theme zu Hell wechseln
+  navigation: Navigationsmenü
+  news: Nachrichten
+  placeholder: Tippen Sie, um die Suche zu starten
+  posts: Beiträge
+  projects: Projekte
+  socials: Soziale Medien
+  system_theme:
+    description: Das Theme der Website auf Systemstandard ändern
+    title: System-Standard-Theme verwenden
+  theme: Theme
+selected_publications: ausgewählte Publikationen
+site_description: Ein einfaches, minimalistisches Theme für Akademiker. Basiert auf dem [*folio](https://github.com/bogoli/-folio) Design.
