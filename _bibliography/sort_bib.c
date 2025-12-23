@@ -5,6 +5,10 @@
 
 #define MAX_ENTRIES 2000
 
+// Cloudinary optimization settings - adjust these as needed
+#define IMAGE_WIDTH 1000
+#define IMAGE_FORMAT "auto"  // auto, jpg, png, webp, etc.
+
 typedef struct {
     char *raw;
     int year, month, day;
@@ -27,13 +31,45 @@ void parse_date(const char *e, Entry *out) {
     if (d) out->day   = extract_int(d + 5);
 }
 
-int cmp_desc(const void *a, const void *b) {
-    const Entry *x = a;
-    const Entry *y = b;
+void optimize_preview_url(char *raw) {
+    char *p = strstr(raw, "preview={");
+    if (!p) return;
 
-    if (x->year  != y->year)  return y->year  - x->year;
-    if (x->month != y->month) return y->month - x->month;
-    return y->day - x->day;
+    char *end = strchr(p, '}');
+    if (!end) return;
+
+    // Find "/upload/" within the preview URL
+    char *upload = strstr(p, "/upload/");
+    if (!upload || upload >= end) return;
+
+    // Check if optimization exists and remove it
+    char *existing_opt = strstr(upload, "/w_");
+    if (existing_opt && existing_opt < end) {
+        // Find the end of the optimization string (next '/')
+        char *opt_end = strchr(existing_opt + 1, '/');
+        if (opt_end && opt_end < end) {
+            // Remove old optimization by shifting text
+            size_t opt_len = opt_end - existing_opt;
+            memmove(existing_opt, opt_end, strlen(opt_end) + 1);
+            end -= opt_len; // Adjust end pointer
+        }
+    }
+
+    upload = strstr(p, "/upload/"); // Re-find after potential removal
+    if (!upload || upload >= end) return;
+    upload += 7; // Move past "/upload"
+    
+    // Build the optimization string from variables
+    char to_insert[128];
+    snprintf(to_insert, sizeof(to_insert), "/w_%d,f_%s", IMAGE_WIDTH, IMAGE_FORMAT);
+    
+    // Calculate insertion point and tail length
+    size_t insert_len = strlen(to_insert);
+    size_t tail_len = strlen(upload);
+
+    // Make room for the optimization string
+    memmove(upload + insert_len, upload, tail_len + 1); // +1 for '\0'
+    memcpy(upload, to_insert, insert_len);
 }
 
 char *read_block(FILE *f, char *first_line) {
@@ -51,12 +87,24 @@ char *read_block(FILE *f, char *first_line) {
         len += l;
         buf[len] = '\0';
 
-        if (strchr(first_line, '}') && first_line[0] == '}')
+        // Check if this line closes the entry (starts with })
+        if (first_line[0] == '}') {
             break;
+        }
 
     } while (fgets(first_line, 1024, f));
 
+    optimize_preview_url(buf);
     return buf;
+}
+
+int cmp_desc(const void *a, const void *b) {
+    const Entry *x = a;
+    const Entry *y = b;
+
+    if (x->year  != y->year)  return y->year  - x->year;
+    if (x->month != y->month) return y->month - x->month;
+    return y->day - x->day;
 }
 
 int main(void) {
