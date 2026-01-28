@@ -139,6 +139,11 @@ ninja.data = [{
           description: "Минималистичная система управления знаниями на основе графов, вдохновленная методологией Zettelkasten. Визуализируй и соединяй свои мысли в интерактивной сети.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/12_project/";
+            },},{id: "projects-wordor",
+          title: 'Wordor',
+          description: "Улучшенный переводчик с алгоритмом интервальных повторений для мгновенного запоминания переводов.",
+          section: "Проекты",handler: () => {
+              window.location.href = "/ru/projects/ru/13_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "Инновационная платформа для управления повседневными задачами и активностями.",

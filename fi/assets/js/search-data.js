@@ -139,6 +139,11 @@ ninja.data = [{
           description: "Minimalistinen graafipohjainen tiedonhallintajärjestelmä Zettelkasten-metodologiasta inspiroituneena. Visualisoi ja yhdistä ajatuksesi interaktiivisessa verkostossa.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/12_project/";
+            },},{id: "projects-wordor",
+          title: 'Wordor',
+          description: "Tehostettu kääntäjä hajautetun kertauksen algoritmilla käännösten välittömään oppimiseen.",
+          section: "Projektit",handler: () => {
+              window.location.href = "/fi/projects/fi/13_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "Innovatiivinen alusta päivittäisten tehtävien ja aktiviteettien hallintaan.",

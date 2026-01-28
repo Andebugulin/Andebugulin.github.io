@@ -139,6 +139,11 @@ ninja.data = [{
           description: "Minimalistisches graph-basiertes Wissensmanagementsystem inspiriert von Zettelkasten. Visualisiere und vernetze deine Gedanken interaktiv.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/12_project/";
+            },},{id: "projects-wordor",
+          title: 'Wordor',
+          description: "Erweiterter Übersetzer mit Spaced-Repetition-Algorithmus, um Übersetzungen sofort zu lernen.",
+          section: "Projekte",handler: () => {
+              window.location.href = "/de-ge/projects/de-ge/13_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "Eine innovative Plattform zur Verwaltung täglicher Aufgaben und Aktivitäten.",

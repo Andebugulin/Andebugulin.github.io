@@ -139,6 +139,11 @@ ninja.data = [{
           description: "Minimalist graph-based knowledge management system inspired by Zettelkasten. Visualize and connect your thoughts in an interactive network.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/12_project/";
+            },},{id: "projects-wordor",
+          title: 'Wordor',
+          description: "Boosted translator with spaced repetition algorithm to help you learn translations instantly.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/en-us/13_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "An innovative platform for managing daily tasks and activities.",
