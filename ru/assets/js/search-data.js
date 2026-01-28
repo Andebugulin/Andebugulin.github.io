@@ -144,6 +144,11 @@ ninja.data = [{
           description: "Улучшенный переводчик с алгоритмом интервальных повторений для мгновенного запоминания переводов.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/13_project/";
+            },},{id: "projects-guardian",
+          title: 'Guardian',
+          description: "Android приложение для продуктивности с блокировкой приложений через NFC.",
+          section: "Проекты",handler: () => {
+              window.location.href = "/ru/projects/ru/14_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "Инновационная платформа для управления повседневными задачами и активностями.",

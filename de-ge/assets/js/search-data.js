@@ -144,6 +144,11 @@ ninja.data = [{
           description: "Erweiterter Übersetzer mit Spaced-Repetition-Algorithmus, um Übersetzungen sofort zu lernen.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/13_project/";
+            },},{id: "projects-guardian",
+          title: 'Guardian',
+          description: "Android app for focused productivity using NFC-controlled app blocking and scheduled modes.",
+          section: "Projekte",handler: () => {
+              window.location.href = "/de-ge/projects/en-us/14_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "Eine innovative Plattform zur Verwaltung täglicher Aufgaben und Aktivitäten.",

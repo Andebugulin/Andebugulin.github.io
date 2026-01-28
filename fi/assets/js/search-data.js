@@ -144,6 +144,11 @@ ninja.data = [{
           description: "Tehostettu kääntäjä hajautetun kertauksen algoritmilla käännösten välittömään oppimiseen.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/13_project/";
+            },},{id: "projects-guardian",
+          title: 'Guardian',
+          description: "Android-sovellus keskittymiseen NFC-ohjatulla sovellusten estolla.",
+          section: "Projektit",handler: () => {
+              window.location.href = "/fi/projects/fi/14_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "Innovatiivinen alusta päivittäisten tehtävien ja aktiviteettien hallintaan.",

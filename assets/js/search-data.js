@@ -144,6 +144,11 @@ ninja.data = [{
           description: "Boosted translator with spaced repetition algorithm to help you learn translations instantly.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/13_project/";
+            },},{id: "projects-guardian",
+          title: 'Guardian',
+          description: "Android app for focused productivity using NFC-controlled app blocking and scheduled modes.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/en-us/14_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "An innovative platform for managing daily tasks and activities.",
