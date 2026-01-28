@@ -2,7 +2,7 @@
 layout: page
 title: Guardian
 description: Android app for focused productivity using NFC-controlled app blocking and scheduled modes.
-img: assets/img/Guardian.png
+img: assets/img/guardian.png
 importance: 2
 category: productivity
 ---

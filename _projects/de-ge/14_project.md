@@ -2,7 +2,7 @@
 layout: page
 title: Guardian
 description: Android-App für fokussierte Produktivität durch NFC-gesteuerte App-Sperrung.
-img: assets/img/Guardian.png
+img: assets/img/guardian.png
 importance: 2
 category: productivity
 lang: de

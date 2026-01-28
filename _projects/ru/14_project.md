@@ -2,7 +2,7 @@
 layout: page
 title: Guardian
 description: Android приложение для продуктивности с блокировкой приложений через NFC.
-img: assets/img/Guardian.png
+img: assets/img/guardian.png
 importance: 2
 category: productivity
 lang: ru

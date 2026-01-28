@@ -2,7 +2,7 @@
 layout: page
 title: Guardian
 description: Android-sovellus keskittymiseen NFC-ohjatulla sovellusten estolla.
-img: assets/img/Guardian.png
+img: assets/img/guardian.png
 importance: 2
 category: productivity
 lang: fi
