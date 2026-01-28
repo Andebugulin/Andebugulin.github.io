@@ -4,7 +4,7 @@ title: Wordor
 description: Erweiterter Übersetzer mit Spaced-Repetition-Algorithmus, um Übersetzungen sofort zu lernen.
 img: assets/img/wordor.png
 importance: 2
-category: Sprachenlernen
+category: productivity 
 ---
 
 ## `Wordor` - Intelligenter Übersetzer mit integriertem Lernsystem

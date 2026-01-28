@@ -4,7 +4,7 @@ title: Wordor
 description: Улучшенный переводчик с алгоритмом интервальных повторений для мгновенного запоминания переводов.
 img: assets/img/wordor.png
 importance: 2
-category: изучение языков
+category: productivity 
 ---
 
 ## `Wordor` - Умный переводчик со встроенной системой обучения

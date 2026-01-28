@@ -9,7 +9,7 @@ category: productivity
 
 ## `Knowledge Tree` Kn-🦉-⭕-🌳
 
-A minimalist graph-based knowledge management system inspired by Zettelkasten methodology. Visualize and connect your thoughts in an interactive network.
+A minimalist graph-based knowledge management system inspired by Zettelkasten methodology. 
 
 ### `Idea`
 

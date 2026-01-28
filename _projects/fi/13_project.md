@@ -4,7 +4,7 @@ title: Wordor
 description: Tehostettu kääntäjä hajautetun kertauksen algoritmilla käännösten välittömään oppimiseen.
 img: assets/img/wordor.png
 importance: 2
-category: kieltenoppiminen
+category: productivity 
 ---
 
 ## `Wordor` - Älykäs kääntäjä sisäänrakennetulla oppimisella

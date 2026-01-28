@@ -4,7 +4,7 @@ title: Wordor
 description: Boosted translator with spaced repetition algorithm to help you learn translations instantly.
 img: assets/img/wordor.png
 importance: 2
-category: language learning
+category: productivity 
 ---
 
 ## `Wordor` - Smart Translator with Built-in Learning
