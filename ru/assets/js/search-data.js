@@ -134,6 +134,11 @@ ninja.data = [{
           description: "Приложение для осознанного использования экранного времени с постоянным таймером наложения.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/11_project/";
+            },},{id: "projects-knowledge-tree",
+          title: 'Knowledge Tree',
+          description: "Минималистичная система управления знаниями на основе графов, вдохновленная методологией Zettelkasten. Визуализируй и соединяй свои мысли в интерактивной сети.",
+          section: "Проекты",handler: () => {
+              window.location.href = "/ru/projects/ru/12_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "Инновационная платформа для управления повседневными задачами и активностями.",

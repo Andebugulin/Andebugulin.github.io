@@ -134,6 +134,11 @@ ninja.data = [{
           description: "Ruutuajan tietoisuussovellus pysyvällä päällysajastimella tietoista laitteen käyttöä varten.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/11_project/";
+            },},{id: "projects-knowledge-tree",
+          title: 'Knowledge Tree',
+          description: "Minimalistinen graafipohjainen tiedonhallintajärjestelmä Zettelkasten-metodologiasta inspiroituneena. Visualisoi ja yhdistä ajatuksesi interaktiivisessa verkostossa.",
+          section: "Projektit",handler: () => {
+              window.location.href = "/fi/projects/fi/12_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "Innovatiivinen alusta päivittäisten tehtävien ja aktiviteettien hallintaan.",

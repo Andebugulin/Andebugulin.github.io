@@ -134,6 +134,11 @@ ninja.data = [{
           description: "Eine Bildschirmzeit-Bewusstseins-App mit persistentem Overlay-Timer für bewusste Gerätenutzung.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/11_project/";
+            },},{id: "projects-knowledge-tree",
+          title: 'Knowledge Tree',
+          description: "Minimalistisches graph-basiertes Wissensmanagementsystem inspiriert von Zettelkasten. Visualisiere und vernetze deine Gedanken interaktiv.",
+          section: "Projekte",handler: () => {
+              window.location.href = "/de-ge/projects/de-ge/12_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "Eine innovative Plattform zur Verwaltung täglicher Aufgaben und Aktivitäten.",

@@ -134,6 +134,11 @@ ninja.data = [{
           description: "A screen time awareness app with persistent overlay timer for mindful device usage.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/11_project/";
+            },},{id: "projects-knowledge-tree",
+          title: 'Knowledge Tree',
+          description: "Minimalist graph-based knowledge management system inspired by Zettelkasten. Visualize and connect your thoughts in an interactive network.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/en-us/12_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
           description: "An innovative platform for managing daily tasks and activities.",
