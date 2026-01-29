@@ -2,12 +2,12 @@
   "basics": {
     "name": "Andrei Gulin",
     "label": "Разработчик программного обеспечения, Fullstack разработчик",
-    "image": "",
+    "image": "cv_pic.jpg",
     "email": "andreigulin2005@gmail.com",
-
-    "summary": "Я разработчик программного обеспечения, живущий в Финляндии, с огромной страстью к обучению и изучению рабочего мира. Я стремлюсь найти лучшие решения для существующих проблем, используя технологии ИИ для положительного влияния.",    "location": {
+    "summary": "Разработчик программного обеспечения из Финляндии, специализирующийся на создании практичных веб- и мобильных приложений. Я работаю с современными фреймворками и AI-технологиями для создания решений, которые решают проблемы.",
+    "location": {
       "address": "raviradantie 7",
-      "postalCode": "Mikkeli 50100",
+      "postalCode": "50100",
       "city": "Mikkeli",
       "countryCode": "FI",
       "region": "Mikkeli"
@@ -16,12 +16,92 @@
   "work": [
     {
       "name": "Full stack",
-      "position": "Стажировка разработчика программного обеспечения - Mindhive Oy",
+      "position": "Стажер-разработчик программного обеспечения - Mindhive Oy",
       "url": "https://www.mindhive.fi/en/home",
       "startDate": "2024-01-10",
       "endDate": "2024-06-10",
-      "summary": "Я глубоко погружаюсь в создание потрясающих веб-сайтов, от фронтенда до бэкенда, используя React, TypeScript, Next.js и Firebase. Всё направлено на создание плавных, быстрых и безопасных онлайн-впечатлений, которые понравятся людям. Мы использовали Toggle и Clickup для управления задачами.",
-      "highlights": ["Git", "Typescript", "React", "Firebase", "Next.js", "React Native"]
+      "summary": "Разработал адаптивные веб-приложения на React, TypeScript, Next.js и Firebase, обслуживающие 100+ ежедневных пользователей. Создавал кроссплатформенные мобильные приложения с помощью React Native и Flutter. Работал в среде с использованием Toggl и ClickUp для отслеживания проектов.",
+      "highlights": [
+        "Git",
+        "Typescript",
+        "React",
+        "Firebase",
+        "Next.js",
+        "React Native",
+        "Flutter"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Knowledge Tree",
+      "startDate": "2026-01-10",
+      "url": "https://kn-owl-edge-tree.vercel.app/",
+      "github": "https://github.com/Andebugulin/kn-owl-edge-tree",
+      "summary": "Система управления знаниями на основе графов, вдохновленная Zettelkasten. Я хотел простой способ визуализировать и связывать свои мысли без сложных плагинов в редакторе, поэтому я создал эту интерактивную сеть, где каждая заметка становится узлом в вашем графе знаний.",
+      "highlights": ["Next.js 15", "TypeScript", "Sigma.js", "tRPC", "Prisma", "PostgreSQL", "NextAuth.js"]
+    },
+    {
+      "name": "Guardian",
+      "startDate": "2025-09-01",
+      "github": "https://github.com/Andebugulin/guardian",
+      "summary": "Android-приложение для управления фокусировкой через запланированную блокировку приложений и NFC-управление. Идея проста: создайте режим, заблокируйте отвлекающие приложения, при желании привяжите NFC-метку, и вам физически понадобится эта метка для разблокировки. Отлично подходит для сохранения концентрации во время работы или учебы.",
+      "highlights": ["Kotlin", "Jetpack Compose", "NFC интеграция", "Foreground Services", "AlarmManager"]
+    },
+    {
+      "name": "Wordor",
+      "startDate": "2025-12-01",
+      "github": "https://github.com/Andebugulin/wordor",
+      "summary": "Приложение для перевода, которое также является инструментом для изучения лексики. Когда я изучаю языки, я переводил интересные слова, но никогда не помнил добавить их в Anki. С Wordor сам переводчик становится инструментом для обучения с использованием интервального повторения с подсказками на основе AI.",
+      "highlights": ["Flutter", "Drift", "DeepL API", "Gemini API", "Интервальное повторение", "Речь в текст"]
+    },
+    {
+      "name": "Awareen",
+      "startDate": "2025-08-01",
+      "url": "https://play.google.com/store/apps/details?id=com.andebugulin.awareen2",
+      "github": "https://github.com/Andebugulin/awareen",
+      "summary": "Приложение для отслеживания экранного времени, полностью построенное на Kotlin с архитектурой на основе сервисов и настраиваемой обработкой разрешений. Опубликовано как подписанный релиз и собрало более 100 пользователей через каналы распространения.",
+      "highlights": ["Kotlin", "Android Services", "Настраиваемые разрешения"]
+    },
+    {
+      "name": "Ankara",
+      "startDate": "2022-12-01",
+      "endDate": "2025-09-10",
+      "github": "https://github.com/Andebugulin/ankara",
+      "summary": "Улучшенная система флеш-карт с многоязычным преобразованием текста в речь и автоматическим определением языка. Создана для оптимизации изучения 1000+ карт с одновременным сбором данных о поведении пользователей для будущего машинного обучения.",
+      "highlights": ["Python", "Pygame", "TTS", "Конвейер данных"]
+    },
+    {
+      "name": "Morner",
+      "startDate": "2023-11-01",
+      "url": "https://t.me/PlanyDbot",
+      "github": "https://github.com/Andebugulin/morner",
+      "summary": "Бот для управления утренними рутинами в Telegram, который помогает оптимизировать утро для 50+ пользователей. Развернут и управляется в Oracle Cloud с использованием Python и фреймворка Aiogram.",
+      "highlights": ["Python", "Aiogram", "Telegram Bot API", "Oracle Cloud"]
+    },
+    {
+      "name": "Личный портфолио-сайт",
+      "startDate": "2024-01-01",
+      "url": "https://andebugulin.github.io",
+      "github": "https://github.com/Andebugulin/andebugulin.github.io",
+      "summary": "Настроил тему Jekyll с открытым исходным кодом al-folio для создания своего личного портфолио с 2 пользовательскими страницами, расширенной функциональностью и многоязычной поддержкой.",
+      "highlights": ["Jekyll", "Ruby", "HTML/CSS", "JavaScript"]
+    },
+    {
+      "name": "GaleriYah",
+      "startDate": "2024-10-01",
+      "url": "https://galeriyah.netlify.app/",
+      "github": "https://github.com/Andebugulin/galeriyah",
+      "summary": "Авангардное фотографическое портфолио с админ-панелью для более простого управления галереей и бесшовной интеграцией с Flickr и Supabase.",
+      "highlights": ["React", "Supabase", "Flickr API"]
+    },
+    {
+      "name": "ArchBlocker",
+      "startDate": "2025-01-01",
+      "endDate": "2025-02-10",
+      "github": "https://github.com/Andebugulin/archblocker",
+      "summary": "Локальный блокировщик веб-сайтов для Linux, построенный с бэкендом Flask REST API и фронтендом React. Реализует интеграцию с системой Linux с использованием модификации файла hosts и служб systemd.",
+      "highlights": ["Flask", "React", "Linux", "systemd"]
     }
   ],
   "education": [
@@ -31,8 +111,8 @@
       "url": "https://www.xamk.fi/en/frontpage/",
       "area": "Информационные технологии",
       "studyType": "Бакалавр",
-      "startDate": "2022-21-08",
-      "endDate": "2025-21-05"
+      "startDate": "2022-08-21",
+      "endDate": "2025-12-21"
     }
   ],
   "skills": [
@@ -49,12 +129,13 @@
         "<i class=\"fa-brands fa-golang\"></i> Golang",
         "<i class=\"fa-solid fa-cog\"></i> C",
         "<i class=\"fa-brands fa-rust\"></i> Rust",
-        "<i class=\"fa-solid fa-chart-pie\"></i> R"
+        "<i class=\"fa-solid fa-chart-pie\"></i> R",
+        "<i class=\"fa-brands fa-java\"></i> Java/Kotlin"
       ]
     },
     {
       "name": "Фреймворки",
-      "level": "Практикую",
+      "level": "Практикуется",
       "icon": "fa-solid fa-feather-pointed",
       "keywords": [
         "&nbsp;<i class=\"fa-brands fa-react\"></i>&nbsp; React",
@@ -62,24 +143,25 @@
         "&nbsp;<i class=\"fa-solid fa-fire\"></i>&nbsp; Firebase",
         "&nbsp;<i class=\"fa-brands fa-node-js\"></i>&nbsp; Node.js",
         "&nbsp;<i class=\"fa-solid fa-flask\"></i>&nbsp; Flask",
-        "&nbsp;<i class=\"fa-solid fa-angles-left\"></i>&nbsp; Flutter"
+        "&nbsp;<i class=\"fa-solid fa-angles-left\"></i>&nbsp; Flutter",
+        "&nbsp;<i class=\"fa-solid fa-wind\"></i>&nbsp; Jetpack Compose"
       ]
     },
     {
       "name": "Инструменты",
-      "level": "Использую часто",
+      "level": "Часто используется",
       "icon": "fa-solid fa-wrench",
       "keywords": [
         "<i class=\"fa-brands fa-git\"></i>&nbsp; Git",
         "<i class=\"fa-solid fa-bolt\"></i>&nbsp; Babel",
         "<i class=\"fa-brands fa-docker\"></i>&nbsp;Docker",
         "<i class=\"fa-solid fa-kiwi-bird\"></i>&nbsp; Linux",
-        "<i class=\"fa-brands fa-aws\"></i> AWS services"
+        "<i class=\"fa-brands fa-aws\"></i> Сервисы AWS"
       ]
     },
     {
       "name": "Базы данных",
-      "level": "Использую часто",
+      "level": "Часто используется",
       "icon": "fa-solid fa-database",
       "keywords": [
         "&nbsp;<i class=\"fa-brands fa-gripfire\"></i>&nbsp; Firestore",
@@ -90,12 +172,12 @@
         "&nbsp;<i class=\"fa-solid fa-diamond\"></i>&nbsp;SQLite",
         "&nbsp;<i class=\"fa-solid fa-rocket\"></i>&nbsp;MySQL",
         "&nbsp;<i class=\"fa-solid fa-globe\"></i>&nbsp;MariaDB"
-              ]
+      ]
     }
   ],
   "languages": [
     {
-      "language": "Русский ",
+      "language": "Русский",
       "fluency": "Родной язык",
       "icon": ""
     },
@@ -127,7 +209,7 @@
       "name": "Фотография <i class=\"fa-solid fa-camera-retro\"></i>"
     },
     {
-      "name": "Фильмы <i class=\"fa-solid fa-film\"></i>"
+      "name": "Кино <i class=\"fa-solid fa-film\"></i>"
     },
     {
       "name": "Музыка <i class=\"fa-solid fa-headphones\"></i>"

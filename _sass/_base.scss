@@ -503,37 +503,376 @@ footer.sticky-bottom {
     text-align: center;
   }
 }
-
-// CV
-
+// CV - Perfected Professional Minimal Design
 .cv {
-  margin-bottom: 40px;
-
-  .card {
-    a {
-      &:hover{
-        color: pink;
-      };
-    }
-    background-color: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
-    .location {
-      color: var(--global-cv-text); // text in the cv in the certificates, for instance.
-    }
-
-    .list-group-name {
-      color: var(--global-cv-text);
+  max-width: 900px;
+  margin: 0 auto 40px;
+  
+  // Hero section at the top
+  .cv-hero {
+    text-align: center;
+    padding: 3rem 0 4rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    margin-bottom: 4rem;
+    
+    .cv-name {
+      font-size: 3rem;
+      font-weight: 300;
+      margin: 0 0 1rem 0;
+      color: var(--global-text-color);
+      letter-spacing: -1.5px;
     }
     
+    .cv-role {
+      font-size: 1.3rem;
+      color: var(--global-theme-color);
+      font-weight: 400;
+      margin: 0 0 2rem 0;
+      letter-spacing: 0.5px;
+    }
+    
+    .cv-summary {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--global-text-color-light);
+      margin: 0 auto 2.5rem;
+      max-width: 700px;
+    }
+    
+    .cv-contact-grid {
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      
+      .cv-contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        color: var(--global-text-color);
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: color 0.2s ease;
+        
+        i {
+          color: var(--global-theme-color);
+          font-size: 1.1rem;
+        }
+        
+        &:hover {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+
+  .card {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 4rem;
+    
+    .card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--global-text-color-light);
+      margin-bottom: 2rem;
+      padding-bottom: 0;
+      border-bottom: none;
+      width: fit-content;
+      
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--global-theme-color);
+        margin-top: 0.75rem;
+      }
+    }
+    
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
 
     .list-group-item {
-      background-color: inherit;
-      border-color: var(--global-divider-color);
+      background-color: transparent;
+      border: none;
+      padding: 2rem 0;
+      border-bottom: 1px solid rgba(var(--global-divider-color-rgb), 0.15);
       
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      
+      &:first-child {
+        padding-top: 0;
+      }
+      
+      .row {
+        align-items: flex-start;
+      }
+      
+      .title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+        color: var(--global-text-color);
+        letter-spacing: -0.3px;
+        
+        a {
+          font-weight: 600;
+          color: var(--global-text-color);
+          
+          &:hover {
+            color: var(--global-theme-color);
+          }
+        }
+        
+        .project-links {
+          margin-left: 0.5rem;
+          font-size: 0.9rem;
+          
+          a {
+            color: var(--global-text-color-light);
+            margin: 0 0.3rem;
+            transition: color 0.2s ease;
+            
+            &:hover {
+              color: var(--global-theme-color);
+            }
+            
+            i {
+              font-size: 0.95rem;
+            }
+          }
+        }
+      }
+      
+      h6:not(.title) {
+        font-weight: 400;
+        color: var(--global-text-color-light);
+        line-height: 1.7;
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+      }
 
       .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
+        background-color: transparent !important;
+        color: var(--global-theme-color) !important;
+        border: 1px solid var(--global-theme-color) !important;
+        padding: 0.4rem 0.9rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        
+        // Hide empty badges
+        &:empty {
+          display: none;
+        }
+      }
+      
+      .location {
+        color: var(--global-text-color-light);
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        font-style: normal;
+        
+        .iconlocation {
+          color: var(--global-theme-color);
+          font-size: 0.9rem;
+          margin-right: 0.3rem;
+        }
+      }
+      
+      .items {
+        margin-top: 1rem;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        
+        li {
+          margin-bottom: 0;
+          background: var(--global-bg-color);
+          border: 1px solid var(--global-divider-color);
+          padding: 0.4rem 0.9rem;
+          border-radius: 3px;
+          font-size: 0.85rem;
+          color: var(--global-text-color);
+          transition: all 0.2s ease;
+          
+          &:hover {
+            border-color: var(--global-theme-color);
+            color: var(--global-theme-color);
+          }
+          
+          &::marker {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  
+  // Projects - distinct styling
+  .projects-section {
+    .list-group-item {
+      padding: 1.8rem 1.5rem;
+      background: rgba(var(--global-theme-color-rgb), 0.02);
+      border: 1px solid rgba(var(--global-divider-color-rgb), 0.2);
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(var(--global-divider-color-rgb), 0.2) !important;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: rgba(var(--global-theme-color-rgb), 0.05);
+        border-color: var(--global-theme-color);
+        transform: translateX(4px);
+      }
+      
+      .row {
+        display: block !important;
+      }
+      
+      .title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+        color: var(--global-theme-color);
+        letter-spacing: -0.5px;
+        
+        a {
+          color: var(--global-theme-color);
+          font-weight: 600;
+          
+          &:hover {
+            text-decoration: none;
+            opacity: 0.8;
+          }
+        }
+        
+        .project-links {
+          margin-left: 0.5rem;
+          font-size: 1rem;
+          
+          a {
+            color: var(--global-text-color-light);
+            margin: 0 0.35rem;
+            transition: color 0.2s ease;
+            
+            &:hover {
+              color: var(--global-theme-color);
+            }
+            
+            i {
+              font-size: 1.05rem;
+            }
+          }
+        }
+      }
+      
+      h6:not(.title) {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        font-style: normal;
+        color: var(--global-text-color);
+      }
+      
+      .items {
+        margin-top: 1rem;
+        
+        li {
+          background: transparent;
+          border: 1px solid rgba(var(--global-theme-color-rgb), 0.25);
+          color: var(--global-text-color-light);
+          font-size: 0.78rem;
+          padding: 0.35rem 0.75rem;
+          font-weight: 500;
+          
+          &:hover {
+            background: rgba(var(--global-theme-color-rgb), 0.08);
+            border-color: var(--global-theme-color);
+            color: var(--global-theme-color);
+            transform: translateY(-1px);
+          }
+        }
+      }
+    }
+  }
+  
+  // List groups (for skills, languages, interests)
+  .list-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    
+    .list-group {
+      background-color: transparent;
+      
+      .list-group-table {
+        width: 100%;
+        border: 1px solid var(--global-divider-color);
+        border-radius: 4px;
+        overflow: hidden;
+        
+        tbody {
+          border: none;
+        }
+        
+        tr:first-child {
+          background: transparent;
+        }
+        
+        .list-group-category {
+          font-size: 1rem;
+          font-weight: 600;
+          color: var(--global-text-color);
+          padding: 1rem 1.2rem;
+          border-bottom: 1px solid var(--global-theme-color);
+          letter-spacing: -0.2px;
+        }
+        
+        .list-group-category-icon {
+          width: 35px;
+          padding: 1rem 0 1rem 1.2rem;
+          border-bottom: 1px solid var(--global-theme-color);
+          
+          i {
+            color: var(--global-theme-color);
+            font-size: 1.2rem;
+          }
+        }
+        
+        .list-group-name {
+          color: var(--global-text-color);
+          font-weight: 400;
+          padding: 0.75rem 1.2rem;
+          font-size: 0.95rem;
+          line-height: 1.6;
+          border-bottom: 1px solid rgba(var(--global-divider-color-rgb), 0.3);
+          
+          &:last-child {
+            border-bottom: none;
+          }
+          
+          b {
+            font-weight: 500;
+          }
+        }
       }
     }
   }
@@ -542,14 +881,47 @@ footer.sticky-bottom {
 .table-cv-map {
   background-color: transparent;
   border: none;
-  color: var(--global-text-color);
+  width: 100%;
+  
+  tr {
+    border-bottom: 1px solid rgba(var(--global-divider-color-rgb), 0.3);
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  td {
+    color: var(--global-text-color);
+    padding: 0.8rem 0;
+    
+    &:first-child {
+      width: 120px;
+      font-weight: 500;
+      color: var(--global-text-color-light);
+      font-size: 0.85rem;
+      padding-right: 1rem;
+    }
+    
+    &:last-child {
+      font-weight: 400;
+    }
+    
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+      
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
 }
 
 .date-column {
-  width: 75px;
-  transform: translateX(-15px) translateY(-5px);
+  width: 95px;
+  flex-shrink: 0;
 }
-
 // Repositories
 
 @media (min-width: 768px) {
