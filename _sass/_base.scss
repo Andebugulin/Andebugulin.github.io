@@ -670,37 +670,57 @@ footer.sticky-bottom {
 
 .projects {
   a {
-
-    &:hover{
-      .card-title{
+    &:hover {
+      .card-title {
         color: rgb(143, 155, 7);
       }
     }
     .card {
-      img {
-        width: 100%;
-      }
-      .card-text{
-        color: var(--global-card-text-color-dimmed);
-      }
-    }
-  
-    .card-item {
-      width: auto;
-      margin-bottom: 10px;
-  
-      .row {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      
+      figure {
+        height: 200px;
+        overflow: hidden;
         display: flex;
         align-items: center;
+        justify-content: center;
+        background: #000; // or any background color you want
+        
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; // This crops images nicely to fill the space
+        }
       }
-    
-  }
+      
+      .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .card-text {
+        color: var(--global-card-text-color-dimmed);
+        flex-grow: 1;
+      }
+    }
   }
 
-  .grid-sizer,
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .grid-sizer {
+    display: none;
+  }
+
   .grid-item {
     width: 250px;
-    margin-bottom: 10px;
   }
 
   h2.category {
