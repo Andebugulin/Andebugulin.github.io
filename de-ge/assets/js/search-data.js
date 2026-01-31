@@ -215,7 +215,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Soziale Medien',
         handler: () => {
-          window.open("https://www.linkedin.com/in/andrei-gulinyo", "_blank");
+          window.open("https://www.linkedin.com/in/andrei-gulin", "_blank");
         },
       },{
           id: 'lang-en-us',
