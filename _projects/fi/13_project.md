@@ -43,6 +43,20 @@ Rakennettu `Flutterilla` alustarajat ylittävään Android-tukeen. Käyttää `R
     </div>
 </details>
 
+#### Teeman mukauttaminen
+
+<details>
+    <summary>Nauti eri teemoista</summary>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/wordor_theme.png" title="Word Theme" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/wordor_palettes.png" title="Word Theme palettes" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
+</details>
+
 
 ### `Toiminta`
 

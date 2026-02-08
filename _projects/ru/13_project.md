@@ -54,6 +54,21 @@ category: productivity
     </div>
 </details>
 
+#### Настройка темы
+
+<details>
+    <summary>Наслаждайтесь разными темами</summary>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/wordor_theme.png" title="Word Theme" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/wordor_palettes.png" title="Word Theme palettes" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
+</details>
+
+
 ### `Как это работает`
 
 Введите слово или используйте голосовой ввод. Выберите исходный и целевой языки из недавно использованных пар. Получите мгновенный перевод от DeepL и сохраните стоящие запоминания слова одним касанием. Повторяйте слова по расписанию через интервалы, адаптирующиеся к вашим результатам.

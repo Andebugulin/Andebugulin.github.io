@@ -54,6 +54,20 @@ Built with `Flutter` for cross-platform Android support. Uses `Riverpod` for sta
     </div>
 </details>
 
+#### Theme customization 
+
+<details>
+    <summary>Enjoy different themes</summary>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/wordor_theme.png" title="Word Theme" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/wordor_palettes.png" title="Word Theme palettes" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
+</details>
+
 ### `How It Works`
 
 Type or speak your word using voice input. Select source and target languages from your recently used pairs. Get instant translation from DeepL and save words worth remembering with one tap. Review due words through spaced repetition intervals that adapt to your performance.

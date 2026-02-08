@@ -43,6 +43,20 @@ Entwickelt mit `Flutter` für plattformübergreifende Android-Unterstützung. Ve
     </div>
 </details>
 
+#### Theme-Anpassung
+
+<details>
+    <summary>Verschiedene Themes genießen</summary>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/wordor_theme.png" title="Word Theme" class="img-fluid rounded z-depth-1" %}
+        </div>
+        <div class="col-sm-6">
+            {% include figure.liquid path="assets/img/wordor_palettes.png" title="Word Theme palettes" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
+</details>
+
 
 ### `Funktionsweise`
 
