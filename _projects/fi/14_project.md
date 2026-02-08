@@ -57,6 +57,11 @@ Rakennettu `Kotlin`-kielellä ja `Jetpack Compose`-kirjastolla. Käyttää `Kotl
             {% include figure.liquid path="assets/img/guardian_nfc.png" title="NFC-Tunnisteet" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-6 mt-3">
+            {% include figure.liquid path="assets/img/guardian_info.png" title="NFC Info" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
 </details>
 
 ### `Vaatimukset`

@@ -57,6 +57,11 @@ Entwickelt mit `Kotlin` und `Jetpack Compose`. Nutzt `Kotlin Coroutines` für as
             {% include figure.liquid path="assets/img/guardian_nfc.png" title="NFC-Tags" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-6 mt-3">
+            {% include figure.liquid path="assets/img/guardian_info.png" title="NFC Info" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
 </details>
 
 ### `Anforderungen`
