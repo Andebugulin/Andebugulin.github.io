@@ -136,7 +136,7 @@ ninja.data = [{
               window.location.href = "/ru/projects/ru/11_project/";
             },},{id: "projects-knowledge-tree",
           title: 'Knowledge Tree',
-          description: "Минималистичная система управления знаниями на основе графов, вдохновленная методологией Zettelkasten. Визуализируй и соединяй свои мысли в интерактивной сети.",
+          description: "Минималистичная система управления знаниями на основе графов, вдохновлённая методологией Zettelkasten. Визуализируйте и связывайте мысли в интерактивной сети — полностью управляемой с клавиатуры.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/12_project/";
             },},{id: "projects-wordor",

@@ -136,7 +136,7 @@ ninja.data = [{
               window.location.href = "/de-ge/projects/de-ge/11_project/";
             },},{id: "projects-knowledge-tree",
           title: 'Knowledge Tree',
-          description: "Minimalistisches graph-basiertes Wissensmanagementsystem inspiriert von Zettelkasten. Visualisiere und vernetze deine Gedanken interaktiv.",
+          description: "Minimalistisches graphbasiertes Wissensmanagementsystem inspiriert von Zettelkasten. Visualisiere und verknüpfe Gedanken in einem interaktiven Netzwerk – vollständig tastaturgesteuert.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/12_project/";
             },},{id: "projects-wordor",

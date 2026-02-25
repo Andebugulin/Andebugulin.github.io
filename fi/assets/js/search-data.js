@@ -136,7 +136,7 @@ ninja.data = [{
               window.location.href = "/fi/projects/fi/11_project/";
             },},{id: "projects-knowledge-tree",
           title: 'Knowledge Tree',
-          description: "Minimalistinen graafipohjainen tiedonhallintajärjestelmä Zettelkasten-metodologiasta inspiroituneena. Visualisoi ja yhdistä ajatuksesi interaktiivisessa verkostossa.",
+          description: "Minimalistinen graafipohjainen tiedonhallintajärjestelmä Zettelkasten-metodologiasta inspiroituneena. Visualisoi ja yhdistä ajatuksesi interaktiivisessa verkostossa – täysin näppäimistöllä ohjattuna.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/12_project/";
             },},{id: "projects-wordor",
