@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Wordor
-description: Tehostettu kääntäjä hajautetun kertauksen algoritmilla käännösten välittömään oppimiseen.
+description: "Kääntäjä, joka tekee jokaisesta hausta sanakortin ja tuo sen takaisin kertausjärjestelmällä."
 img: assets/img/wordor.png
 importance: 2
 category: productivity 
+year: 2026
+stack: Flutter · Drift · DeepL
 ---
 
 ## `Wordor` - Älykäs kääntäjä sisäänrakennetulla oppimisella

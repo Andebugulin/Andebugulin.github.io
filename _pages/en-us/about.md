@@ -3,38 +3,15 @@ page_id: about
 layout: about
 title: about
 permalink: /
-subtitle: 
-
+hero:
+  kicker: Software developer at Mapbox · Helsinki
 profile:
-  align: right
-  image: prof_pic_light.png      # Keep your original light theme image here
+  image: prof_pic_light.png
   image_dark: prof_pic1.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p>I am Andryha</p>
-
-
-news: true # includes a list of news items
-latest_posts: false # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at t
 ---
 
+I design and build focused software: Android apps that give people their attention back, and tools for thinking on the web.
 
-```arduino
-$ whoami
-```
-Software developer based in Finland 🇫🇮
+Since June 2026 I have been at Mapbox in Helsinki, on the Automotive Integration team. On my own time I ship apps: [nfcGuard](/projects/en-us/14_project/) has passed 1,250 users and [Awareen](/projects/en-us/11_project/) 350, all of them organic. I studied IT at XAMK, where my thesis measured [WebAssembly against JavaScript](/thesis/).
 
-I like productivity, open-source, system programming, AI, good music and coffee.
-
-```arduino
-$ vim interests
-```
-
-I run <span style="color:  var(--global-theme-color);">Arch Linux</span>  on a <span style="color:  var(--global-theme-color);"> Hyprland</span> desktop, like a proper guy, I enjoy the concept of customization, and availability, I do all kinds of sports, invested in F1, and I like to learn new things. 
-
-
-
->*"He who asks a question remains a fool for five minutes. He who does not ask remains a fool forever."*
-
+Away from the screen: bouldering, skateboarding and a lot of stretching. Mostly I try to keep things in balance and enjoy the ride.

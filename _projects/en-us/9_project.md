@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Robanization
-description: A challenging 2D platformer game with procedural level generation and dynamic obstacles.
+description: "2D platformer with procedurally generated levels and moving obstacles."
 img: assets/img/robanization.svg
 importance: 1
 category: fun 
+year: 2023
+stack: Python · Pygame
 ---
 
 ## `Robanization`

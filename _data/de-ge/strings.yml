@@ -82,10 +82,7 @@ cv:
 footer:
   copyright: Urheberrecht
   last_updated: "Zuletzt aktualisiert:"
-footer_text: > # the ">" symbol means to ignore newlines until "titles:"
-  Unterstützt von <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> mit <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a> Theme.
-  Gehostet von <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Fotos von <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+footer_text: Helsinki, Finnland. Der Hintergrund wird live in Ihrem Browser gezeichnet.
 latest_posts: neueste Beiträge
 months:
   long:
@@ -161,4 +158,11 @@ search:
     title: System-Standard-Theme verwenden
   theme: Theme
 selected_publications: ausgewählte Publikationen
-site_description: Ein einfaches, minimalistisches Theme für Akademiker. Basiert auf dem [*folio](https://github.com/bogoli/-folio) Design.
+site_description: Andrei Gulin, Softwareentwickler in Helsinki. Android-Apps, Web-Werkzeuge und Experimente.
+home:
+  email: "E-Mail"
+  cv: "Lebenslauf"
+  selected_work: "Ausgewählte Arbeiten"
+  all_projects: "Alle Projekte"
+  contact_kicker: "Kontakt"
+  contact_line: "Sie bauen etwas, das es geben sollte? Ich höre gern davon."

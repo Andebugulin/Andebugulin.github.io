@@ -1,10 +1,12 @@
 ---
 layout: page
 title: HaHaSaaS
-description: Платформа SaaS для обмена шутками, доставляющая юмор по запросу.
+description: "Сервис для обмена шутками: API на Go, фронтенд на React и PostgreSQL, развёртывание через Docker."
 img: assets/img/hahasaas.svg
 importance: 2
 category: uni 
+year: 2025
+stack: Go · React · PostgreSQL
 ---
 
 ## `HaHaSaaS` – Смех в облаке

@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Ankara
-description: Интерактивный инструмент, использующий интервальное повторение и рандомизацию для эффективного изучения словарного запаса.
+description: "Карточки для слов с интервальными повторениями, случайным порядком и озвучкой."
 img: assets/img/ankara.png
 importance: 1
 category: productivity 
+year: 2022
+stack: Python · Pygame
 ---
 
 ## `Ankara` - Улучшенный инструмент для обучения с карточками

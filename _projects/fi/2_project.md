@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Morner Bot
-description: Telegram-botti aamurutiinien seuraamiseen älykellolla puhelimen häiriöiden minimoimiseksi.
+description: "Telegram-botti, joka seuraa aamurutiinia älykellosta, jotta puhelin voi jäädä toiseen huoneeseen."
 img: assets/img/PlaniriumBot.png
 importance: 1
 category: productivity
+year: 2023
+stack: Python · Telegram API
 ---
 
 ## `Morner Bot` - Aamurutiini älykellolla

@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Robanization
-description: Haastava 2D-tasohyppelypeli proseduraalisella tasojen luomisella ja dynaamisilla esteillä.
+description: "2D-tasohyppely proseduraalisesti luoduilla tasoilla ja liikkuvilla esteillä."
 img: assets/img/robanization.svg
 importance: 1
 category: fun
+year: 2023
+stack: Python · Pygame
 ---
 
 ## `Robanization`

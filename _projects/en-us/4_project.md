@@ -1,10 +1,12 @@
 ---
 layout: page
 title: WeatherOrNot
-description: A real-time temperature monitoring system using ESP32, MQTT, and a web application.
+description: "Live room temperature from an ESP32 sensor, streamed over MQTT to a web dashboard."
 img: assets/img/weather_or_not.png
 importance: 1
 category: uni
+year: 2024
+stack: ESP32 · MQTT · TypeScript
 ---
 
 ## `WeatherOrNot` - Real-Time Temperature Monitoring System

@@ -1,0 +1,19 @@
+{% assign project = include.project %}
+<li class="project-row">
+  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+    <span class="project-num">{{ include.number | prepend: '0' | slice: -2, 2 }}</span>
+    <span class="project-thumb">
+      <img src="{{ project.icon | default: project.img | relative_url }}" alt="" loading="lazy" width="64" height="64">
+    </span>
+    <span class="project-main">
+      <span class="project-title">{{ project.title }}</span>
+      <span class="project-desc">{{ project.description }}</span>
+    </span>
+    <span class="project-meta">
+      {% if project.metric %}<span class="project-metric">{{ project.metric }}</span>{% endif %}
+      <span class="project-stack">{{ project.stack }}</span>
+      <span class="project-year">{{ project.year }}</span>
+    </span>
+    <span class="project-arrow" aria-hidden="true">→</span>
+  </a>
+</li>

@@ -1,79 +1,60 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
+{% assign strings = site.data[site.active_lang].strings.home %}
+<div class="home">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">{{ page.hero.kicker }}</p>
+      <h1 class="hero-title">
+        {{ site.first_name }}<br><em>{{ site.last_name }}</em>
+      </h1>
+      <div class="hero-lede">{{ content }}</div>
+      <ul class="hero-links">
+        <li><a href="mailto:{{ site.email }}">{{ strings.email }}</a></li>
+        <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a></li>
+        <li><a href="{{ '/cv/' | relative_url }}">{{ strings.cv }}</a></li>
+      </ul>
+    </div>
+    {% if page.profile.image %}
+      <figure class="hero-portrait">
+        <img
+          class="only-light"
+          src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}"
+          alt="{{ site.first_name }} {{ site.last_name }}"
+          width="480"
+          height="600"
+        >
+        <img
+          class="only-dark"
+          src="{{ page.profile.image_dark | default: page.profile.image | prepend: '/assets/img/' | relative_url }}"
+          alt="{{ site.first_name }} {{ site.last_name }}"
+          width="480"
+          height="600"
+        >
+      </figure>
     {% endif %}
+  </section>
 
-    <div class="clearfix">{{ content }}</div>
+  {% assign featured = site.projects | where_exp: 'p', 'p.featured' | sort: 'featured' %}
+  {% if featured.size > 0 %}
+    <section class="index-section">
+      <header class="section-head">
+        <h2>{{ strings.selected_work }}</h2>
+        <a class="section-link" href="{{ '/projects/' | relative_url }}">{{ strings.all_projects }} →</a>
+      </header>
+      <ol class="project-index">
+        {% for project in featured %}
+          {% include project_row.liquid project=project number=forloop.index %}
+        {% endfor %}
+      </ol>
+    </section>
+  {% endif %}
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.news }}</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.latest_posts }}</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.selected_publications }}</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.data[site.active_lang].strings.contact_note }}</div>
-      </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  <section class="contact-block">
+    <p class="eyebrow">{{ strings.contact_kicker }}</p>
+    <p class="contact-line">{{ strings.contact_line }}</p>
+    <a class="contact-mail" href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </section>
 </div>

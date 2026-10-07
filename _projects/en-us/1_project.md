@@ -1,10 +1,12 @@
 ---
 layout: page
 title: TATASk
-description: An innovative platform for managing daily tasks and activities.
+description: "Task and activity tracker built as a university team project, with statistics on where the week went."
 img: assets/img/wizardTATASK.png
 importance: 1
 category: uni 
+year: 2024
+stack: TypeScript · React · PostgreSQL
 ---
 
 ## `TATASk` - Your Daily Task Management Wizard

@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Morner Bot
-description: Telegram-Bot zur Verfolgung von Morgenroutinen über Smartwatch, um Ablenkungen durch das Telefon zu minimieren.
+description: "Telegram-Bot, der die Morgenroutine über die Smartwatch erfasst, damit das Telefon im anderen Zimmer bleiben kann."
 img: assets/img/PlaniriumBot.png
 importance: 1
 category: productivity
+year: 2023
+stack: Python · Telegram API
 ---
 
 ## `Morner Bot` - Morgenroutine über Smartwatch

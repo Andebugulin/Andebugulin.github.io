@@ -1,10 +1,12 @@
 ---
 layout: page
 title: TATASk
-description: Innovatiivinen alusta päivittäisten tehtävien ja aktiviteettien hallintaan.
+description: "Opintojen tiimiprojektina tehty tehtävä- ja aktiviteettiseuranta, jonka tilastot näyttävät, mihin viikko meni."
 img: assets/img/wizardTATASK.png
 importance: 1
 category: uni
+year: 2024
+stack: TypeScript · React · PostgreSQL
 ---
 ## `TATASk` - Päivittäisten Tehtävien Hallintavelho
 > TATASk yhdistää huipputeknologiat päivittäisten tehtävien ja aktiviteettien hallinnan tehostamiseksi, tarjoten monipuolisen alustan joka parantaa tehokkuutta ja tyylikkyyttä.

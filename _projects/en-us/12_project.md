@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Knowledge Tree
-description: Minimalist graph-based knowledge management system inspired by Zettelkasten. Visualize and connect your thoughts in an interactive network — fully keyboard-driven.
+description: "Notes as a graph, in the spirit of Zettelkasten. Every note is a node you can link, search and navigate by keyboard."
 img: assets/img/knowledge-tree.png
 importance: 1
 category: productivity
+year: 2026
+stack: Next.js · tRPC · Sigma.js
+featured: 3
 ---
 
 ## `Knowledge Tree` Kn-🦉-⭕-🌳

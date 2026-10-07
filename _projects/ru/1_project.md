@@ -1,10 +1,12 @@
 ---
 layout: page
 title: TATASk
-description: Инновационная платформа для управления повседневными задачами и активностями.
+description: "Трекер задач и активностей, сделанный в университетской команде, со статистикой о том, куда ушла неделя."
 img: assets/img/wizardTATASK.png
 importance: 1
 category: uni 
+year: 2024
+stack: TypeScript · React · PostgreSQL
 ---
 
 ## `TATASk` - Ваш помощник в управлении повседневными задачами

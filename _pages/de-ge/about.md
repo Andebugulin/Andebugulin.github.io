@@ -3,34 +3,15 @@ page_id: about
 layout: about
 title: über mich
 permalink: /
-subtitle: 
-
+hero:
+  kicker: Softwareentwickler bei Mapbox · Helsinki
 profile:
-  align: right
-  image: prof_pic_light.png      # Keep your original light theme image here
+  image: prof_pic_light.png
   image_dark: prof_pic1.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p>Ich bin Andryha</p>
-
-
-news: true # includes a list of news items
-latest_posts: false # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at t
 ---
-```arduino
-$ whoami
-```
-Softwareentwickler aus Finnland 🇫🇮
 
-Ich mag Produktivität, Open-Source, Systemprogrammierung, KI, gute Musik und Kaffee.
-```arduino
-$ vim interests
-```
+Ich entwerfe und baue fokussierte Software: Android-Apps, die Menschen ihre Aufmerksamkeit zurückgeben, und Werkzeuge zum Denken im Web.
 
-Ich benutze <span style="color:  var(--global-theme-color);">Arch Linux</span> auf einem <span style="color:  var(--global-theme-color);"> Hyprland</span>-Desktop, wie ein richtiger Typ, ich mag das Konzept der Anpassung und Verfügbarkeit, ich mache alle Arten von Sport, bin in F1 investiert, und ich lerne gerne neue Dinge.
+Seit Juni 2026 arbeite ich bei Mapbox in Helsinki im Team Automotive Integration. In meiner freien Zeit veröffentliche ich eigene Apps: [nfcGuard](/projects/de-ge/14_project/) hat über 1.250 Nutzer, [Awareen](/projects/de-ge/11_project/) über 350, alle organisch. Ich habe IT an der XAMK studiert, wo ich in meiner Abschlussarbeit [WebAssembly mit JavaScript](/thesis/) verglichen habe.
 
-
-
->*"Wer eine Frage stellt, bleibt fünf Minuten lang ein Narr. Wer nicht fragt, bleibt für immer ein Narr."*
+Abseits des Bildschirms: Bouldern, Skateboarden und viel Dehnen. Vor allem versuche ich, die Balance zu halten und die Fahrt zu genießen.

@@ -1,10 +1,12 @@
 ---
 layout: page
 title: TATASk
-description: Eine innovative Plattform zur Verwaltung täglicher Aufgaben und Aktivitäten.
+description: "Aufgaben- und Aktivitätstracker, im Studienteam gebaut, mit Statistiken darüber, wohin die Woche ging."
 img: assets/img/wizardTATASK.png
 importance: 1
 category: uni 
+year: 2024
+stack: TypeScript · React · PostgreSQL
 ---
 
 ## `TATASk` - Ihr täglicher Aufgabenverwaltungs-Assistent

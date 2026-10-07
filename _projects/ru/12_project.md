@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Knowledge Tree
-description: Минималистичная система управления знаниями на основе графов, вдохновлённая методологией Zettelkasten. Визуализируйте и связывайте мысли в интерактивной сети — полностью управляемой с клавиатуры.
+description: "Заметки в виде графа в духе Zettelkasten. Каждая заметка — узел, который можно связывать, искать и открывать с клавиатуры."
 img: assets/img/knowledge-tree.png
 importance: 1
 category: productivity
+year: 2026
+stack: Next.js · tRPC · Sigma.js
+featured: 3
 ---
 
 ## `Knowledge Tree` Kn-🦉-⭕-🌳

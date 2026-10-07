@@ -1,10 +1,12 @@
 ---
 layout: page
 title: GaleriYah
-description: Авангардное портфолио фотографий.
+description: "Фотопортфолио с необычной раскладкой, где главное — галерея."
 img: assets/img/GaleriYah.png
 importance: 1
 category: fun 
+year: 2024
+stack: Next.js · Python
 ---
 
 ## `GaleriYah` - Авангардное портфолио фотографий

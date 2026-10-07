@@ -1,214 +1,64 @@
 ---
 layout: page
 title: Awareen
-description: Приложение для осознанного использования экранного времени с постоянным таймером наложения.
-img: assets/img/awareen.png
+description: "Тихий таймер поверх всех приложений, который показывает, сколько вы сегодня провели в телефоне. Без блокировок, без рекламы, без доступа в интернет."
+img: assets/img/awareen_icon.png
 importance: 1
-category: productivity 
+category: productivity
+lang: ru
+year: 2025
+stack: Kotlin · Android
+featured: 2
+metric: 350+ пользователей
+icon: assets/img/awareen_icon.png
 ---
 
-## `Awareen` – Страж осознанного экранного времени
+<figure class="project-cover"><img src="/assets/img/awareen_cover.png" alt="Awareen"></figure>
 
-> Awareen (Awareness + Screen) — это Android-приложение, которое способствует осознанному использованию устройства с помощью постоянного таймера наложения, помогая пользователям быть более внимательными к времени, проведенному перед экраном, во всех приложениях.
+<dl class="project-facts">
+  <div><dt>Платформа</dt><dd>Android 8.0+</dd></div>
+  <div><dt>Технологии</dt><dd>Kotlin, Android Views</dd></div>
+  <div><dt>Приватность</dt><dd>Без доступа в интернет</dd></div>
+  <div><dt>Пользователи</dt><dd>350+, все органические</dd></div>
+</dl>
 
-### `Технологический стек`
-
-Создано с использованием современных практик Android-разработки:
-- `Kotlin` для нативной Android-разработки
-- `Архитектура на основе сервисов` для фоновой обработки
-- `Разрешения на наложение` для интеграции на системном уровне
-- `Foreground-сервисы` для надежной работы
-- `SharedPreferences` для сохранения настроек
-- `Кастомные UI-компоненты` для гибких вариантов отображения
-
-### `Ключевая инновация: система оповещений из трёх уровней`
-
-Awareen использует прогрессивную систему осознанности, адаптирующуюся к паттернам использования:
-
-1. **Уровень 1 (Зелёный)**: отображение по умолчанию при нормальном использовании (0-30 минут)  
-2. **Уровень 2 (Жёлтый)**: предупреждение при приближении к лимиту (30-60 минут)  
-3. **Уровень 3 (Красный)**: сигнал при чрезмерном использовании (60+ минут) с возможностью мигания
-
-Все цвета, позиции и пороги времени полностью настраиваемы под индивидуальные предпочтения.
-
-### `Основные функции`
-
-#### Постоянный таймер наложения
-- **Всегда видимый таймер**, работающий во всех приложениях  
-- **Умные режимы отображения**: всегда включен или с настраиваемым интервалом  
-- **Настраиваемое позиционирование** с индивидуальными размерами шрифтов и цветами для каждого уровня  
-- **Интеграция на системном уровне**, которая сохраняется при переключении приложений и вращении устройства  
-
-#### Расширенная конфигурация
-- **Трёхуровневая настройка** цветов, позиций и порогов  
-- **Гибкие интервалы отображения** с настраиваемыми длительностями  
-- **Авто-сброс каждый день** по времени, заданному пользователем  
-- **Обработка оптимизации батареи** для бесперебойной работы  
-
-#### Панель аналитики
-- **Отслеживание ежедневного использования** с распознаванием паттернов  
-- **Визуализация исторических данных** для долгосрочной осознанности  
-- **Анализ тенденций** для выявления привычек использования  
-
-### `Галерея скриншотов`
-
-#### Основной интерфейс и настройки
-
-<details>
-    <summary>Посмотреть скриншоты приложения</summary>
-    <div class="col-sm-8">
-            {% include figure.liquid path="assets/img/Awareen_app_demonstration.png" title="Основной интерфейс" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="caption">
-        Полный интерфейс с основными элементами управления, настройками, аналитикой и функционалом наложения
-    </div>
-</details>
-
-### `Техническая архитектура`
-
-#### Сервисная архитектура
-```kotlin
-class ScreenTimeService : Service() {
-    private val overlayManager = OverlayManager()
-    private val timeTracker = TimeTracker()
-    
-    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        startForeground(NOTIFICATION_ID, createNotification())
-        return START_STICKY // Гарантирует перезапуск сервиса после завершения
-    }
-}
-````
-
-#### Система управления разрешениями
-
-```kotlin
-// Комплексная обработка разрешений в Android
-private fun requestOverlayPermission() {
-    if (!Settings.canDrawOverlays(this)) {
-        val intent = Intent(
-            Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-            Uri.parse("package:$packageName")
-        )
-        startActivityForResult(intent, OVERLAY_PERMISSION_REQUEST)
-    }
-}
-```
-
-#### Динамическая конфигурация отображения
-
-```kotlin
-class OverlayManager {
-    fun updateDisplayLevel(screenTime: Long) {
-        val level = when {
-            screenTime < level1Threshold -> DisplayLevel.NORMAL
-            screenTime < level2Threshold -> DisplayLevel.WARNING  
-            else -> DisplayLevel.ALERT
-        }
-        applyLevelConfiguration(level)
-    }
-}
-```
-
-### `Структура проекта`
-
-```
-app/src/main/
-├── java/com/example/screentimetracker/
-│   ├── MainActivity.kt              # Главная точка входа приложения
-│   ├── ScreenTimeService.kt         # Основной сервис отслеживания
-│   ├── SettingsActivity.kt          # Интерфейс настроек
-│   ├── AnalyticsActivity.kt         # Аналитика использования
-│   ├── InfoActivity.kt              # О приложении и помощь
-│   ├── AppSettings.kt               # Константы конфигурации
-│   ├── BootReceiver.kt              # Автозапуск при старте системы
-│   └── UnsavedChangesDialog.kt      # Управление несохранёнными изменениями
-├── res/
-│   ├── layout/                      # UI-лейауты
-│   ├── drawable/                    # Иконки и графика
-│   ├── values/                      # Строки и темы
-│   └── xml/                         # Резервные конфигурации
-└── AndroidManifest.xml              # Разрешения и компоненты
-```
-
-### `Дополнительные функции`
-
-#### Обработка оптимизации батареи
-
-Приложение умно управляет ограничениями оптимизации батареи на Android, обеспечивая стабильную работу на разных устройствах и версиях Android.
-
-#### Интеграция автозапуска
-
-Бесшовная интеграция с процессами загрузки системы гарантирует автоматическую активацию системы осознанности без вмешательства пользователя.
-
-#### Совместимость с разными устройствами
-
-Комплексная обработка разрешений и резервные механизмы обеспечивают совместимость с различными версиями Android (8.0+) и производителями устройств.
-
-### `Установка и настройка`
-
-```bash
-# Настройка для разработки
-git clone https://github.com/Andebugulin/awareen.git
-cd awareen
-
-# Сборка и установка
-./gradlew assembleDebug
-adb install app/build/outputs/apk/debug/app-debug.apk
-```
-
-### `Путь разработки`
-
-Создание Awareen стало исследованием программирования на уровне системы Android, психологии пользовательского поведения и устойчивой архитектуры приложений. Проект поставил передо мной следующие задачи:
-
-* **Освоить Android-сервисы** и управление foreground-сервисами
-* **Разобраться со сложной системой разрешений** на разных версиях Android
-* **Создать интуитивный UX** для приложений, ориентированных на продуктивность
-* **Реализовать постоянный таймер наложения** с уважением к приватности пользователей
-* **Учесть оптимизацию батареи** и сложность автозапуска
-* **Создать гибкую систему настроек** для разных пользовательских предпочтений
-
-Приложение успешно привлекло более 100 пользователей через органические каналы распространения, демонстрируя реальный спрос на решения для осознанного использования технологий.
-
-### `Влияние и распространение`
-
-* **Более 100 активных пользователей** через различные каналы распространения
-* **Подписанные релизные версии** с соблюдением Android-безопасности
-* **Положительные отзывы пользователей** о повышении осознанности использования экрана
-* **Вклад в open-source** в экосистему цифрового благополучия
-
-Для детального изучения реализации и участия:
-
-* **[Awareen GitHub Repository](https://github.com/Andebugulin/awareen)**
-
-### `Участники`
-
-<div id="contributors-list" style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px;">Загрузка участников...</div>
-
-<script>
-  async function fetchContributors() {
-    const url = 'https://api.github.com/repos/Andebugulin/awareen/contributors';
-    const response = await fetch(url);
-    const contributors = await response.json();
-
-    const contributorsHtml = contributors.map(contributor =>
-      `<div class="contributor" style="margin: 10px; text-align: center;">
-        <img src="${contributor.avatar_url}" alt="${contributor.login}" style="width: 100px; height: 100px; border-radius: 50%; display: block; margin: auto;">
-        <p><a href="${contributor.html_url}" target="_blank">${contributor.login}</a></p>
-      </div>`
-    ).join('');
-
-    document.getElementById('contributors-list').innerHTML = contributorsHtml;
-  }
-
-  fetchContributors();
-</script>
-
----
-
-### `Download`
-
-<div style="text-align: center; margin: 40px 0;">
-  <a href="https://play.google.com/store/apps/details?id=com.andebugulin.awareen2" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 80px;">
-  </a>
+<div class="cta-row">
+  <a href="https://play.google.com/store/apps/details?id=com.andebugulin.awareen2">Google Play</a>
+  <a href="https://andebugulin.github.io/Awareen/">Сайт</a>
+  <a href="https://github.com/Andebugulin/Awareen">Исходный код</a>
+  <a href="https://github.com/Andebugulin/Awareen/releases/latest">APK</a>
 </div>
+
+Awareen (awareness + screen) ничего не блокирует. Он показывает маленький таймер поверх любого приложения со временем, проведённым в телефоне сегодня, и доверяет вам это число. Обычно этого достаточно.
+
+<div class="shots">
+  <figure><img src="/assets/img/awareen_1.webp" alt="Awareen" loading="lazy"></figure>
+  <figure><img src="/assets/img/awareen_2.webp" alt="Awareen" loading="lazy"></figure>
+  <figure><img src="/assets/img/awareen_3.webp" alt="Awareen" loading="lazy"></figure>
+  <figure><img src="/assets/img/awareen_4.webp" alt="Awareen" loading="lazy"></figure>
+  <figure><img src="/assets/img/awareen_5.webp" alt="Awareen" loading="lazy"></figure>
+</div>
+
+## Как это работает
+
+Таймер проходит три стадии в течение дня. У каждой стадии своё название, цвета, положение, размер и мигание по желанию, а любая настройка применяется сразу, с живым предпросмотром на экране.
+
+| Стадия | Цвет по умолчанию | Время по умолчанию |
+| --- | --- | --- |
+| **Calm** | зелёный | первые 30 минут |
+| **Heads up** | янтарный | следующие 30 минут |
+| **Enough** | красный, мигает | до ежедневного сброса |
+
+- **Как удобно вам.** Всегда, на несколько секунд каждую минуту или никогда, с виджетом на главном экране.
+- **Не мешает.** Коснитесь таймера, чтобы скрыть его на пять секунд; перетащите, и он останется там.
+- **Ваш день.** Аналитика делит сутки на сон, работу, свободное время и экранное время, рядом среднее, тренд и прогноз на всю жизнь.
+- **Надёжный сброс.** День сбрасывается в выбранное время, даже когда телефон спит.
+- **Данные ваши.** Настройки и история экспортируются в JSON и переносятся на новый телефон. Без аккаунта, рекламы и доступа в интернет, так что ваше экранное время не может покинуть устройство.
+
+## Архитектура
+
+Чистый Kotlin и Android Views, один файл настроек, без базы данных и DI-фреймворка. `ui` обращается к `service`, `service` к `data`, а `overlay` общий для обоих. Решения оверлея, ключи аналитики и расчёт сброса живут в чистом пакете `domain`, чтобы их можно было тестировать без устройства. Вся графика, от иконки до страницы в Play, генерируется одним скриптом и остаётся единой от релиза к релизу.
+
+## Распространение
+
+Awareen начинался как APK для ручной установки, а сейчас у него больше 350 пользователей в Google Play, и все они органические.

@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Knowledge Tree
-description: Minimalistinen graafipohjainen tiedonhallintajärjestelmä Zettelkasten-metodologiasta inspiroituneena. Visualisoi ja yhdistä ajatuksesi interaktiivisessa verkostossa – täysin näppäimistöllä ohjattuna.
+description: "Muistiinpanot verkkona Zettelkastenin hengessä. Jokainen muistiinpano on solmu, jota voi linkittää, hakea ja selata näppäimistöllä."
 img: assets/img/knowledge-tree.png
 importance: 1
 category: productivity
+year: 2026
+stack: Next.js · tRPC · Sigma.js
+featured: 3
 ---
 
 ## `Knowledge Tree` Kn-🦉-⭕-🌳

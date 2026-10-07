@@ -1,19 +1,25 @@
 {
   "basics": {
     "name": "Andrei Gulin",
-    "label": "Software Developer, Fullstack Developer",
+    "label": "Software Developer, Mapbox",
     "image": "cv_pic.jpg",
     "email": "andreigulin2005@gmail.com",
-    "summary": "Software developer based in Finland, focused on building practical web and mobile applications. I work with modern frameworks and AI technologies to create solutions that solve problems.",
+    "summary": "Software developer in Helsinki, on the Automotive Integration team at Mapbox. On my own time I build and ship Android apps, with more than 1,600 organic users across nfcGuard and Awareen.",
     "location": {
-      "address": "raviradantie 7",
-      "postalCode": "50100",
-      "city": "Mikkeli",
+      "city": "Helsinki",
       "countryCode": "FI",
-      "region": "Mikkeli"
+      "region": "Uusimaa"
     }
   },
   "work": [
+    {
+      "name": "Automotive Integration",
+      "position": "Software Developer - Mapbox",
+      "url": "https://www.mapbox.com/",
+      "startDate": "2026-06-15",
+      "summary": "Automotive Integration team, Helsinki.",
+      "highlights": []
+    },
     {
       "name": "Full stack",
       "position": "Software Developer Internship - Mindhive Oy",
@@ -42,10 +48,11 @@
       "highlights": ["Next.js 15", "TypeScript", "Sigma.js", "tRPC", "Prisma", "PostgreSQL", "NextAuth.js"]
     },
     {
-      "name": "Guardian",
+      "name": "nfcGuard",
+      "url": "https://play.google.com/store/apps/details?id=com.andebugulin.nfcguard",
       "startDate": "2025-09-01",
-      "github": "https://github.com/Andebugulin/guardian",
-      "summary": "An Android app for managing focus through scheduled app blocking and NFC-based controls. The idea is simple: create a mode, block distracting apps, optionally link an NFC tag, and you physically need that tag to unlock. Great for staying focused during work or study sessions.",
+      "github": "https://github.com/Andebugulin/nfcGuard",
+      "summary": "Android app that blocks distracting apps until you tap a physical NFC tag. Modes, schedules, timed unlocks per tag and a lost-tag recovery flow. Pure-Kotlin domain module covered by 333 unit tests. Published on Google Play, with more than 1,250 organic users.",
       "highlights": ["Kotlin", "Jetpack Compose", "NFC Integration", "Foreground Services", "AlarmManager"]
     },
     {
@@ -59,8 +66,8 @@
       "name": "Awareen",
       "startDate": "2025-08-01",
       "url": "https://play.google.com/store/apps/details?id=com.andebugulin.awareen2",
-      "github": "https://github.com/Andebugulin/awareen",
-      "summary": "A screen time awareness app built entirely in Kotlin with service-based architecture and custom permissions handling. Published as a signed release and gathered over 100 users through distribution channels.",
+      "github": "https://github.com/Andebugulin/Awareen",
+      "summary": "Screen time app that floats a quiet timer over every app. Three customisable stages, day analytics, widget, JSON export, and no internet permission. More than 350 organic users on Google Play.",
       "highlights": ["Kotlin", "Android Services", "Custom Permissions"]
     },
     {

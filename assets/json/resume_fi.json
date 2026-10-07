@@ -1,19 +1,25 @@
 {
   "basics": {
     "name": "Andrei Gulin",
-    "label": "Ohjelmistokehittäjä, Fullstack-kehittäjä",
+    "label": "Ohjelmistokehittäjä, Mapbox",
     "image": "cv_pic.jpg",
     "email": "andreigulin2005@gmail.com",
-    "summary": "Suomessa asuva ohjelmistokehittäjä, joka keskittyy käytännöllisten web- ja mobiilisovellusten rakentamiseen. Työskentelen modernien frameworkien ja tekoälyteknologioiden parissa luodakseni ratkaisuja, jotka ratkaisevat ongelmia.",
+    "summary": "Ohjelmistokehittäjä Helsingissä, Mapboxin Automotive Integration -tiimissä. Vapaa-ajallani rakennan ja julkaisen Android-sovelluksia, ja nfcGuardilla ja Awareenilla on yhteensä yli 1 600 orgaanista käyttäjää.",
     "location": {
-      "address": "raviradantie 7",
-      "postalCode": "50100",
-      "city": "Mikkeli",
+      "city": "Helsinki",
       "countryCode": "FI",
-      "region": "Mikkeli"
+      "region": "Uusimaa"
     }
   },
   "work": [
+    {
+      "name": "Automotive Integration",
+      "position": "Ohjelmistokehittäjä - Mapbox",
+      "url": "https://www.mapbox.com/",
+      "startDate": "2026-06-15",
+      "summary": "Automotive Integration -tiimi, Helsinki.",
+      "highlights": []
+    },
     {
       "name": "Full stack",
       "position": "Ohjelmistokehittäjä Harjoittelija - Mindhive Oy",
@@ -42,10 +48,11 @@
       "highlights": ["Next.js 15", "TypeScript", "Sigma.js", "tRPC", "Prisma", "PostgreSQL", "NextAuth.js"]
     },
     {
-      "name": "Guardian",
+      "name": "nfcGuard",
+      "url": "https://play.google.com/store/apps/details?id=com.andebugulin.nfcguard",
       "startDate": "2025-09-01",
-      "github": "https://github.com/Andebugulin/guardian",
-      "summary": "Android-sovellus keskittymisen hallintaan ajoitetun sovellusten eston ja NFC-pohjaisten kontrollien avulla. Idea on yksinkertainen: luo tila, estä häiritsevät sovellukset, linkitä valinnainen NFC-tagi, ja tarvitset fyysisesti kyseisen tagin avataksesi lukituksen. Loistavaa keskittymisen säilyttämiseen työ- tai opiskelusessioiden aikana.",
+      "github": "https://github.com/Andebugulin/nfcGuard",
+      "summary": "Android-sovellus, joka estää häiritsevät sovellukset, kunnes kosketat fyysistä NFC-tagia. Tilat, aikataulut, tagikohtaiset väliaikaiset avaukset ja palautus kadonneelle tagille. Puhdas Kotlin-domainmoduuli, jota kattaa 333 yksikkötestiä. Julkaistu Google Playssa, yli 1 250 orgaanista käyttäjää.",
       "highlights": ["Kotlin", "Jetpack Compose", "NFC-integraatio", "Foreground Services", "AlarmManager"]
     },
     {
@@ -59,8 +66,8 @@
       "name": "Awareen",
       "startDate": "2025-08-01",
       "url": "https://play.google.com/store/apps/details?id=com.andebugulin.awareen2",
-      "github": "https://github.com/Andebugulin/awareen",
-      "summary": "Ruutuajan tietoisuussovellus rakennettu kokonaan Kotlinilla service-pohjaisella arkkitehtuurilla ja mukautetuilla käyttöoikeuksien käsittelyillä. Julkaistu allekirjoitettuna versiona ja kerännyt yli 100 käyttäjää jakelukanavien kautta.",
+      "github": "https://github.com/Andebugulin/Awareen",
+      "summary": "Ruutuaikasovellus, joka näyttää hiljaisen ajastimen jokaisen sovelluksen päällä. Kolme muokattavaa vaihetta, päivän analytiikka, widget, JSON-vienti eikä internet-lupaa. Yli 350 orgaanista käyttäjää Google Playssa.",
       "highlights": ["Kotlin", "Android Services", "Mukautetut käyttöoikeudet"]
     },
     {

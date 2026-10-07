@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Robanization
-description: Ein herausforderndes 2D-Plattformspiel mit prozeduraler Level-Generierung und dynamischen Hindernissen.
+description: "2D-Plattformer mit prozedural erzeugten Levels und beweglichen Hindernissen."
 img: assets/img/robanization.svg
 importance: 1
 category: fun 
+year: 2023
+stack: Python · Pygame
 ---
 
 ## `Robanization`

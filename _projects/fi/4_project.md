@@ -1,10 +1,12 @@
 ---
 layout: page
 title: WeatherOrNot
-description: Reaaliaikainen lämpötilanseurantajärjestelmä käyttäen ESP32:ta, MQTT:tä ja web-sovellusta.
+description: "Huoneen lämpötila reaaliajassa ESP32-anturilta MQTT:n kautta verkkonäkymään."
 img: assets/img/weather_or_not.png
 importance: 1
 category: uni
+year: 2024
+stack: ESP32 · MQTT · TypeScript
 ---
 
 ## `WeatherOrNot` - Reaaliaikainen Lämpötilanseurantajärjestelmä

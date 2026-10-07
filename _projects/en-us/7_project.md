@@ -1,10 +1,12 @@
 ---
 layout: page
 title: GaleriYah
-description: An avant-garde photography portfolio.
+description: "Photography portfolio with an unconventional, gallery-first layout."
 img: assets/img/GaleriYah.png
 importance: 1
 category: fun 
+year: 2024
+stack: Next.js · Python
 ---
 
 ## `GaleriYah` - Avant-Garde Photography Portfolio

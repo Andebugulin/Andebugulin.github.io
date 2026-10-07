@@ -1,19 +1,25 @@
 {
   "basics": {
     "name": "Andrei Gulin",
-    "label": "Softwareentwickler, Fullstack-Entwickler",
+    "label": "Softwareentwickler, Mapbox",
     "image": "cv_pic.jpg",
     "email": "andreigulin2005@gmail.com",
-    "summary": "In Finnland ansässiger Softwareentwickler, der sich auf die Entwicklung praktischer Web- und Mobile-Anwendungen konzentriert. Ich arbeite mit modernen Frameworks und KI-Technologien, um Lösungen zu schaffen, die Probleme lösen.",
+    "summary": "Softwareentwickler in Helsinki im Team Automotive Integration bei Mapbox. In meiner freien Zeit baue und veröffentliche ich Android-Apps, nfcGuard und Awareen haben zusammen über 1.600 organische Nutzer.",
     "location": {
-      "address": "raviradantie 7",
-      "postalCode": "50100",
-      "city": "Mikkeli",
+      "city": "Helsinki",
       "countryCode": "FI",
-      "region": "Mikkeli"
+      "region": "Uusimaa"
     }
   },
   "work": [
+    {
+      "name": "Automotive Integration",
+      "position": "Softwareentwickler - Mapbox",
+      "url": "https://www.mapbox.com/",
+      "startDate": "2026-06-15",
+      "summary": "Team Automotive Integration, Helsinki.",
+      "highlights": []
+    },
     {
       "name": "Full stack",
       "position": "Softwareentwickler Praktikant - Mindhive Oy",
@@ -42,10 +48,11 @@
       "highlights": ["Next.js 15", "TypeScript", "Sigma.js", "tRPC", "Prisma", "PostgreSQL", "NextAuth.js"]
     },
     {
-      "name": "Guardian",
+      "name": "nfcGuard",
+      "url": "https://play.google.com/store/apps/details?id=com.andebugulin.nfcguard",
       "startDate": "2025-09-01",
-      "github": "https://github.com/Andebugulin/guardian",
-      "summary": "Eine Android-App zur Verwaltung der Konzentration durch geplante App-Sperrung und NFC-basierte Steuerung. Die Idee ist einfach: Erstellen Sie einen Modus, blockieren Sie ablenkende Apps, verknüpfen Sie optional einen NFC-Tag, und Sie benötigen physisch diesen Tag zum Entsperren. Großartig, um während Arbeits- oder Lernsitzungen konzentriert zu bleiben.",
+      "github": "https://github.com/Andebugulin/nfcGuard",
+      "summary": "Android-App, die ablenkende Apps sperrt, bis man einen physischen NFC-Tag berührt. Modi, Zeitpläne, zeitlich begrenzte Entsperrung pro Tag und ein Wiederherstellungsablauf bei verlorenem Tag. Reines Kotlin-Domänenmodul mit 333 Unit-Tests. Bei Google Play veröffentlicht, mit über 1.250 organischen Nutzern.",
       "highlights": ["Kotlin", "Jetpack Compose", "NFC-Integration", "Foreground Services", "AlarmManager"]
     },
     {
@@ -59,8 +66,8 @@
       "name": "Awareen",
       "startDate": "2025-08-01",
       "url": "https://play.google.com/store/apps/details?id=com.andebugulin.awareen2",
-      "github": "https://github.com/Andebugulin/awareen",
-      "summary": "Eine Bildschirmzeit-Bewusstseins-App, vollständig in Kotlin mit servicebasierter Architektur und benutzerdefinierter Berechtigungsverwaltung entwickelt. Als signiertes Release veröffentlicht und über 100 Nutzer durch Vertriebskanäle gesammelt.",
+      "github": "https://github.com/Andebugulin/Awareen",
+      "summary": "Bildschirmzeit-App mit einem stillen Timer über jeder App. Drei anpassbare Stufen, Tagesanalyse, Widget, JSON-Export und keine Internetberechtigung. Über 350 organische Nutzer bei Google Play.",
       "highlights": ["Kotlin", "Android Services", "Benutzerdefinierte Berechtigungen"]
     },
     {

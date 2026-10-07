@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Ankara
-description: Ein interaktives Tool, das verteilte Wiederholung und Randomisierung für effektives Vokabellernen nutzt.
+description: "Vokabelkarten mit verteilter Wiederholung, zufälliger Reihenfolge und Sprachausgabe."
 img: assets/img/ankara.png
 importance: 1
 category: productivity 
+year: 2022
+stack: Python · Pygame
 ---
 
 ## `Ankara` - Verbessertes Karteikarten-Lerntool

@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Wordor
-description: Улучшенный переводчик с алгоритмом интервальных повторений для мгновенного запоминания переводов.
+description: "Переводчик, который превращает каждый запрос в карточку и возвращает её по системе интервальных повторений."
 img: assets/img/wordor.png
 importance: 2
 category: productivity 
+year: 2026
+stack: Flutter · Drift · DeepL
 ---
 
 ## `Wordor` - Умный переводчик со встроенной системой обучения

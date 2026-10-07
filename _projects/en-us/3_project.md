@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Ankara
-description: An interactive tool utilizing spaced repetition and randomization for effective vocabulary learning.
+description: "Flashcards for vocabulary with spaced repetition, shuffled order and text-to-speech."
 img: assets/img/ankara.png
 importance: 1
 category: productivity 
+year: 2022
+stack: Python · Pygame
 ---
 
 ## `Ankara` - Enhanced Flashcard Learning Tool

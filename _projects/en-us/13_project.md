@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Wordor
-description: Boosted translator with spaced repetition algorithm to help you learn translations instantly.
+description: "A translator that turns every lookup into a flashcard, then brings it back with spaced repetition."
 img: assets/img/wordor.png
 importance: 2
 category: productivity 
+year: 2026
+stack: Flutter · Drift · DeepL
 ---
 
 ## `Wordor` - Smart Translator with Built-in Learning

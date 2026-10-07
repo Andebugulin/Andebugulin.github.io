@@ -1,10 +1,12 @@
 ---
 layout: page
 title: ArchBlocker
-description: Tehokas verkkosivujen esto-ohjelma retro-terminaaliliittymällä digitaalisten häiriötekijöiden hallintaan.
+description: "Järjestelmätasolla toimiva verkkosivujen estäjä Arch Linuxille, terminaalityylisellä ohjauspaneelilla."
 img: assets/img/ArchBlocker.png
 importance: 1
 category: productivity
+year: 2025
+stack: Python · React · systemd
 ---
 
 ## `ArchWebBlocker` - Digitaalisen hyvinvoinnin vartija

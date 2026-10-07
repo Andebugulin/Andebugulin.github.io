@@ -1,10 +1,12 @@
 ---
 layout: page
 title: HaHaSaaS
-description: Vitsien jakamisen SaaS-alusta, joka tarjoaa huumoria pyynnöstä.
+description: "Vitsienjakopalvelu: Go-rajapinta, React-käyttöliittymä ja PostgreSQL, julkaistu Dockerilla."
 img: assets/img/hahasaas.svg
 importance: 2
 category: uni
+year: 2025
+stack: Go · React · PostgreSQL
 ---
 
 ## `HaHaSaaS` - Naurun tuominen pilveen

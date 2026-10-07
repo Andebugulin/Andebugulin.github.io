@@ -1,10 +1,12 @@
 ---
 layout: page
 title: WeatherOrNot
-description: Система мониторинга температуры в реальном времени с использованием ESP32, MQTT и веб-приложения.
+description: "Температура в комнате в реальном времени: датчик на ESP32, MQTT и веб-панель."
 img: assets/img/weather_or_not.png
 importance: 1
 category: uni
+year: 2024
+stack: ESP32 · MQTT · TypeScript
 ---
 
 ## `WeatherOrNot` — Система мониторинга температуры в реальном времени

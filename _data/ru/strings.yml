@@ -82,10 +82,7 @@ cv:
 footer:
   copyright: Авторские права
   last_updated: "Последнее обновление:"
-footer_text: > # символ ">" означает игнорировать переносы строк до "titles:"
-  Разработано на <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> с темой <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>.
-  Размещено на <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Фотографии с <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+footer_text: Хельсинки, Финляндия. Фон рисуется вживую в вашем браузере.
 latest_posts: последние посты
 months:
   long:
@@ -161,4 +158,11 @@ search:
     title: Использовать системную тему по умолчанию
   theme: Тема
 selected_publications: избранные публикации
-site_description: Простая тема для ученых. Основана на дизайне [*folio](https://github.com/bogoli/-folio).
+site_description: Андрей Гулин, разработчик из Хельсинки. Android-приложения, веб-инструменты и эксперименты.
+home:
+  email: "Почта"
+  cv: "Резюме"
+  selected_work: "Избранные работы"
+  all_projects: "Все проекты"
+  contact_kicker: "Контакты"
+  contact_line: "Делаете что-то, что должно существовать? Буду рад услышать."

@@ -3,34 +3,15 @@ page_id: about
 layout: about
 title: обо мне
 permalink: /
-subtitle: 
-
+hero:
+  kicker: Разработчик в Mapbox · Хельсинки
 profile:
-  align: right
-  image: prof_pic_light.png      # Keep your original light theme image here
+  image: prof_pic_light.png
   image_dark: prof_pic1.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p>Я Андрюха</p>
-
-
-news: true # includes a list of news items
-latest_posts: false # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at t
 ---
-```arduino
-$ whoami
-```
-Разработчик программного обеспечения из Финляндии 🇫🇮
 
-Мне нравится продуктивность, открытый исходный код, системное программирование, ИИ, хорошая музыка и кофе.
-```arduino
-$ vim interests
-```
+Я проектирую и создаю сфокусированный софт: Android-приложения, которые возвращают людям внимание, и веб-инструменты для мышления.
 
-Я использую <span style="color:  var(--global-theme-color);">Arch Linux</span> на десктопе с <span style="color:  var(--global-theme-color);"> Hyprland</span>, как настоящий парень, мне нравится концепция кастомизации и доступности, я занимаюсь всеми видами спорта, интересуюсь Формулой-1, и люблю изучать новое.
+С июня 2026 года я работаю в Mapbox в Хельсинки, в команде Automotive Integration. В свободное время выпускаю свои приложения: у [nfcGuard](/projects/ru/14_project/) больше 1 250 пользователей, у [Awareen](/projects/ru/11_project/) больше 350, и все они органические. Я изучал IT в XAMK, где в дипломной работе сравнивал [WebAssembly и JavaScript](/thesis/).
 
-
-
->*"Тот, кто задаёт вопрос, остаётся дураком на пять минут. Тот, кто не задаёт, остаётся дураком навсегда."*
+Вне экрана: боулдеринг, скейтборд и много растяжки. Главное для меня — баланс и умение наслаждаться процессом.

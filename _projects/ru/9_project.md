@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Robanization
-description: Сложная 2D платформер-игра с процедурной генерацией уровней и динамическими препятствиями.
+description: "2D-платформер с процедурно генерируемыми уровнями и движущимися препятствиями."
 img: assets/img/robanization.svg
 importance: 1
 category: fun 
+year: 2023
+stack: Python · Pygame
 ---
 
 ## `Robanization`

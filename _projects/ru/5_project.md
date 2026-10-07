@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Piracy RPG
-description: Стратегическая игра о морских исследованиях и сражениях с процедурной генерацией и современными паттернами проектирования.
+description: "Игра о морских исследованиях и сражениях с процедурными картами, написанная для практики классических паттернов."
 img: assets/img/pirates_battle.jpeg
 importance: 3
 category: uni
+year: 2024
+stack: C# · design patterns
 ---
 
 ## `Seas of Fortune` - Приключенческая Пиратская RPG 🏴‍☠️  

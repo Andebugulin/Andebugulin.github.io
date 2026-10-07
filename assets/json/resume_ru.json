@@ -1,19 +1,25 @@
 {
   "basics": {
     "name": "Andrei Gulin",
-    "label": "Разработчик программного обеспечения, Fullstack разработчик",
+    "label": "Разработчик, Mapbox",
     "image": "cv_pic.jpg",
     "email": "andreigulin2005@gmail.com",
-    "summary": "Разработчик программного обеспечения из Финляндии, специализирующийся на создании практичных веб- и мобильных приложений. Я работаю с современными фреймворками и AI-технологиями для создания решений, которые решают проблемы.",
+    "summary": "Разработчик в Хельсинки, команда Automotive Integration в Mapbox. В свободное время создаю и выпускаю Android-приложения: у nfcGuard и Awareen вместе больше 1 600 органических пользователей.",
     "location": {
-      "address": "raviradantie 7",
-      "postalCode": "50100",
-      "city": "Mikkeli",
+      "city": "Helsinki",
       "countryCode": "FI",
-      "region": "Mikkeli"
+      "region": "Uusimaa"
     }
   },
   "work": [
+    {
+      "name": "Automotive Integration",
+      "position": "Разработчик - Mapbox",
+      "url": "https://www.mapbox.com/",
+      "startDate": "2026-06-15",
+      "summary": "Команда Automotive Integration, Хельсинки.",
+      "highlights": []
+    },
     {
       "name": "Full stack",
       "position": "Стажер-разработчик программного обеспечения - Mindhive Oy",
@@ -42,10 +48,11 @@
       "highlights": ["Next.js 15", "TypeScript", "Sigma.js", "tRPC", "Prisma", "PostgreSQL", "NextAuth.js"]
     },
     {
-      "name": "Guardian",
+      "name": "nfcGuard",
+      "url": "https://play.google.com/store/apps/details?id=com.andebugulin.nfcguard",
       "startDate": "2025-09-01",
-      "github": "https://github.com/Andebugulin/guardian",
-      "summary": "Android-приложение для управления фокусировкой через запланированную блокировку приложений и NFC-управление. Идея проста: создайте режим, заблокируйте отвлекающие приложения, при желании привяжите NFC-метку, и вам физически понадобится эта метка для разблокировки. Отлично подходит для сохранения концентрации во время работы или учебы.",
+      "github": "https://github.com/Andebugulin/nfcGuard",
+      "summary": "Android-приложение, которое блокирует отвлекающие приложения, пока вы не коснётесь физической NFC-метки. Режимы, расписания, временная разблокировка для каждой метки и восстановление при потере метки. Доменный модуль на чистом Kotlin покрыт 333 модульными тестами. Опубликовано в Google Play, больше 1 250 органических пользователей.",
       "highlights": ["Kotlin", "Jetpack Compose", "NFC интеграция", "Foreground Services", "AlarmManager"]
     },
     {
@@ -59,8 +66,8 @@
       "name": "Awareen",
       "startDate": "2025-08-01",
       "url": "https://play.google.com/store/apps/details?id=com.andebugulin.awareen2",
-      "github": "https://github.com/Andebugulin/awareen",
-      "summary": "Приложение для отслеживания экранного времени, полностью построенное на Kotlin с архитектурой на основе сервисов и настраиваемой обработкой разрешений. Опубликовано как подписанный релиз и собрало более 100 пользователей через каналы распространения.",
+      "github": "https://github.com/Andebugulin/Awareen",
+      "summary": "Приложение экранного времени с тихим таймером поверх всех приложений. Три настраиваемые стадии, аналитика дня, виджет, экспорт в JSON и никакого доступа в интернет. Больше 350 органических пользователей в Google Play.",
       "highlights": ["Kotlin", "Android Services", "Настраиваемые разрешения"]
     },
     {

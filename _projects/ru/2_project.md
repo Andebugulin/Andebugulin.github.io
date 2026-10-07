@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Morner Bot
-description: Telegram бот для отслеживания утренней рутины через смарт-часы для минимизации отвлечений от телефона.
+description: "Telegram-бот, который отслеживает утреннюю рутину со смарт-часов, чтобы телефон мог оставаться в другой комнате."
 img: assets/img/PlaniriumBot.png
 importance: 1
 category: productivity
+year: 2023
+stack: Python · Telegram API
 ---
 
 ## `Morner Bot` - Утренняя рутина через смарт-часы

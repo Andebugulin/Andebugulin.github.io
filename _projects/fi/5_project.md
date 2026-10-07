@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Piracy RPG
-description: Strateginen merimatkailu- ja taistelupeli proseduraalisella tasojen luomisella ja edistyneillä ohjelmistosuunnittelumalleilla.
+description: "Merenkulku- ja taistelupeli proseduraalisilla kartoilla, kirjoitettu klassisten suunnittelumallien harjoitteluun."
 img: assets/img/pirates_battle.jpeg
 importance: 3
 category: uni
+year: 2024
+stack: C# · design patterns
 ---
 
 ## `Seas of Fortune` - Merirosvo RPG-seikkailu 🏴‍☠️

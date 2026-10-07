@@ -1,10 +1,12 @@
 ---
 layout: page
 title: ArchBlocker
-description: Мощный блокировщик сайтов с ретро-интерфейсом терминала для управления цифровыми отвлечениями.
+description: "Блокировщик сайтов для Arch Linux на системном уровне с панелью управления в стиле терминала."
 img: assets/img/ArchBlocker.png
 importance: 1
 category: productivity
+year: 2025
+stack: Python · React · systemd
 ---
 
 ## `ArchWebBlocker` - Ваш хранитель цифрового благополучия

@@ -1,10 +1,12 @@
 ---
 layout: page
 title: GaleriYah
-description: Ein avantgardistisches Fotografie-Portfolio.
+description: "Fotografie-Portfolio mit einem ungewöhnlichen, galerieorientierten Layout."
 img: assets/img/GaleriYah.png
 importance: 1
 category: fun 
+year: 2024
+stack: Next.js · Python
 ---
 
 ## `GaleriYah` - Avantgardistisches Fotografie-Portfolio

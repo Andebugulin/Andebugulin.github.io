@@ -1,10 +1,12 @@
 ---
 layout: page
 title: HaHaSaaS
-description: A joke-sharing SaaS platform that delivers humor on demand.
+description: "Joke-sharing service with a Go API, a React front end and PostgreSQL, deployed with Docker."
 img: assets/img/hahasaas.svg
 importance: 2
 category: uni 
+year: 2025
+stack: Go · React · PostgreSQL
 ---
 
 ## `HaHaSaaS` - Bringing Laughter to the Cloud

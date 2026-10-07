@@ -1,10 +1,12 @@
 ---
 layout: page
 title: ArchBlocker
-description: A powerful website blocker with a retro terminal interface for managing digital distractions.
+description: "Website blocker for Arch Linux that works at the system level, with a terminal-styled control panel."
 img: assets/img/ArchBlocker.png
 importance: 1
 category: productivity
+year: 2025
+stack: Python · React · systemd
 ---
 
 ## `ArchWebBlocker` - Your Digital Well-being Guardian

@@ -4,96 +4,55 @@
 
 @use "sass:color";
 
+/* Light: warm survey-paper ground, spruce ink. Dark: night spruce. */
 :root {
   color-scheme: light;
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
+  --global-bg-color: #f3f1ea;
+  --global-card-bg-color: #fbfaf6;
+  --global-code-bg-color: #e9e6db;
+  --global-text-color: #1b1d1a;
+  --global-text-color-light: #5f645d;
+  --global-card-text-color: #1b1d1a;
+  --global-card-text-color-dimmed: #5f645d;
+  --global-cv-text: #3a3e38;
+  --global-theme-color: #2f5d46;
+  --global-theme-color-rgb: 47, 93, 70;
+  --global-hover-color: #1d4231;
+  --global-hover-text-color: #1d4231;
+  --global-page-link-color: #2f5d46;
+  --global-page-link-hover-color: #1d4231;
+  --global-divider-color: #dcd8cc;
+  --global-divider-color-rgb: 220, 216, 204;
+  --global-highlight-color: #9a3b26;
+  --global-footer-bg-color: transparent;
+  --global-footer-text-color: #5f645d;
+  --global-footer-link-color: #2f5d46;
+  --global-distill-app-color: #5f645d;
+  --global-back-to-top-bg-color: rgba(27, 29, 26, 0.55);
+  --global-back-to-top-text-color: #f3f1ea;
+  --global-newsletter-bg-color: #fbfaf6;
+  --global-newsletter-text-color: #1b1d1a;
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  --global-tip-block: #2f5d46;
+  --global-tip-block-bg: #e6ece4;
+  --global-tip-block-text: #1d3a2b;
+  --global-tip-block-title: #2f5d46;
+  --global-warning-block: #b5852a;
+  --global-warning-block-bg: #f4ecd9;
+  --global-warning-block-text: #5c4413;
+  --global-warning-block-title: #8a6318;
+  --global-danger-block: #9a3b26;
+  --global-danger-block-bg: #f3e1dc;
+  --global-danger-block-text: #5a2014;
+  --global-danger-block-title: #9a3b26;
 
-  --global-theme-color: #104f32; /* Neon green for accents (geeky and futuristic) */
-  --global-hover-color: #1a3f2e; /* Slightly darker green for hover states */
-  --global-hover-text-color: #165436; /* Light green for hover text */
-  --global-footer-text-color: #8E8E93; /* Light gray for footer text */
-  --global-footer-link-color: #1c4a34b4; /* Neon green for footer links */
-  --global-distill-app-color: #6D83F2; /* Soft blue for subdued elements */
-  --global-divider-color: #333333; /* Subtle gray for dividers */
-  --global-card-bg-color: #1E1E1E; /* Dark gray for card backgrounds */
-  --global-tip-block: #23754f; /* Neon green for tips */
-  --global-tip-block-bg: #1E1E1E; /* Dark gray for tip backgrounds */
-  --global-tip-block-text: #B0FFD9; /* Light green for tip text */
-  --global-tip-block-title: #00FF88; /* Neon green for tip titles */
-  --global-warning-block: #FFA726; /* Vibrant orange for warnings */
-  --global-warning-block-bg: #4B3721; /* Dark muted orange for warning backgrounds */
-  --global-warning-block-text: #FFE0B2; /* Light orange for warning text */
-  --global-warning-block-title: #FFA726; /* Orange for warning titles */
-  --global-danger-block: #FF5252; /* Bright red for errors */
-  --global-danger-block-bg: #3B1F1F; /* Dark muted red for danger backgrounds */
-  --global-danger-block-text: #FF9A9A; /* Soft red for error text */
-  --global-danger-block-title: #FF5252; /* Bright red for error titles */
-  --global-cv-text: #D1D5DA; /* Light gray for CV text */
-  --global-page-link-color: #1f6544; /* Neon green for links */
-  --global-page-link-hover-color: #1c4632; /* Slightly darker green for hovered links */
+  --flow-ink: rgba(27, 29, 26, 0.16);
+  --flow-accent: rgba(47, 93, 70, 0.55);
+  --flow-ember: rgba(196, 98, 52, 0.7);
 
-  --global-bg-color: #FFFFFF; /* Pure white for a clean, modern base */
-  --global-code-bg-color: #F5F5F5; /* Light gray for code blocks */
-  --global-text-color: #333333; /* Dark gray for primary text */
-  --global-text-color-light: #666666; /* Medium gray for secondary text */
-  --global-hover-text-color: #004080; /* Darker blue for hover text */
-  --global-footer-bg-color: #F8F9FA; /* Light gray for the footer */
-  --global-footer-text-color: #6C757D; /* Medium gray for footer text */
-  --global-footer-link-color: #007BFF; /* Bright blue for footer links */
-  --global-distill-app-color: #6D83F2; /* Soft blue for subdued elements */
-  --global-divider-color: #E0E0E0; /* Light gray for dividers */
-  --global-card-bg-color: #F8F9FA; /* Light gray for card backgrounds */
-  --global-tip-block: #28A745; /* Green for tips */
-  --global-tip-block-bg: #E8F5E9; /* Light green for tip backgrounds */
-  --global-tip-block-text: #155724; /* Dark green for tip text */
-  --global-tip-block-title: #28A745; /* Green for tip titles */
-  --global-warning-block: #FFC107; /* Vibrant yellow for warnings */
-  --global-warning-block-bg: #FFF3CD; /* Light yellow for warning backgrounds */
-  --global-warning-block-text: #856404; /* Dark yellow for warning text */
-  --global-warning-block-title: #FFC107; /* Yellow for warning titles */
-  --global-danger-block: #DC3545; /* Bright red for errors */
-  --global-danger-block-bg: #F8D7DA; /* Light red for danger backgrounds */
-  --global-danger-block-text: #721C24; /* Dark red for error text */
-  --global-danger-block-title: #DC3545; /* Bright red for error titles */
-  --global-cv-text: #495057; /* Dark gray for CV text */
-  --global-page-link-color: #007BFF; /* Bright blue for links */
-  --global-page-link-hover-color: #0056b3; /* Slightly darker blue for hovered links */
-  --global-card-text-color-dimmed: #6C757D; /* Medium gray for dimmed card text */
+  --font-display: "Newsreader", "Literata", "Iowan Old Style", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
   #light-toggle-system {
     padding-left: 10px;
@@ -114,15 +73,6 @@
   }
   .repo-img-dark {
     display: none;
-  }
-
-
-  
-  .repo-img-light {
-    display: none;
-  }
-  .repo-img-dark {
-    display: block;
   }
   .only-light {
     display: block;
@@ -145,43 +95,54 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($white-color, "red", $space: rgb)},
-    #{color.channel($white-color, "green", $space: rgb)},
-    #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{$black-color};
-  --global-newsletter-bg-color: #{$grey-color-light};
-  --global-newsletter-text-color: #{$grey-color-dark};
+  --global-bg-color: #0e1210;
+  --global-card-bg-color: #151a17;
+  --global-code-bg-color: #1a201c;
+  --global-text-color: #e7e5dd;
+  --global-text-color-light: #9ba39b;
+  --global-card-text-color: #e7e5dd;
+  --global-card-text-color-dimmed: #9ba39b;
+  --global-cv-text: #cfd2ca;
+  --global-theme-color: #a6c99b;
+  --global-theme-color-rgb: 166, 201, 155;
+  --global-hover-color: #c4dfba;
+  --global-hover-text-color: #c4dfba;
+  --global-page-link-color: #a6c99b;
+  --global-page-link-hover-color: #c4dfba;
+  --global-divider-color: #29302b;
+  --global-divider-color-rgb: 41, 48, 43;
+  --global-highlight-color: #e39a7f;
+  --global-footer-text-color: #9ba39b;
+  --global-footer-link-color: #a6c99b;
+  --global-distill-app-color: #9ba39b;
+  --global-back-to-top-bg-color: rgba(231, 229, 221, 0.5);
+  --global-back-to-top-text-color: #0e1210;
+  --global-newsletter-bg-color: #151a17;
+  --global-newsletter-text-color: #e7e5dd;
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  --global-tip-block-bg: #18231c;
+  --global-tip-block-text: #cfe0c8;
+  --global-tip-block: #a6c99b;
+  --global-tip-block-title: #a6c99b;
+  --global-warning-block-bg: #2a2416;
+  --global-warning-block-text: #ecdcb6;
+  --global-warning-block: #d6ad5c;
+  --global-warning-block-title: #d6ad5c;
+  --global-danger-block-bg: #2c1915;
+  --global-danger-block-text: #f0c9bd;
+  --global-danger-block: #e39a7f;
+  --global-danger-block-title: #e39a7f;
 
-  
+  --flow-ink: rgba(231, 229, 221, 0.11);
+  --flow-accent: rgba(166, 201, 155, 0.5);
+  --flow-ember: rgba(232, 140, 96, 0.65);
+
+  .repo-img-light {
+    display: none;
+  }
+  .repo-img-dark {
+    display: block;
+  }
 
   .only-light {
     display: none;
@@ -190,25 +151,6 @@ html[data-theme="dark"] {
   .only-dark {
     display: block;
   }
-}
-
-html[data-theme="dark"] {
-  --global-bg-color: #0A0A0A; /* Deep black */
-  --global-code-bg-color: #1A1A1A; /* Slightly lighter black */
-  --global-text-color: #F0F0F5; /* Crisp white */
-  --global-text-color-light: #B0B0B5; /* Soft gray */
-  --global-theme-color: #0eaa1b; /* Neon green */
-  --global-hover-color: #438a28; /* Slightly darker green */
-  --global-hover-text-color: #B0FFD9; /* Light green */
-  --global-footer-bg-color: #1E1E1E; /* Deep gray */
-  --global-footer-text-color: #8E8E93; /* Light gray */
-  --global-footer-link-color: #00FF88; /* Neon green */
-  --global-distill-app-color: #6D83F2; /* Soft blue */
-  --global-divider-color: #333333; /* Subtle gray */
-  --global-card-bg-color: #1E1E1E; /* Dark gray */
-  --global-cv-text: #D1D5DA; /* Light gray */
-  --global-card-text-color-dimmed: rgb(227, 228, 218); // color: for text in the card of the project, not the title.
-  ;
 }
 
 html[data-theme-setting="dark"] {

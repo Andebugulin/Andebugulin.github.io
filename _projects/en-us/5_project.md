@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Piracy RPG
-description: A strategic naval exploration and combat game with procedural generation and advanced software design patterns.
+description: "Naval exploration and combat game with procedural maps, written to practise classic design patterns."
 img: assets/img/pirates_battle.jpeg
 importance: 3
 category: uni
+year: 2024
+stack: C# · design patterns
 ---
 
 ## `Seas of Fortune` - Pirate RPG Adventure 🏴‍☠️  

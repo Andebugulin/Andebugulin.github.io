@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Ankara
-description: Interaktiivinen työkalu, joka hyödyntää kertausjärjestelmää ja satunnaistamista tehokkaaseen sanaston oppimiseen.
+description: "Sanastokortit kertausjärjestelmällä, satunnaisella järjestyksellä ja puhesynteesillä."
 img: assets/img/ankara.png
 importance: 1
 category: productivity 
+year: 2022
+stack: Python · Pygame
 ---
 
 ## `Ankara` - Parannettu Muistikorttien Oppimistyökalu

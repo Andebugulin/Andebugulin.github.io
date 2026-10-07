@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Piracy RPG
-description: Ein strategisches Seefahrt-Erkundungs- und Kampfspiel mit prozeduraler Generierung und fortgeschrittenen Software-Design-Mustern.
+description: "Seefahrts- und Kampfspiel mit prozeduralen Karten, geschrieben, um klassische Entwurfsmuster zu üben."
 img: assets/img/pirates_battle.jpeg
 importance: 3
 category: uni
+year: 2024
+stack: C# · design patterns
 ---
 
 ## `Seas of Fortune` - Piraten-RPG-Abenteuer 🏴‍☠️  
