@@ -36,13 +36,13 @@ ninja.data = [{
           },
         },{id: "nav-проекты",
           title: "проекты",
-          description: "Здесь мои проекты))",
+          description: "То, что я спроектировал, сделал и выпустил. Большинством пользуюсь каждый день.",
           section: "Меню навигации",
           handler: () => {
             window.location.href = "/ru/projects/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "",
           section: "Меню навигации",
           handler: () => {
@@ -126,67 +126,67 @@ ninja.data = [{
           description: "",
           section: "Новости",},{id: "projects-hahasaas",
           title: 'HaHaSaaS',
-          description: "Платформа SaaS для обмена шутками, доставляющая юмор по запросу.",
+          description: "Сервис для обмена шутками: API на Go, фронтенд на React и PostgreSQL, развёртывание через Docker.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/10_project/";
             },},{id: "projects-awareen",
           title: 'Awareen',
-          description: "Приложение для осознанного использования экранного времени с постоянным таймером наложения.",
+          description: "Тихий таймер поверх всех приложений, который показывает, сколько вы сегодня провели в телефоне. Без блокировок, без рекламы, без доступа в интернет.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/11_project/";
             },},{id: "projects-knowledge-tree",
           title: 'Knowledge Tree',
-          description: "Минималистичная система управления знаниями на основе графов, вдохновлённая методологией Zettelkasten. Визуализируйте и связывайте мысли в интерактивной сети — полностью управляемой с клавиатуры.",
+          description: "Заметки в виде графа в духе Zettelkasten. Каждая заметка — узел, который можно связывать, искать и открывать с клавиатуры.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/12_project/";
             },},{id: "projects-wordor",
           title: 'Wordor',
-          description: "Улучшенный переводчик с алгоритмом интервальных повторений для мгновенного запоминания переводов.",
+          description: "Переводчик, который превращает каждый запрос в карточку и возвращает её по системе интервальных повторений.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/13_project/";
-            },},{id: "projects-guardian",
-          title: 'Guardian',
-          description: "Android приложение для продуктивности с блокировкой приложений через NFC.",
+            },},{id: "projects-nfcguard",
+          title: 'nfcGuard',
+          description: "Блокирует отвлекающие приложения, пока вы не коснётесь физической NFC-метки. Оставьте метку где-нибудь подальше, и открыть Instagram будет стоить прогулки.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/14_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
-          description: "Инновационная платформа для управления повседневными задачами и активностями.",
+          description: "Трекер задач и активностей, сделанный в университетской команде, со статистикой о том, куда ушла неделя.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/1_project/";
             },},{id: "projects-morner-bot",
           title: 'Morner Bot',
-          description: "Telegram бот для отслеживания утренней рутины через смарт-часы для минимизации отвлечений от телефона.",
+          description: "Telegram-бот, который отслеживает утреннюю рутину со смарт-часов, чтобы телефон мог оставаться в другой комнате.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/2_project/";
             },},{id: "projects-ankara",
           title: 'Ankara',
-          description: "Интерактивный инструмент, использующий интервальное повторение и рандомизацию для эффективного изучения словарного запаса.",
+          description: "Карточки для слов с интервальными повторениями, случайным порядком и озвучкой.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/3_project/";
             },},{id: "projects-weatherornot",
           title: 'WeatherOrNot',
-          description: "Система мониторинга температуры в реальном времени с использованием ESP32, MQTT и веб-приложения.",
+          description: "Температура в комнате в реальном времени: датчик на ESP32, MQTT и веб-панель.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/4_project/";
             },},{id: "projects-piracy-rpg",
           title: 'Piracy RPG',
-          description: "Стратегическая игра о морских исследованиях и сражениях с процедурной генерацией и современными паттернами проектирования.",
+          description: "Игра о морских исследованиях и сражениях с процедурными картами, написанная для практики классических паттернов.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/5_project/";
             },},{id: "projects-galeriyah",
           title: 'GaleriYah',
-          description: "Авангардное портфолио фотографий.",
+          description: "Фотопортфолио с необычной раскладкой, где главное — галерея.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/7_project/";
             },},{id: "projects-archblocker",
           title: 'ArchBlocker',
-          description: "Мощный блокировщик сайтов с ретро-интерфейсом терминала для управления цифровыми отвлечениями.",
+          description: "Блокировщик сайтов для Arch Linux на системном уровне с панелью управления в стиле терминала.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/8_project/";
             },},{id: "projects-robanization",
           title: 'Robanization',
-          description: "Сложная 2D платформер-игра с процедурной генерацией уровней и динамическими препятствиями.",
+          description: "2D-платформер с процедурно генерируемыми уровнями и движущимися препятствиями.",
           section: "Проекты",handler: () => {
               window.location.href = "/ru/projects/ru/9_project/";
             },},{

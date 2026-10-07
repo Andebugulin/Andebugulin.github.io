@@ -36,13 +36,13 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of my/our cool projects.",
+          description: "Things I have designed, built and shipped. Most of them I still use every day.",
           section: "Navigation menu",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "",
           section: "Navigation menu",
           handler: () => {
@@ -126,67 +126,67 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-hahasaas",
           title: 'HaHaSaaS',
-          description: "A joke-sharing SaaS platform that delivers humor on demand.",
+          description: "Joke-sharing service with a Go API, a React front end and PostgreSQL, deployed with Docker.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/10_project/";
             },},{id: "projects-awareen",
           title: 'Awareen',
-          description: "A screen time awareness app with persistent overlay timer for mindful device usage.",
+          description: "A quiet timer that floats over every app and shows how long you have been on your phone today. No blocking, no ads, no internet permission.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/11_project/";
             },},{id: "projects-knowledge-tree",
           title: 'Knowledge Tree',
-          description: "Minimalist graph-based knowledge management system inspired by Zettelkasten. Visualize and connect your thoughts in an interactive network — fully keyboard-driven.",
+          description: "Notes as a graph, in the spirit of Zettelkasten. Every note is a node you can link, search and navigate by keyboard.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/12_project/";
             },},{id: "projects-wordor",
           title: 'Wordor',
-          description: "Boosted translator with spaced repetition algorithm to help you learn translations instantly.",
+          description: "A translator that turns every lookup into a flashcard, then brings it back with spaced repetition.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/13_project/";
-            },},{id: "projects-guardian",
-          title: 'Guardian',
-          description: "Android app for focused productivity using NFC-controlled app blocking and scheduled modes.",
+            },},{id: "projects-nfcguard",
+          title: 'nfcGuard',
+          description: "Blocks distracting apps until you tap a physical NFC tag. Keep the tag somewhere inconvenient and opening Instagram costs a walk.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/14_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
-          description: "An innovative platform for managing daily tasks and activities.",
+          description: "Task and activity tracker built as a university team project, with statistics on where the week went.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/1_project/";
             },},{id: "projects-morner-bot",
           title: 'Morner Bot',
-          description: "Telegram bot for morning routine tracking via smartwatch to minimize phone distractions.",
+          description: "Telegram bot that tracks a morning routine from a smartwatch, so the phone can stay in another room.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/2_project/";
             },},{id: "projects-ankara",
           title: 'Ankara',
-          description: "An interactive tool utilizing spaced repetition and randomization for effective vocabulary learning.",
+          description: "Flashcards for vocabulary with spaced repetition, shuffled order and text-to-speech.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/3_project/";
             },},{id: "projects-weatherornot",
           title: 'WeatherOrNot',
-          description: "A real-time temperature monitoring system using ESP32, MQTT, and a web application.",
+          description: "Live room temperature from an ESP32 sensor, streamed over MQTT to a web dashboard.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/4_project/";
             },},{id: "projects-piracy-rpg",
           title: 'Piracy RPG',
-          description: "A strategic naval exploration and combat game with procedural generation and advanced software design patterns.",
+          description: "Naval exploration and combat game with procedural maps, written to practise classic design patterns.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/5_project/";
             },},{id: "projects-galeriyah",
           title: 'GaleriYah',
-          description: "An avant-garde photography portfolio.",
+          description: "Photography portfolio with an unconventional, gallery-first layout.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/7_project/";
             },},{id: "projects-archblocker",
           title: 'ArchBlocker',
-          description: "A powerful website blocker with a retro terminal interface for managing digital distractions.",
+          description: "Website blocker for Arch Linux that works at the system level, with a terminal-styled control panel.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/8_project/";
             },},{id: "projects-robanization",
           title: 'Robanization',
-          description: "A challenging 2D platformer game with procedural level generation and dynamic obstacles.",
+          description: "2D platformer with procedurally generated levels and moving obstacles.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en-us/9_project/";
             },},{

@@ -36,13 +36,13 @@ ninja.data = [{
           },
         },{id: "nav-projektit",
           title: "projektit",
-          description: "Kasvava kokoelma minun/meidän hienoja projekteja.",
+          description: "Asioita, jotka olen suunnitellut, rakentanut ja julkaissut. Useimpia käytän itse joka päivä.",
           section: "Navigointivalikko",
           handler: () => {
             window.location.href = "/fi/projects/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "",
           section: "Navigointivalikko",
           handler: () => {
@@ -126,67 +126,67 @@ ninja.data = [{
           description: "",
           section: "Uutiset",},{id: "projects-hahasaas",
           title: 'HaHaSaaS',
-          description: "Vitsien jakamisen SaaS-alusta, joka tarjoaa huumoria pyynnöstä.",
+          description: "Vitsienjakopalvelu: Go-rajapinta, React-käyttöliittymä ja PostgreSQL, julkaistu Dockerilla.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/10_project/";
             },},{id: "projects-awareen",
           title: 'Awareen',
-          description: "Ruutuajan tietoisuussovellus pysyvällä päällysajastimella tietoista laitteen käyttöä varten.",
+          description: "Hiljainen ajastin jokaisen sovelluksen päällä, joka näyttää, kuinka kauan olet ollut puhelimella tänään. Ei estoja, ei mainoksia, ei internet-lupaa.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/11_project/";
             },},{id: "projects-knowledge-tree",
           title: 'Knowledge Tree',
-          description: "Minimalistinen graafipohjainen tiedonhallintajärjestelmä Zettelkasten-metodologiasta inspiroituneena. Visualisoi ja yhdistä ajatuksesi interaktiivisessa verkostossa – täysin näppäimistöllä ohjattuna.",
+          description: "Muistiinpanot verkkona Zettelkastenin hengessä. Jokainen muistiinpano on solmu, jota voi linkittää, hakea ja selata näppäimistöllä.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/12_project/";
             },},{id: "projects-wordor",
           title: 'Wordor',
-          description: "Tehostettu kääntäjä hajautetun kertauksen algoritmilla käännösten välittömään oppimiseen.",
+          description: "Kääntäjä, joka tekee jokaisesta hausta sanakortin ja tuo sen takaisin kertausjärjestelmällä.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/13_project/";
-            },},{id: "projects-guardian",
-          title: 'Guardian',
-          description: "Android-sovellus keskittymiseen NFC-ohjatulla sovellusten estolla.",
+            },},{id: "projects-nfcguard",
+          title: 'nfcGuard',
+          description: "Estää häiritsevät sovellukset, kunnes kosketat fyysistä NFC-tagia. Pidä tagi hankalassa paikassa, niin Instagramin avaaminen maksaa kävelyn.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/14_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
-          description: "Innovatiivinen alusta päivittäisten tehtävien ja aktiviteettien hallintaan.",
+          description: "Opintojen tiimiprojektina tehty tehtävä- ja aktiviteettiseuranta, jonka tilastot näyttävät, mihin viikko meni.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/1_project/";
             },},{id: "projects-morner-bot",
           title: 'Morner Bot',
-          description: "Telegram-botti aamurutiinien seuraamiseen älykellolla puhelimen häiriöiden minimoimiseksi.",
+          description: "Telegram-botti, joka seuraa aamurutiinia älykellosta, jotta puhelin voi jäädä toiseen huoneeseen.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/2_project/";
             },},{id: "projects-ankara",
           title: 'Ankara',
-          description: "Interaktiivinen työkalu, joka hyödyntää kertausjärjestelmää ja satunnaistamista tehokkaaseen sanaston oppimiseen.",
+          description: "Sanastokortit kertausjärjestelmällä, satunnaisella järjestyksellä ja puhesynteesillä.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/3_project/";
             },},{id: "projects-weatherornot",
           title: 'WeatherOrNot',
-          description: "Reaaliaikainen lämpötilanseurantajärjestelmä käyttäen ESP32:ta, MQTT:tä ja web-sovellusta.",
+          description: "Huoneen lämpötila reaaliajassa ESP32-anturilta MQTT:n kautta verkkonäkymään.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/4_project/";
             },},{id: "projects-piracy-rpg",
           title: 'Piracy RPG',
-          description: "Strateginen merimatkailu- ja taistelupeli proseduraalisella tasojen luomisella ja edistyneillä ohjelmistosuunnittelumalleilla.",
+          description: "Merenkulku- ja taistelupeli proseduraalisilla kartoilla, kirjoitettu klassisten suunnittelumallien harjoitteluun.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/5_project/";
             },},{id: "projects-galeriyah",
           title: 'GaleriYah',
-          description: "An avant-garde photography portfolio.",
+          description: "Valokuvaportfolio epätavallisella, galleriakeskeisellä asettelulla.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/7_project/";
             },},{id: "projects-archblocker",
           title: 'ArchBlocker',
-          description: "Tehokas verkkosivujen esto-ohjelma retro-terminaaliliittymällä digitaalisten häiriötekijöiden hallintaan.",
+          description: "Järjestelmätasolla toimiva verkkosivujen estäjä Arch Linuxille, terminaalityylisellä ohjauspaneelilla.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/8_project/";
             },},{id: "projects-robanization",
           title: 'Robanization',
-          description: "Haastava 2D-tasohyppelypeli proseduraalisella tasojen luomisella ja dynaamisilla esteillä.",
+          description: "2D-tasohyppely proseduraalisesti luoduilla tasoilla ja liikkuvilla esteillä.",
           section: "Projektit",handler: () => {
               window.location.href = "/fi/projects/fi/9_project/";
             },},{

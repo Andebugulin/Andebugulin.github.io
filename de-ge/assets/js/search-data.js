@@ -36,13 +36,13 @@ ninja.data = [{
           },
         },{id: "nav-projekte",
           title: "projekte",
-          description: "Eine wachsende Sammlung meiner/unserer coolen Projekte.",
+          description: "Was ich entworfen, gebaut und veröffentlicht habe. Das meiste davon benutze ich jeden Tag.",
           section: "Navigationsmenü",
           handler: () => {
             window.location.href = "/de-ge/projects/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "",
           section: "Navigationsmenü",
           handler: () => {
@@ -126,67 +126,67 @@ ninja.data = [{
           description: "",
           section: "Nachrichten",},{id: "projects-hahasaas",
           title: 'HaHaSaaS',
-          description: "Eine Witze-teilende SaaS-Plattform, die Humor auf Abruf liefert.",
+          description: "Dienst zum Teilen von Witzen mit Go-API, React-Frontend und PostgreSQL, ausgeliefert mit Docker.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/10_project/";
             },},{id: "projects-awareen",
           title: 'Awareen',
-          description: "Eine Bildschirmzeit-Bewusstseins-App mit persistentem Overlay-Timer für bewusste Gerätenutzung.",
+          description: "Ein stiller Timer über jeder App, der zeigt, wie lange Sie heute schon am Telefon sind. Keine Sperren, keine Werbung, keine Internetberechtigung.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/11_project/";
             },},{id: "projects-knowledge-tree",
           title: 'Knowledge Tree',
-          description: "Minimalistisches graphbasiertes Wissensmanagementsystem inspiriert von Zettelkasten. Visualisiere und verknüpfe Gedanken in einem interaktiven Netzwerk – vollständig tastaturgesteuert.",
+          description: "Notizen als Graph im Sinne des Zettelkastens. Jede Notiz ist ein Knoten, den man verknüpfen, suchen und per Tastatur ansteuern kann.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/12_project/";
             },},{id: "projects-wordor",
           title: 'Wordor',
-          description: "Erweiterter Übersetzer mit Spaced-Repetition-Algorithmus, um Übersetzungen sofort zu lernen.",
+          description: "Ein Übersetzer, der jede Abfrage in eine Lernkarte verwandelt und sie mit verteilter Wiederholung zurückbringt.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/13_project/";
-            },},{id: "projects-guardian",
-          title: 'Guardian',
-          description: "Android app for focused productivity using NFC-controlled app blocking and scheduled modes.",
+            },},{id: "projects-nfcguard",
+          title: 'nfcGuard',
+          description: "Sperrt ablenkende Apps, bis Sie einen physischen NFC-Tag berühren. Legen Sie den Tag an einen unbequemen Ort, und Instagram zu öffnen kostet einen Spaziergang.",
           section: "Projekte",handler: () => {
-              window.location.href = "/de-ge/projects/en-us/14_project/";
+              window.location.href = "/de-ge/projects/de-ge/14_project/";
             },},{id: "projects-tatask",
           title: 'TATASk',
-          description: "Eine innovative Plattform zur Verwaltung täglicher Aufgaben und Aktivitäten.",
+          description: "Aufgaben- und Aktivitätstracker, im Studienteam gebaut, mit Statistiken darüber, wohin die Woche ging.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/1_project/";
             },},{id: "projects-morner-bot",
           title: 'Morner Bot',
-          description: "Telegram-Bot zur Verfolgung von Morgenroutinen über Smartwatch, um Ablenkungen durch das Telefon zu minimieren.",
+          description: "Telegram-Bot, der die Morgenroutine über die Smartwatch erfasst, damit das Telefon im anderen Zimmer bleiben kann.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/2_project/";
             },},{id: "projects-ankara",
           title: 'Ankara',
-          description: "Ein interaktives Tool, das verteilte Wiederholung und Randomisierung für effektives Vokabellernen nutzt.",
+          description: "Vokabelkarten mit verteilter Wiederholung, zufälliger Reihenfolge und Sprachausgabe.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/3_project/";
             },},{id: "projects-weatherornot",
           title: 'WeatherOrNot',
-          description: "Ein Echtzeit-Temperaturüberwachungssystem mit ESP32, MQTT und einer Webanwendung.",
+          description: "Raumtemperatur live von einem ESP32-Sensor, per MQTT an ein Web-Dashboard gestreamt.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/4_project/";
             },},{id: "projects-piracy-rpg",
           title: 'Piracy RPG',
-          description: "Ein strategisches Seefahrt-Erkundungs- und Kampfspiel mit prozeduraler Generierung und fortgeschrittenen Software-Design-Mustern.",
+          description: "Seefahrts- und Kampfspiel mit prozeduralen Karten, geschrieben, um klassische Entwurfsmuster zu üben.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/5_project/";
             },},{id: "projects-galeriyah",
           title: 'GaleriYah',
-          description: "Ein avantgardistisches Fotografie-Portfolio.",
+          description: "Fotografie-Portfolio mit einem ungewöhnlichen, galerieorientierten Layout.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/7_project/";
             },},{id: "projects-archblocker",
           title: 'ArchBlocker',
-          description: "Ein mächtiger Website-Blocker mit einer Retro-Terminal-Oberfläche zur Verwaltung digitaler Ablenkungen.",
+          description: "Website-Blocker für Arch Linux auf Systemebene, mit einer Steuerung im Terminal-Stil.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/8_project/";
             },},{id: "projects-robanization",
           title: 'Robanization',
-          description: "Ein herausforderndes 2D-Plattformspiel mit prozeduraler Level-Generierung und dynamischen Hindernissen.",
+          description: "2D-Plattformer mit prozedural erzeugten Levels und beweglichen Hindernissen.",
           section: "Projekte",handler: () => {
               window.location.href = "/de-ge/projects/de-ge/9_project/";
             },},{
